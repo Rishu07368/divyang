@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disability Intelligence Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+        .stat-card.green { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+        .stat-card.orange { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .stat-card.blue { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .nav-item {
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .nav-item:hover, .nav-item.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .tab-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .tab-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .severity-critical { color: #dc2626; font-weight: bold; }
+        .severity-severe { color: #f97316; font-weight: bold; }
+        .severity-moderate { color: #eab308; font-weight: bold; }
+        .severity-mild { color: #22c55e; font-weight: bold; }
+        #map { height: 400px; border-radius: 12px; }
+        .insight-card {
+            border-left: 4px solid;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+        .insight-critical { border-left-color: #dc2626; }
+        .insight-high { border-left-color: #f97316; }
+        .insight-medium { border-left-color: #eab308; }
+        .insight-low { border-left-color: #22c55e; }
+        .loading { display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div id="loading" class="loading">
+        <div class="text-center">
+            <div class="spinner mx-auto mb-4"></div>
+            <p class="text-gray-600">Loading Disability Intelligence Platform...</p>
+        </div>
+    </div>
+
+    <div id="app" class="hidden">
+        <!-- Header -->
+        <header class="bg-indigo-600 text-white shadow-lg">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <svg class="w-10 h-10 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                        <div>
+                            <h1 class="text-2xl font-bold">Disability Intelligence Platform</h1>
+                            <p class="text-indigo-200 text-sm">Data-Driven Disability Welfare Analytics</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-sm text-indigo-200">Last Updated</p>
+                        <p id="lastUpdated" class="font-semibold">-</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="bg-indigo-700 text-white">
+            <div class="container mx-auto px-6">
+                <div class="flex space-x-1">
+                    <div class="nav-item active" onclick="showTab('dashboard')">📊 Dashboard</div>
+                    <div class="nav-item" onclick="showTab('maps')">🗺️ Maps</div>
+                    <div class="nav-item" onclick="showTab('analytics')">📈 Analytics</div>
+                    <div class="nav-item" onclick="showTab('welfare')">🏥 Welfare</div>
+                    <div class="nav-item" onclick="showTab('insights')">💡 Insights</div>
+                    <div class="nav-item" onclick="showTab('planning')">📋 Planning</div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-6 py-8">
+            <!-- Dashboard Tab -->
+            <div id="tab-dashboard" class="tab-content">
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="stat-card">
+                        <p class="text-indigo-100 text-sm">Total Beneficiaries</p>
+                        <p id="totalBeneficiaries" class="text-4xl font-bold mt-2">-</p>
+                    </div>
+                    <div class="stat-card green">
+                        <p class="text-emerald-100 text-sm">Villages Covered</p>
+                        <p id="villagesCovered" class="text-4xl font-bold mt-2">-</p>
+                    </div>
+                    <div class="stat-card orange">
+                        <p class="text-orange-100 text-sm">High Priority Cases</p>
+                        <p id="highPriorityCases" class="text-4xl font-bold mt-2">-</p>
+                    </div>
+                    <div class="stat-card blue">
+                        <p class="text-cyan-100 text-sm">Welfare Schemes Eligible</p>
+                        <p id="welfareEligible" class="text-4xl font-bold mt-2">-</p>
+                    </div>
+                </div>
+
+                <!-- Charts Row -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <div class="card">
+                        <h3 class="text-lg font-semibold mb-4">Disability Distribution</h3>
+                        <canvas id="disabilityChart" height="250"></canvas>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-lg font-semibold mb-4">Severity Distribution</h3>
+                        <canvas id="severityChart" height="250"></canvas>
+                    </div>
+                </div>
+
+                <!-- Gender & Age Distribution -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <div class="card">
+                        <h3 class="text-lg font-semibold mb-4">Gender Distribution</h3>
+                        <canvas id="genderChart" height="200"></canvas>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-lg font-semibold mb-4">Age Group Distribution</h3>
+                        <canvas id="ageChart" height="200"></canvas>
+                    </div>
+                </div>
+
+                <!-- Top Villages Table -->
+                <div class="card">
+                    <h3 class="text-lg font-semibold mb-4">Top Villages by Beneficiary Count</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-4 py-2 text-left text-sm font-semibold">Village</th>
+                                    <th class="px-4 py-2 text-left text-sm font-semibold">Beneficiaries</th>
+                                    <th class="px-4 py-2 text-left text-sm font-semibold">Dominant Severity</th>
+                                </tr>
+                            </thead>
+                            <tbody id="villageTable" class="divide-y divide-gray-200">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maps Tab -->
+            <div id="tab-maps" class="tab-content hidden">
+                <div class="flex gap-4 mb-4">
+                    <button class="tab-btn active" onclick="switchMap('beneficiary')">Beneficiary Map</button>
+                    <button class="tab-btn" onclick="switchMap('heatmap')">Severity Heatmap</button>
+                    <button class="tab-btn" onclick="switchMap('village')">Village Summary</button>
+                </div>
+                <div class="card">
+                    <div id="map"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                    <div class="card text-center">
+                        <p class="text-sm text-gray-500">Geocoded Records</p>
+                        <p id="geocodedCount" class="text-2xl font-bold text-indigo-600">-</p>
+                    </div>
+                    <div class="card text-center">
+                        <p class="text-sm text-gray-500">Map Center</p>
+                        <p class="text-lg font-semibold">Bihar Region</p>
+                    </div>
+                    <div class="card text-center">
+                        <p class="text-sm text-gray-500">Legend</p>
+                        <div class="flex justify-center gap-2 mt-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">Mild</span>
+                            <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs">Moderate</span>
+                            <span class="px-2 py-1 bg-red-100 text-red-800 rounded text-xs">Severe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Tab -->
+            <div id="tab-analytics" class="tab-content hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="card">
+                        <h3 class="text-lg font-semibold mb-4">Social Status Distribution</h3>
+                        <canvas id="socialChart" height="250"></canvas>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-lg font-semibold mb-4">Key Metrics</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                                <span class="text-gray-700">Without Ayushman Card</span>
+                                <span id="withoutAyushman" class="font-bold text-red-600">-</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                                <span class="text-gray-700">Not in School</span>
+                                <span id="notInSchool" class="font-bold text-orange-600">-</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                                <span class="text-gray-700">Average Severity Score</span>
+                                <span id="avgSeverity" class="font-bold text-indigo-600">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource Requirements -->
+                <div class="card mt-6">
+                    <h3 class="text-lg font-semibold mb-4">Resource Requirements</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="p-4 bg-blue-50 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-blue-600" id="specialEducators">-</p>
+                            <p class="text-sm text-gray-600">Special Educators</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-green-600" id="physiotherapists">-</p>
+                            <p class="text-sm text-gray-600">Physiotherapists</p>
+                        </div>
+                        <div class="p-4 bg-purple-50 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-purple-600" id="speechTherapists">-</p>
+                            <p class="text-sm text-gray-600">Speech Therapists</p>
+                        </div>
+                        <div class="p-4 bg-orange-50 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-orange-600" id="cbrWorkers">-</p>
+                            <p class="text-sm text-gray-600">CBR Workers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Welfare Tab -->
+            <div id="tab-welfare" class="tab-content hidden">
+                <div class="card">
+                    <h3 class="text-lg font-semibold mb-4">Welfare Scheme Recommendations</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-4 py-2 text-left text-sm font-semibold">Beneficiary</th>
+                                    <th class="px-4 py-2 text-left text-sm font-semibold">Disability</th>
+                                    <th class="px-4 py-2 text-left text-sm font-semibold">Primary Scheme</th>
+                                    <th class="px-4 py-2 text-left text-sm font-semibold">Eligible Schemes</th>
+                                    <th class="px-4 py-2 text-left text-sm font-semibold">Has Aadhaar</th>
+                                </tr>
+                            </thead>
+                            <tbody id="welfareTable" class="divide-y divide-gray-200">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insights Tab -->
+            <div id="tab-insights" class="tab-content hidden">
+                <div class="grid grid-cols-3 gap-4 mb-6">
+                    <div class="card text-center">
+                        <p class="text-4xl font-bold text-red-600" id="criticalCount">0</p>
+                        <p class="text-gray-600">Critical Insights</p>
+                    </div>
+                    <div class="card text-center">
+                        <p class="text-4xl font-bold text-orange-600" id="highCount">0</p>
+                        <p class="text-gray-600">High Priority</p>
+                    </div>
+                    <div class="card text-center">
+                        <p class="text-4xl font-bold text-indigo-600" id="totalInsights">0</p>
+                        <p class="text-gray-600">Total Insights</p>
+                    </div>
+                </div>
+                <div id="insightsList" class="space-y-4">
+                </div>
+            </div>
+
+            <!-- Planning Tab -->
+            <div id="tab-planning" class="tab-content hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="card">
+                        <h3 class="text-lg font-semibold mb-4">Top Priority Villages</h3>
+                        <div id="priorityZones" class="space-y-3">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-lg font-semibold mb-4">Recommended Camp Locations</h3>
+                        <div id="campLocations" class="space-y-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekly Schedule -->
+                <div class="card mt-6">
+                    <h3 class="text-lg font-semibold mb-4">Weekly Outreach Schedule</h3>
+                    <div id="weeklySchedule" class="overflow-x-auto">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-6 mt-8">
+            <div class="container mx-auto px-6 text-center">
+                <p class="text-gray-400">Disability Intelligence Platform - Empowering NGOs, Schools, and Welfare Offices</p>
+                <p class="text-gray-500 text-sm mt-2">Built with ❤️ for disability welfare in India</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Global data storage
+        let dashboardData = null;
+        let welfareData = null;
+        let insightsData = null;
+        let resourceData = null;
+        let fieldWorkerData = null;
+        let map = null;
+
+        // Load all data
+        async function loadData() {
+            try {
+                const response = await fetch('./data/dashboard_data.json');
+                dashboardData = await response.json();
+                
+                // Load additional data files
+                try {
+                    const welfareResponse = await fetch('./data/processed/welfare_recommendations.csv');
+                    welfareData = await welfareResponse.text();
+                } catch (e) { console.log('Welfare data not available'); }
+                
+                try {
+                    const insightsResponse = await fetch('./data/processed/ai_insights.json');
+                    insightsData = await insightsResponse.json();
+                } catch (e) { console.log('Insights data not available'); }
+                
+                try {
+                    const resourceResponse = await fetch('./data/processed/resource_allocation.json');
+                    resourceData = await resourceResponse.json();
+                } catch (e) { console.log('Resource data not available'); }
+                
+                try {
+                    const fieldResponse = await fetch('./data/processed/field_worker_data.json');
+                    fieldWorkerData = await fieldResponse.json();
+                } catch (e) { console.log('Field worker data not available'); }
+                
+                initializeApp();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').innerHTML = `
+                    <div class="text-center text-red-600">
+                        <p>Error loading data. Please ensure analytics have been run.</p>
+                        <p class="text-sm">Run: cd /workspace/project/analytics && python run_analytics.py</p>
+                    </div>
+                `;
+            }
+        }
+
+        function initializeApp() {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('app').classList.remove('hidden');
+            
+            updateDashboard();
+            initializeMap();
+        }
+
+        function updateDashboard() {
+            const data = dashboardData;
+            if (!data) return;
+
+            // Update timestamp
+            if (data.summary.last_updated) {
+                document.getElementById('lastUpdated').textContent = new Date(data.summary.last_updated).toLocaleString();
+            }
+
+            // Stats
+            document.getElementById('totalBeneficiaries').textContent = data.summary.total_beneficiaries || '-';
+            document.getElementById('villagesCovered').textContent = Object.keys(data.summary.by_village || {}).length;
+            document.getElementById('highPriorityCases').textContent = data.key_metrics.high_priority_beneficiaries || 0;
+            document.getElementById('welfareEligible').textContent = data.key_metrics.welfare_eligible_total || 0;
+
+            // Key metrics
+            document.getElementById('withoutAyushman').textContent = data.key_metrics.without_ayushman || 0;
+            document.getElementById('notInSchool').textContent = data.key_metrics.not_in_school || 0;
+            document.getElementById('avgSeverity').textContent = data.key_metrics.severity_avg_score || '-';
+
+            // Resource requirements
+            if (data.resource_needs) {
+                document.getElementById('specialEducators').textContent = data.resource_needs.staff?.special_educators || '-';
+                document.getElementById('physiotherapists').textContent = data.resource_needs.staff?.physiotherapists || '-';
+                document.getElementById('speechTherapists').textContent = data.resource_needs.staff?.speech_therapists || '-';
+                document.getElementById('cbrWorkers').textContent = data.resource_needs.staff?.cbr_workers || '-';
+            }
+
+            // Disability Distribution Chart
+            const disabilityCtx = document.getElementById('disabilityChart').getContext('2d');
+            const disabilityLabels = Object.keys(data.disability_distribution || {}).slice(0, 10);
+            const disabilityValues = Object.values(data.disability_distribution || {}).slice(0, 10);
+            
+            new Chart(disabilityCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: disabilityLabels,
+                    datasets: [{
+                        data: disabilityValues,
+                        backgroundColor: [
+                            '#667eea', '#764ba2', '#f093fb', '#f5576c', '#4facfe',
+                            '#00f2fe', '#11998e', '#38ef7d', '#f093fb', '#eab308'
+                        ]
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // Severity Distribution Chart
+            const severityCtx = document.getElementById('severityChart').getContext('2d');
+            const severityLabels = Object.keys(data.severity_distribution || {});
+            const severityValues = Object.values(data.severity_distribution || {});
+            
+            new Chart(severityCtx, {
+                type: 'bar',
+                data: {
+                    labels: severityLabels,
+                    datasets: [{
+                        label: 'Beneficiaries',
+                        data: severityValues,
+                        backgroundColor: ['#22c55e', '#eab308', '#f97316', '#dc2626']
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // Gender Distribution
+            const genderCtx = document.getElementById('genderChart').getContext('2d');
+            const genderLabels = Object.keys(data.summary.by_gender || {});
+            const genderValues = Object.values(data.summary.by_gender || {});
+            
+            new Chart(genderCtx, {
+                type: 'pie',
+                data: {
+                    labels: genderLabels,
+                    datasets: [{
+                        data: genderValues,
+                        backgroundColor: ['#667eea', '#f5576c', '#11998e']
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // Age Distribution
+            const ageCtx = document.getElementById('ageChart').getContext('2d');
+            const ageLabels = Object.keys(data.summary.by_age_group || {});
+            const ageValues = Object.values(data.summary.by_age_group || {});
+            
+            new Chart(ageCtx, {
+                type: 'bar',
+                data: {
+                    labels: ageLabels,
+                    datasets: [{
+                        label: 'Count',
+                        data: ageValues,
+                        backgroundColor: '#4facfe'
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // Village Table
+            const villageTable = document.getElementById('villageTable');
+            const villages = Object.entries(data.village_distribution || {})
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10);
+            
+            villageTable.innerHTML = villages.map(([village, count]) => `
+                <tr>
+                    <td class="px-4 py-2">${village}</td>
+                    <td class="px-4 py-2 font-semibold">${count}</td>
+                    <td class="px-4 py-2"><span class="px-2 py-1 bg-green-100 rounded text-sm">Check Data</span></td>
+                </tr>
+            `).join('');
+
+            // Update insights
+            if (insightsData && insightsData.length > 0) {
+                updateInsights();
+            }
+
+            // Update planning
+            if (resourceData) {
+                updatePlanning();
+            }
+        }
+
+        function updateInsights() {
+            if (!insightsData) return;
+            
+            const criticalCount = insightsData.filter(i => i.urgency === 'CRITICAL').length;
+            const highCount = insightsData.filter(i => i.urgency === 'HIGH').length;
+            
+            document.getElementById('criticalCount').textContent = criticalCount;
+            document.getElementById('highCount').textContent = highCount;
+            document.getElementById('totalInsights').textContent = insightsData.length;
+
+            const insightsList = document.getElementById('insightsList');
+            insightsList.innerHTML = insightsData.slice(0, 15).map(insight => `
+                <div class="insight-card insight-${insight.urgency.toLowerCase()}">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="px-2 py-1 text-xs font-semibold rounded ${
+                                insight.urgency === 'CRITICAL' ? 'bg-red-100 text-red-800' :
+                                insight.urgency === 'HIGH' ? 'bg-orange-100 text-orange-800' :
+                                insight.urgency === 'MEDIUM' ? 'bg-yellow-100 text-yellow-800' :
+                                'bg-green-100 text-green-800'
+                            }">${insight.urgency}</span>
+                            <h4 class="font-semibold mt-2">${insight.title}</h4>
+                            <p class="text-gray-600 text-sm mt-1">${insight.description}</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-2xl font-bold">${insight.impact_score}</p>
+                            <p class="text-xs text-gray-500">Impact</p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-sm font-semibold text-gray-700">Recommendations:</p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside">
+                            ${insight.recommendations.slice(0, 3).map(r => `<li>${r}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">Affected: ${insight.affected_count} beneficiaries | Location: ${insight.location}</p>
+                </div>
+            `).join('');
+        }
+
+        function updatePlanning() {
+            if (!resourceData) return;
+
+            // Priority zones
+            const priorityZones = document.getElementById('priorityZones');
+            const zones = (resourceData.intervention_zones || [])
+                .sort((a, b) => b.priority_score - a.priority_score)
+                .slice(0, 5);
+            
+            priorityZones.innerHTML = zones.map(zone => `
+                <div class="p-3 bg-gray-50 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold">${zone.name}</span>
+                        <span class="px-2 py-1 text-xs rounded ${
+                            zone.impact_potential === 'High' ? 'bg-green-100 text-green-800' :
+                            zone.impact_potential === 'Medium' ? 'bg-yellow-100 text-yellow-800' :
+                            'bg-gray-100 text-gray-800'
+                        }">${zone.impact_potential}</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-1">${zone.beneficiary_count} beneficiaries | Priority: ${zone.priority_score}</p>
+                </div>
+            `).join('');
+
+            // Camp locations
+            const campLocations = document.getElementById('campLocations');
+            const camps = resourceData.camp_locations || [];
+            
+            campLocations.innerHTML = camps.length > 0 ? camps.map(camp => `
+                <div class="p-3 bg-purple-50 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold">${camp.village}</span>
+                        <span class="px-2 py-1 text-xs bg-purple-200 text-purple-800 rounded">Priority ${camp.priority}</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-1">${camp.total_beneficiaries} beneficiaries</p>
+                    <p class="text-xs text-gray-500">Services: ${camp.services_needed?.slice(0, 2).join(', ') || 'N/A'}</p>
+                </div>
+            `).join('') : '<p class="text-gray-500">No camp locations recommended yet</p>';
+        }
+
+        function initializeMap() {
+            map = L.map('map').setView([26.95, 84.40], 9);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Add sample markers
+            const villages = dashboardData?.village_distribution || {};
+            Object.entries(villages).slice(0, 10).forEach(([village, count]) => {
+                // Random position near center for demo
+                const lat = 26.95 + (Math.random() - 0.5) * 0.2;
+                const lon = 84.40 + (Math.random() - 0.5) * 0.2;
+                
+                L.circleMarker([lat, lon], {
+                    radius: Math.min(count * 2, 15),
+                    color: '#667eea',
+                    fillOpacity: 0.5
+                }).bindPopup(`<b>${village}</b><br>Beneficiaries: ${count}`).addTo(map);
+            });
+
+            document.getElementById('geocodedCount').textContent = Object.keys(villages).length;
+        }
+
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+            document.getElementById(`tab-${tabName}`).classList.remove('hidden');
+            
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Refresh map when shown
+            if (tabName === 'maps' && map) {
+                setTimeout(() => map.invalidateSize(), 100);
+            }
+        }
+
+        function switchMap(type) {
+            document.querySelectorAll('#tab-maps .tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            // Map switching logic would go here
+        }
+
+        // Initialize
+        loadData();
+    </script>
+</body>
+</html>
