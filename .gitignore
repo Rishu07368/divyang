@@ -8,15 +8,6 @@ __pycache__/
 dist/
 build/
 
-# Data
-*.xlsx
-*.csv
-*.json
-!frontend/public/data/*.json
-!frontend/public/data/**/*.json
-data/
-*.geojson
-
 # IDE
 .vscode/
 .idea/
@@ -35,3 +26,4 @@ node_modules/
 # Logs
 *.log
 logs/
+# Source Data (do not commit)\n*.xlsx

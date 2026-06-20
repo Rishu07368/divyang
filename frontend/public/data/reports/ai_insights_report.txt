@@ -1,0 +1,527 @@
+================================================================================
+DISABILITY INTELLIGENCE PLATFORM - AI INSIGHTS REPORT
+================================================================================
+
+Total Insights: 31
+CRITICAL: 0 | HIGH: 5
+Total Affected Beneficiaries: 374
+
+--------------------------------------------------------------------------------
+HIGH PRIORITY INSIGHTS (5)
+--------------------------------------------------------------------------------
+
+[INSIGHT_0003] High-Need Village: BRAHMPUR
+Category: geographic_hotspot | Location: BRAHMPUR
+Impact: 90/100 | Confidence: 88%
+Description: BRAHMPUR has 5 SEVERE/CRITICAL cases out of 15 total beneficiaries
+Affected: 15 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 15
+  • High-severity cases: 5
+  • Dominant disability types: ['INTELLECTUAL DISABILITY', 'SPEECH AND LANGUAGE DISABILITY']
+
+Recommendations:
+  → Deploy dedicated field worker
+  → Organize village-level camp
+  → Priority home visits
+  → Community awareness program
+
+
+[INSIGHT_0001] Progressive Conditions Showing Deterioration
+Category: high_risk | Location: Multiple Villages
+Impact: 88/100 | Confidence: 90%
+Description: 5 beneficiaries with progressive disabilities showing increasing symptoms
+Affected: 5 beneficiaries
+
+Evidence:
+  • Neuromuscular conditions require regular monitoring
+  • Risk of further functional decline
+
+Recommendations:
+  → Medical review referral
+  → Increased physiotherapy frequency
+  → Equipment assessment for progression
+  → Caregiver training for monitoring
+
+
+[INSIGHT_0002] Severe Cases Not Accessing Education
+Category: high_risk | Location: Multiple Villages
+Impact: 85/100 | Confidence: 92%
+Description: 3 beneficiaries with SEVERE/CRITICAL disability are not in school
+Affected: 3 beneficiaries
+
+Evidence:
+  • Education is critical for development
+  • Social isolation risk
+  • Missed learning opportunities
+
+Recommendations:
+  → Special school enrollment
+  → Home-based education program
+  → Transport assistance
+  → IEP (Individualized Education Plan) development
+
+
+[INSIGHT_0012] School Enrollment Gap for School-Age Children
+Category: service_gap | Location: Multiple Villages
+Impact: 82/100 | Confidence: 92%
+Description: 4 of 86 school-age children (6-14 years) are not enrolled in school
+Affected: 4 beneficiaries
+
+Evidence:
+  • School-age beneficiaries: 86
+  • Not currently studying: 4
+
+Recommendations:
+  → School enrollment campaign
+  → Transport assistance program
+  → Special school awareness
+  → Home-based education option
+
+
+[INSIGHT_0011] Physiotherapy Services Gap
+Category: service_gap | Location: Multiple Villages
+Impact: 78/100 | Confidence: 70%
+Description: ~65% of 13 beneficiaries with mobility needs may lack physiotherapy
+Affected: 8 beneficiaries
+
+Evidence:
+  • Total mobility-affected cases: 13
+  • Estimated gap: 65%
+
+Recommendations:
+  → Deploy physiotherapist to high-need villages
+  → Train family members in home exercises
+  → Provide exercise equipment
+  → Establish physiotherapy camp
+
+--------------------------------------------------------------------------------
+MEDIUM PRIORITY INSIGHTS (22)
+--------------------------------------------------------------------------------
+
+[INSIGHT_0004] High-Need Village: BAHABAR
+Category: geographic_hotspot | Location: BAHABAR
+Impact: 90/100 | Confidence: 88%
+Description: BAHABAR has 4 SEVERE/CRITICAL cases out of 5 total beneficiaries
+Affected: 5 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 5
+  • High-severity cases: 4
+  • Dominant disability types: ['MULTIPLE DISABILITY', 'MUSCULAR DYSTROPHY']
+
+Recommendations:
+  → Deploy dedicated field worker
+  → Organize village-level camp
+  → Priority home visits
+  → Community awareness program
+
+
+[INSIGHT_0005] High-Need Village: HARPUR
+Category: geographic_hotspot | Location: HARPUR
+Impact: 90/100 | Confidence: 88%
+Description: HARPUR has 4 SEVERE/CRITICAL cases out of 9 total beneficiaries
+Affected: 9 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 9
+  • High-severity cases: 4
+  • Dominant disability types: ['HI', 'CP']
+
+Recommendations:
+  → Deploy dedicated field worker
+  → Organize village-level camp
+  → Priority home visits
+  → Community awareness program
+
+
+[INSIGHT_0006] High-Need Village: PARSAUNI
+Category: geographic_hotspot | Location: PARSAUNI
+Impact: 90/100 | Confidence: 88%
+Description: PARSAUNI has 4 SEVERE/CRITICAL cases out of 14 total beneficiaries
+Affected: 14 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 14
+  • High-severity cases: 4
+  • Dominant disability types: ['INTELLECTUAL DISABILITY', 'LOCOMOTER DISABILITY']
+
+Recommendations:
+  → Deploy dedicated field worker
+  → Organize village-level camp
+  → Priority home visits
+  → Community awareness program
+
+
+[INSIGHT_0007] High-Need Village: VISHWANATHPUR
+Category: geographic_hotspot | Location: VISHWANATHPUR
+Impact: 90/100 | Confidence: 88%
+Description: VISHWANATHPUR has 4 SEVERE/CRITICAL cases out of 8 total beneficiaries
+Affected: 8 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 8
+  • High-severity cases: 4
+  • Dominant disability types: ['INTELLECTUAL DISABILITY', 'HI']
+
+Recommendations:
+  → Deploy dedicated field worker
+  → Organize village-level camp
+  → Priority home visits
+  → Community awareness program
+
+
+[INSIGHT_0008] High-Need Village: PANCHDEORI
+Category: geographic_hotspot | Location: PANCHDEORI
+Impact: 80/100 | Confidence: 88%
+Description: PANCHDEORI has 3 SEVERE/CRITICAL cases out of 9 total beneficiaries
+Affected: 9 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 9
+  • High-severity cases: 3
+  • Dominant disability types: ['LD', 'IDD']
+
+Recommendations:
+  → Deploy dedicated field worker
+  → Organize village-level camp
+  → Priority home visits
+  → Community awareness program
+
+
+[INSIGHT_0009] Regional Intervention Zone Required
+Category: geographic_hotspot | Location: Regional Cluster
+Impact: 80/100 | Confidence: 75%
+Description: 6 villages form a high-need cluster requiring coordinated intervention
+Affected: 24 beneficiaries
+
+Evidence:
+  • Combined high-severity cases: 24
+  • Villages: BRAHMPUR, BAHABAR, HARPUR, PARSAUNI, VISHWANATHPUR
+  • Geographic proximity allows resource optimization
+
+Recommendations:
+  → Establish regional camp
+  → Coordinate multi-village visits
+  → Shared resource pool
+  → Unified intervention plan
+
+
+[INSIGHT_0031] Ayushman Card Enrollment Opportunity
+Category: opportunity | Location: Multiple Villages
+Impact: 78/100 | Confidence: 95%
+Description: 61 beneficiaries are eligible for Ayushman card but not enrolled
+Affected: 61 beneficiaries
+
+Evidence:
+  • Ayushman provides ₹5 lakh health coverage
+  • High healthcare needs in disabled population
+  • Easy enrollment process
+
+Recommendations:
+  → Organize Ayushman card camp
+  → Partner with local CSC
+  → Provide enrollment assistance
+  → Track enrollment progress
+
+
+[INSIGHT_0010] Speech Therapy Services Gap
+Category: service_gap | Location: All Villages
+Impact: 75/100 | Confidence: 70%
+Description: ~60% of 22 beneficiaries with speech needs may lack communication interventions
+Affected: 13 beneficiaries
+
+Evidence:
+  • Total speech/language cases: 22
+  • Estimated gap: 60%
+
+Recommendations:
+  → Recruit speech therapist
+  → Train CBR workers in basic speech techniques
+  → Partner with speech therapy NGO
+  → Tele-rehabilitation option
+
+
+[INSIGHT_0013] High-Need Village: RAJI JAGDISHPUR
+Category: service_gap | Location: RAJI JAGDISHPUR
+Impact: 70/100 | Confidence: 80%
+Description: RAJI JAGDISHPUR has 16 beneficiaries requiring field worker attention
+Affected: 16 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 16
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0014] High-Need Village: BRAHMPUR
+Category: service_gap | Location: BRAHMPUR
+Impact: 70/100 | Confidence: 80%
+Description: BRAHMPUR has 15 beneficiaries requiring field worker attention
+Affected: 15 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 15
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0015] High-Need Village: PARSAUNI
+Category: service_gap | Location: PARSAUNI
+Impact: 70/100 | Confidence: 80%
+Description: PARSAUNI has 14 beneficiaries requiring field worker attention
+Affected: 14 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 14
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0016] High-Need Village: NADUA GYANPUR
+Category: service_gap | Location: NADUA GYANPUR
+Impact: 70/100 | Confidence: 80%
+Description: NADUA GYANPUR has 13 beneficiaries requiring field worker attention
+Affected: 13 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 13
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0017] High-Need Village: MITHABEL
+Category: service_gap | Location: MITHABEL
+Impact: 70/100 | Confidence: 80%
+Description: MITHABEL has 13 beneficiaries requiring field worker attention
+Affected: 13 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 13
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0018] High-Need Village: PANCHDEORI
+Category: service_gap | Location: PANCHDEORI
+Impact: 70/100 | Confidence: 80%
+Description: PANCHDEORI has 9 beneficiaries requiring field worker attention
+Affected: 9 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 9
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0019] High-Need Village: HARPUR
+Category: service_gap | Location: HARPUR
+Impact: 70/100 | Confidence: 80%
+Description: HARPUR has 9 beneficiaries requiring field worker attention
+Affected: 9 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 9
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0020] High-Need Village: VISHWANATHPUR
+Category: service_gap | Location: VISHWANATHPUR
+Impact: 70/100 | Confidence: 80%
+Description: VISHWANATHPUR has 8 beneficiaries requiring field worker attention
+Affected: 8 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 8
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0021] High-Need Village: BELWA
+Category: service_gap | Location: BELWA
+Impact: 70/100 | Confidence: 80%
+Description: BELWA has 7 beneficiaries requiring field worker attention
+Affected: 7 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 7
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0022] High-Need Village: SINGHPUR
+Category: service_gap | Location: SINGHPUR
+Impact: 70/100 | Confidence: 80%
+Description: SINGHPUR has 7 beneficiaries requiring field worker attention
+Affected: 7 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 7
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0023] High-Need Village: BAHABAR
+Category: service_gap | Location: BAHABAR
+Impact: 70/100 | Confidence: 80%
+Description: BAHABAR has 6 beneficiaries requiring field worker attention
+Affected: 6 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 6
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0024] High-Need Village: BAIJUDIHA
+Category: service_gap | Location: BAIJUDIHA
+Impact: 70/100 | Confidence: 80%
+Description: BAIJUDIHA has 6 beneficiaries requiring field worker attention
+Affected: 6 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 6
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0025] High-Need Village: MATHIYA
+Category: service_gap | Location: MATHIYA
+Impact: 70/100 | Confidence: 80%
+Description: MATHIYA has 5 beneficiaries requiring field worker attention
+Affected: 5 beneficiaries
+
+Evidence:
+  • Total beneficiaries: 5
+
+Recommendations:
+  → Priority field worker visit
+  → Comprehensive needs assessment
+  → Intervention plan development
+
+
+[INSIGHT_0027] Missing Disability Severity Data
+Category: data_anomaly | Location: Data Quality
+Impact: 65/100 | Confidence: 95%
+Description: 20 records have no disability degree/severity recorded
+Affected: 20 beneficiaries
+
+Evidence:
+  • Affects prioritization
+  • Limits severity-based analysis
+  • Requires reassessment
+
+Recommendations:
+  → Priority reassessment for affected cases
+  → Train field workers on severity assessment
+  → Implement mandatory severity field
+
+--------------------------------------------------------------------------------
+LOW PRIORITY INSIGHTS (4)
+--------------------------------------------------------------------------------
+
+[INSIGHT_0030] Group Intervention Opportunity: INTELLECTUAL DISABILITY
+Category: opportunity | Location: All Villages
+Impact: 72/100 | Confidence: 88%
+Description: 23 beneficiaries have INTELLECTUAL DISABILITY - ideal for group therapy sessions
+Affected: 23 beneficiaries
+
+Evidence:
+  • Most common disability: INTELLECTUAL DISABILITY
+  • Count: 23
+  • Group interventions more cost-effective
+
+Recommendations:
+  → Organize group therapy sessions
+  → Create peer support groups
+  → Batch equipment distribution
+  → Shared training programs
+
+
+[INSIGHT_0026] Missing Unique IDs
+Category: data_anomaly | Location: Data Quality
+Impact: 60/100 | Confidence: 98%
+Description: 1 records have missing Unique IDs, affecting data linkage
+Affected: 1 beneficiaries
+
+Evidence:
+  • Cannot track individual progress
+  • Duplicate risk
+  • Reporting accuracy impact
+
+Recommendations:
+  → Assign unique IDs to incomplete records
+  → Implement data entry validation
+  → Manual ID assignment for orphan records
+
+
+[INSIGHT_0028] Potential Duplicate Records
+Category: data_anomaly | Location: Data Quality
+Impact: 55/100 | Confidence: 70%
+Description: 4 records may be duplicates (same name and village)
+Affected: 4 beneficiaries
+
+Evidence:
+  • Same child name in same village with different IDs
+  • Could be data entry error or genuine siblings
+  • Requires verification
+
+Recommendations:
+  → Manual verification of potential duplicates
+  → Cross-reference with family information
+  → Merge or confirm as separate records
+
+
+[INSIGHT_0029] Age Data Outliers
+Category: data_anomaly | Location: Data Quality
+Impact: 50/100 | Confidence: 92%
+Description: 20 records have age values outside the expected range (0-18 years)
+Affected: 20 beneficiaries
+
+Evidence:
+  • Age values may be data entry errors
+  • Affects age-group analysis
+  • Could impact program eligibility
+
+Recommendations:
+  → Review and correct age values
+  → Implement age validation (0-18)
+  → Cross-reference with school grade if available

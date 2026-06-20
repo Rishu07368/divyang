@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ed7c762287f3b882823dad8aa33d21e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; top: 10px; left: 50px; z-index: 1000; 
+                    background-color: white; padding: 10px; border-radius: 5px;
+                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
+            <h4 style="margin: 0;">Village Summary Map</h4>
+            <p style="margin: 5px 0 0 0; font-size: 12px;">Circle size = number of beneficiaries</p>
+        </div>
+        
+    
+        <div style="position: fixed; bottom: 50px; right: 50px; z-index: 1000; 
+                    background-color: white; padding: 10px; border-radius: 5px;
+                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
+            <h5 style="margin: 0 0 10px 0;">Severity Legend</h5>
+            <p style="margin: 3px 0;"><span style="color: #2ecc71;">●</span> Mild</p>
+            <p style="margin: 3px 0;"><span style="color: #f39c12;">●</span> Moderate</p>
+            <p style="margin: 3px 0;"><span style="color: #e74c3c;">●</span> Severe</p>
+            <p style="margin: 3px 0;"><span style="color: #8e44ad;">●</span> Critical</p>
+        </div>
+        
+    
+            <div class="folium-map" id="map_ed7c762287f3b882823dad8aa33d21e7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ed7c762287f3b882823dad8aa33d21e7 = L.map(
+                "map_ed7c762287f3b882823dad8aa33d21e7",
+                {
+                    center: [27.57, 81.8],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_87efd1ee97d9a253af4fe1578ce158dc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_87efd1ee97d9a253af4fe1578ce158dc.addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var circle_marker_a755dc4d13b25aa79d34cb92c7c19e7c = L.circleMarker(
+                [27.5833, 81.8],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_bfe6375f71246c2334306d52fe4e4135 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d9428f8dd5b13e8844e28831cd93a694 = $(`<div id="html_d9428f8dd5b13e8844e28831cd93a694" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> BAHABAR<br>                     <b>Beneficiaries:</b> 5<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_bfe6375f71246c2334306d52fe4e4135.setContent(html_d9428f8dd5b13e8844e28831cd93a694);
+            
+        
+
+        circle_marker_a755dc4d13b25aa79d34cb92c7c19e7c.bindPopup(popup_bfe6375f71246c2334306d52fe4e4135)
+        ;
+
+        
+    
+    
+            var marker_0251cef728ff589f9171ab68384c415a = L.marker(
+                [27.5863, 81.8],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_39b7f123d3e44090e40639d005dd4955 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eBAHABAR\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_0251cef728ff589f9171ab68384c415a.setIcon(div_icon_39b7f123d3e44090e40639d005dd4955);
+            
+    
+            var circle_marker_822d2141b820475ef00c2b79e678a064 = L.circleMarker(
+                [26.72, 84.28],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_a3aecbf7ec831308d6d9f0938bc24375 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_edd01d1aeef0e09c93b7d4ac24b60385 = $(`<div id="html_edd01d1aeef0e09c93b7d4ac24b60385" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> BAIJUDIHA<br>                     <b>Beneficiaries:</b> 6<br>                     <b>Dominant Severity:</b> MODERATE<br>                     <b>Severity Score:</b> 2.0/4                 </div>                 </div>`)[0];
+                popup_a3aecbf7ec831308d6d9f0938bc24375.setContent(html_edd01d1aeef0e09c93b7d4ac24b60385);
+            
+        
+
+        circle_marker_822d2141b820475ef00c2b79e678a064.bindPopup(popup_a3aecbf7ec831308d6d9f0938bc24375)
+        ;
+
+        
+    
+    
+            var marker_b4f11a2580b043be32f84eb72da0f80c = L.marker(
+                [26.723, 84.28],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_2885a1d4ebbfd00f81b9cf85be5d5c0b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eBAIJUDIHA\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_b4f11a2580b043be32f84eb72da0f80c.setIcon(div_icon_2885a1d4ebbfd00f81b9cf85be5d5c0b);
+            
+    
+            var circle_marker_18bb73c89c5e69d3814793861e2e438c = L.circleMarker(
+                [26.9, 84.0],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_14f825dbd0d7602f212c719e62101c89 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_10abd16f31fdbc4c3ba106096b4db420 = $(`<div id="html_10abd16f31fdbc4c3ba106096b4db420" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> BELWA<br>                     <b>Beneficiaries:</b> 7<br>                     <b>Dominant Severity:</b> MILD<br>                     <b>Severity Score:</b> 1.0/4                 </div>                 </div>`)[0];
+                popup_14f825dbd0d7602f212c719e62101c89.setContent(html_10abd16f31fdbc4c3ba106096b4db420);
+            
+        
+
+        circle_marker_18bb73c89c5e69d3814793861e2e438c.bindPopup(popup_14f825dbd0d7602f212c719e62101c89)
+        ;
+
+        
+    
+    
+            var marker_6e111c44c5cc5dd70891eec4edc98d44 = L.marker(
+                [26.903, 84.0],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_9942d8e2acf6bd9671da08708fa734cf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eBELWA\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_6e111c44c5cc5dd70891eec4edc98d44.setIcon(div_icon_9942d8e2acf6bd9671da08708fa734cf);
+            
+    
+            var circle_marker_c4f18359341a677d7bde2061bd14d1c1 = L.circleMarker(
+                [27.58, 81.81],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_2a2807427f192e8c78514862aa6594f0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6abb1266477212b119d7dc58c922e03a = $(`<div id="html_6abb1266477212b119d7dc58c922e03a" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> BRAHMPUR<br>                     <b>Beneficiaries:</b> 15<br>                     <b>Dominant Severity:</b> MILD<br>                     <b>Severity Score:</b> 1.0/4                 </div>                 </div>`)[0];
+                popup_2a2807427f192e8c78514862aa6594f0.setContent(html_6abb1266477212b119d7dc58c922e03a);
+            
+        
+
+        circle_marker_c4f18359341a677d7bde2061bd14d1c1.bindPopup(popup_2a2807427f192e8c78514862aa6594f0)
+        ;
+
+        
+    
+    
+            var marker_c292026a82ff6a844b0c6b68ddf41bcc = L.marker(
+                [27.583, 81.81],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_e43e771d1770d80b7639b0c4bb203acb = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eBRAHMPUR\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_c292026a82ff6a844b0c6b68ddf41bcc.setIcon(div_icon_e43e771d1770d80b7639b0c4bb203acb);
+            
+    
+            var circle_marker_714ffc9df975051431a088226eb5733f = L.circleMarker(
+                [26.95, 84.5],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_ad57d61e37d531e34298d87a1614d2cd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_08041dbf2562d36e899331af45613bc4 = $(`<div id="html_08041dbf2562d36e899331af45613bc4" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> HARAIYA<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_ad57d61e37d531e34298d87a1614d2cd.setContent(html_08041dbf2562d36e899331af45613bc4);
+            
+        
+
+        circle_marker_714ffc9df975051431a088226eb5733f.bindPopup(popup_ad57d61e37d531e34298d87a1614d2cd)
+        ;
+
+        
+    
+    
+            var marker_96b056740467f21a2e830db5c695aacf = L.marker(
+                [26.953, 84.5],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_8f3fc01c1be9db0236ff3843c5e58e5a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eHARAIYA\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_96b056740467f21a2e830db5c695aacf.setIcon(div_icon_8f3fc01c1be9db0236ff3843c5e58e5a);
+            
+    
+            var circle_marker_1dd20ee07eb7567d515c3fe762cad823 = L.circleMarker(
+                [26.95, 84.5],
+                {"bubblingMouseEvents": true, "color": "#95a5a6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_b5f737a90127988e1e9c0868c670f803 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eba7f0e0c9d434585131bcb61f7df22f = $(`<div id="html_eba7f0e0c9d434585131bcb61f7df22f" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> HARAIYA TOLA<br>                     <b>Beneficiaries:</b> 4<br>                     <b>Dominant Severity:</b> PROFOUND<br>                     <b>Severity Score:</b> 0.0/4                 </div>                 </div>`)[0];
+                popup_b5f737a90127988e1e9c0868c670f803.setContent(html_eba7f0e0c9d434585131bcb61f7df22f);
+            
+        
+
+        circle_marker_1dd20ee07eb7567d515c3fe762cad823.bindPopup(popup_b5f737a90127988e1e9c0868c670f803)
+        ;
+
+        
+    
+    
+            var marker_8997d7082f2dc94894e1094e26a5a5f2 = L.marker(
+                [26.953, 84.5],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_9681241eb8c464ee3a769e5b6cb61dd3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eHARAIYA TOLA\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_8997d7082f2dc94894e1094e26a5a5f2.setIcon(div_icon_9681241eb8c464ee3a769e5b6cb61dd3);
+            
+    
+            var circle_marker_f03c376c4819b9687efd69d6640ab745 = L.circleMarker(
+                [27.5667, 81.8167],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_2ba72a6f9dbb3056216810b4fb68ccf2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f6121a87ebe4f02987dcece448c517a2 = $(`<div id="html_f6121a87ebe4f02987dcece448c517a2" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> HARIYA<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_2ba72a6f9dbb3056216810b4fb68ccf2.setContent(html_f6121a87ebe4f02987dcece448c517a2);
+            
+        
+
+        circle_marker_f03c376c4819b9687efd69d6640ab745.bindPopup(popup_2ba72a6f9dbb3056216810b4fb68ccf2)
+        ;
+
+        
+    
+    
+            var marker_0ca05cdd32c08992b92818fdc8ef6525 = L.marker(
+                [27.5697, 81.8167],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_94d18015b26e2aba605b498a2ddcf29c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eHARIYA\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_0ca05cdd32c08992b92818fdc8ef6525.setIcon(div_icon_94d18015b26e2aba605b498a2ddcf29c);
+            
+    
+            var circle_marker_7bf96f408ae5b4c86c99610b75753911 = L.circleMarker(
+                [27.5667, 81.8167],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_f24fe0d8f377c5660fc7d672203b1e8c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_aa0319bc075e0428916abc86ac2e0e65 = $(`<div id="html_aa0319bc075e0428916abc86ac2e0e65" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> HARIYAR<br>                     <b>Beneficiaries:</b> 2<br>                     <b>Dominant Severity:</b> MILD<br>                     <b>Severity Score:</b> 1.0/4                 </div>                 </div>`)[0];
+                popup_f24fe0d8f377c5660fc7d672203b1e8c.setContent(html_aa0319bc075e0428916abc86ac2e0e65);
+            
+        
+
+        circle_marker_7bf96f408ae5b4c86c99610b75753911.bindPopup(popup_f24fe0d8f377c5660fc7d672203b1e8c)
+        ;
+
+        
+    
+    
+            var marker_bb8b8f6404c2e95bb20121ae43265ea5 = L.marker(
+                [27.5697, 81.8167],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_baef1341c9e80de1b31695af67717f58 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eHARIYAR\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_bb8b8f6404c2e95bb20121ae43265ea5.setIcon(div_icon_baef1341c9e80de1b31695af67717f58);
+            
+    
+            var circle_marker_cb821d668acd34a089556ec8e25b8435 = L.circleMarker(
+                [26.95, 84.35],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_20d60d80775f56a4258de8fd69b72664 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6cc7fe3312b37cb4a640ad32cad2cb2d = $(`<div id="html_6cc7fe3312b37cb4a640ad32cad2cb2d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> JR02<br>                     <b>Beneficiaries:</b> 4<br>                     <b>Dominant Severity:</b> MODERATE<br>                     <b>Severity Score:</b> 2.0/4                 </div>                 </div>`)[0];
+                popup_20d60d80775f56a4258de8fd69b72664.setContent(html_6cc7fe3312b37cb4a640ad32cad2cb2d);
+            
+        
+
+        circle_marker_cb821d668acd34a089556ec8e25b8435.bindPopup(popup_20d60d80775f56a4258de8fd69b72664)
+        ;
+
+        
+    
+    
+            var marker_ea3d6047ae9e1b6cd10530727bcfb331 = L.marker(
+                [26.953, 84.35],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_5922f98e594802a40f1bfe77aaf67873 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eJR02\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_ea3d6047ae9e1b6cd10530727bcfb331.setIcon(div_icon_5922f98e594802a40f1bfe77aaf67873);
+            
+    
+            var circle_marker_34e9d6eea583b12600a2fd425f97efee = L.circleMarker(
+                [26.75, 84.4],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_73a863d2d14deefc218c95bfe9d16856 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4e2e51d2d627d05a8d67b113e47c0dbd = $(`<div id="html_4e2e51d2d627d05a8d67b113e47c0dbd" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> KHURHRI<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> MODERATE<br>                     <b>Severity Score:</b> 2.0/4                 </div>                 </div>`)[0];
+                popup_73a863d2d14deefc218c95bfe9d16856.setContent(html_4e2e51d2d627d05a8d67b113e47c0dbd);
+            
+        
+
+        circle_marker_34e9d6eea583b12600a2fd425f97efee.bindPopup(popup_73a863d2d14deefc218c95bfe9d16856)
+        ;
+
+        
+    
+    
+            var marker_019074e535ce07a81a99b0c16737dbc6 = L.marker(
+                [26.753, 84.4],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_22f5ad873ddd6a9186d1e73854ab2964 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eKHURHRI\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_019074e535ce07a81a99b0c16737dbc6.setIcon(div_icon_22f5ad873ddd6a9186d1e73854ab2964);
+            
+    
+            var circle_marker_66a5533b6de4e013ddb218c1ac00f53b = L.circleMarker(
+                [26.88, 83.64],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_420afdbc6ab4df060db151c176e48cca = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_199ad2905eb8eb60c649c79df4a28d58 = $(`<div id="html_199ad2905eb8eb60c649c79df4a28d58" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> MATHIYA<br>                     <b>Beneficiaries:</b> 5<br>                     <b>Dominant Severity:</b> MILD<br>                     <b>Severity Score:</b> 1.0/4                 </div>                 </div>`)[0];
+                popup_420afdbc6ab4df060db151c176e48cca.setContent(html_199ad2905eb8eb60c649c79df4a28d58);
+            
+        
+
+        circle_marker_66a5533b6de4e013ddb218c1ac00f53b.bindPopup(popup_420afdbc6ab4df060db151c176e48cca)
+        ;
+
+        
+    
+    
+            var marker_ce59081c91ad02ba5ea51206ebf3e9b4 = L.marker(
+                [26.883, 83.64],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_5ab97435158fdf5c43cac37911eac126 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eMATHIYA\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_ce59081c91ad02ba5ea51206ebf3e9b4.setIcon(div_icon_5ab97435158fdf5c43cac37911eac126);
+            
+    
+            var circle_marker_fbe4f0fe86a383a20fe9139a05238320 = L.circleMarker(
+                [26.78, 84.35],
+                {"bubblingMouseEvents": true, "color": "#95a5a6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_25862bc3ffa42e906c83cd3fada1bc8b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a0546bd14ffcd72ecd7a2ef896447003 = $(`<div id="html_a0546bd14ffcd72ecd7a2ef896447003" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> MITHABEL<br>                     <b>Beneficiaries:</b> 13<br>                     <b>Dominant Severity:</b> PROFOUND<br>                     <b>Severity Score:</b> 0.0/4                 </div>                 </div>`)[0];
+                popup_25862bc3ffa42e906c83cd3fada1bc8b.setContent(html_a0546bd14ffcd72ecd7a2ef896447003);
+            
+        
+
+        circle_marker_fbe4f0fe86a383a20fe9139a05238320.bindPopup(popup_25862bc3ffa42e906c83cd3fada1bc8b)
+        ;
+
+        
+    
+    
+            var marker_d636b0383a501166c36c33a105316b2a = L.marker(
+                [26.783, 84.35],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_c68e18ddd6d1fd80cb7c759cd82d8f65 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eMITHABEL\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_d636b0383a501166c36c33a105316b2a.setIcon(div_icon_c68e18ddd6d1fd80cb7c759cd82d8f65);
+            
+    
+            var circle_marker_67c7a00a1b33f441e28ab12ac492fbc1 = L.circleMarker(
+                [26.85, 84.3],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_79f2cbc50db65da499ece2a9b920f794 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c3a8564c568631c08bd93f6f9796f39f = $(`<div id="html_c3a8564c568631c08bd93f6f9796f39f" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Beneficiaries:</b> 13<br>                     <b>Dominant Severity:</b> MILD<br>                     <b>Severity Score:</b> 1.0/4                 </div>                 </div>`)[0];
+                popup_79f2cbc50db65da499ece2a9b920f794.setContent(html_c3a8564c568631c08bd93f6f9796f39f);
+            
+        
+
+        circle_marker_67c7a00a1b33f441e28ab12ac492fbc1.bindPopup(popup_79f2cbc50db65da499ece2a9b920f794)
+        ;
+
+        
+    
+    
+            var marker_8416b2fd6dbb02fedbbe18836b051ba5 = L.marker(
+                [26.853, 84.3],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_e30dbccc3758d00fe829c85dac3be82a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eNADUA GYANPUR\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_8416b2fd6dbb02fedbbe18836b051ba5.setIcon(div_icon_e30dbccc3758d00fe829c85dac3be82a);
+            
+    
+            var circle_marker_f048832cc861f0a636566589858346e3 = L.circleMarker(
+                [26.95, 84.35],
+                {"bubblingMouseEvents": true, "color": "#95a5a6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_61df5575fa99117cfe4130706f5f50c9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_63ddbdbcbc814d5ceb5b30e9c6fabea8 = $(`<div id="html_63ddbdbcbc814d5ceb5b30e9c6fabea8" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> NEKAVAR JR02<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> PROFOUND<br>                     <b>Severity Score:</b> 0.0/4                 </div>                 </div>`)[0];
+                popup_61df5575fa99117cfe4130706f5f50c9.setContent(html_63ddbdbcbc814d5ceb5b30e9c6fabea8);
+            
+        
+
+        circle_marker_f048832cc861f0a636566589858346e3.bindPopup(popup_61df5575fa99117cfe4130706f5f50c9)
+        ;
+
+        
+    
+    
+            var marker_3b591557c20355803550485877b37bbe = L.marker(
+                [26.953, 84.35],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_1d1667da7d335c4a1fe596aa8488398d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eNEKAVAR JR02\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_3b591557c20355803550485877b37bbe.setIcon(div_icon_1d1667da7d335c4a1fe596aa8488398d);
+            
+    
+            var circle_marker_89230e86de4c12dbcfc87e42d0dfb1de = L.circleMarker(
+                [26.95, 84.25],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_d805d60bc14283272190367179f33e23 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_40982f29071df57f96aad86a5826981f = $(`<div id="html_40982f29071df57f96aad86a5826981f" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> NIBAHI<br>                     <b>Beneficiaries:</b> 3<br>                     <b>Dominant Severity:</b> MILD<br>                     <b>Severity Score:</b> 1.0/4                 </div>                 </div>`)[0];
+                popup_d805d60bc14283272190367179f33e23.setContent(html_40982f29071df57f96aad86a5826981f);
+            
+        
+
+        circle_marker_89230e86de4c12dbcfc87e42d0dfb1de.bindPopup(popup_d805d60bc14283272190367179f33e23)
+        ;
+
+        
+    
+    
+            var marker_8904954ef7a7ccc19e3dcaa465274b53 = L.marker(
+                [26.953, 84.25],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_0216a3826939536aff1ec14c807494cf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eNIBAHI\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_8904954ef7a7ccc19e3dcaa465274b53.setIcon(div_icon_0216a3826939536aff1ec14c807494cf);
+            
+    
+            var circle_marker_22620292afe12dbede4ae4b656350217 = L.circleMarker(
+                [25.3, 83.01],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_f1ff9f8fe4a77cbe7077904b3c06edeb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1b60b6c2131087c048153a1f8eee85b7 = $(`<div id="html_1b60b6c2131087c048153a1f8eee85b7" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> PANDAY<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_f1ff9f8fe4a77cbe7077904b3c06edeb.setContent(html_1b60b6c2131087c048153a1f8eee85b7);
+            
+        
+
+        circle_marker_22620292afe12dbede4ae4b656350217.bindPopup(popup_f1ff9f8fe4a77cbe7077904b3c06edeb)
+        ;
+
+        
+    
+    
+            var marker_59cfee3073198865f9895ed5656d7f0b = L.marker(
+                [25.303, 83.01],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_fab43fa9e86723d5150a8b799b809114 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003ePANDAY\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_59cfee3073198865f9895ed5656d7f0b.setIcon(div_icon_fab43fa9e86723d5150a8b799b809114);
+            
+    
+            var circle_marker_2f13fbde4bdf4c7f84cee6230a125a17 = L.circleMarker(
+                [26.75, 84.5],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_3a8ab0ae29bc030fd1b5fb530ec19c6f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a5107218178f876d49a1fdfb97362584 = $(`<div id="html_a5107218178f876d49a1fdfb97362584" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> PARSAUNI<br>                     <b>Beneficiaries:</b> 14<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_3a8ab0ae29bc030fd1b5fb530ec19c6f.setContent(html_a5107218178f876d49a1fdfb97362584);
+            
+        
+
+        circle_marker_2f13fbde4bdf4c7f84cee6230a125a17.bindPopup(popup_3a8ab0ae29bc030fd1b5fb530ec19c6f)
+        ;
+
+        
+    
+    
+            var marker_fe2f7723278c190d5df9b737a22cced2 = L.marker(
+                [26.753, 84.5],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_0de5634db43f6777611d0e7344d6cad5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003ePARSAUNI\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_fe2f7723278c190d5df9b737a22cced2.setIcon(div_icon_0de5634db43f6777611d0e7344d6cad5);
+            
+    
+            var circle_marker_47b205052df7613da7115a06e5c67526 = L.circleMarker(
+                [26.82, 84.42],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_051105b95d0145ac6defe0fa1e7c264a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b2da8364123fc94a557089caa99267de = $(`<div id="html_b2da8364123fc94a557089caa99267de" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> PIPRAHIYA<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_051105b95d0145ac6defe0fa1e7c264a.setContent(html_b2da8364123fc94a557089caa99267de);
+            
+        
+
+        circle_marker_47b205052df7613da7115a06e5c67526.bindPopup(popup_051105b95d0145ac6defe0fa1e7c264a)
+        ;
+
+        
+    
+    
+            var marker_8462a3d80da68a4b5bd6f88084f9a78c = L.marker(
+                [26.823, 84.42],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_e492957901d4d9311d8809917bdc2308 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003ePIPRAHIYA\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_8462a3d80da68a4b5bd6f88084f9a78c.setIcon(div_icon_e492957901d4d9311d8809917bdc2308);
+            
+    
+            var circle_marker_83e450c9c6e8be3b9dd3cc89c1ca311e = L.circleMarker(
+                [26.88, 84.38],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_31de82915bf94d530bed7e81879fd6cb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e2c3b21845fe2a626ab882e518342d7b = $(`<div id="html_e2c3b21845fe2a626ab882e518342d7b" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> RASULPUR<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_31de82915bf94d530bed7e81879fd6cb.setContent(html_e2c3b21845fe2a626ab882e518342d7b);
+            
+        
+
+        circle_marker_83e450c9c6e8be3b9dd3cc89c1ca311e.bindPopup(popup_31de82915bf94d530bed7e81879fd6cb)
+        ;
+
+        
+    
+    
+            var marker_85f8b1c5a06b28e0a98ef3b746c19318 = L.marker(
+                [26.883, 84.38],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_76e46fc44b573e0f4bd66d53830f0d3c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eRASULPUR\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_85f8b1c5a06b28e0a98ef3b746c19318.setIcon(div_icon_76e46fc44b573e0f4bd66d53830f0d3c);
+            
+    
+            var circle_marker_b64f4fd498c819769d5e3420a1563d94 = L.circleMarker(
+                [26.88, 84.38],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_5fc64562a631f19c4216a874e8214fc0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ad587c566e4e9fcdcb3f5b7df0e03d52 = $(`<div id="html_ad587c566e4e9fcdcb3f5b7df0e03d52" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> RASULPUR 2<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> MODERATE<br>                     <b>Severity Score:</b> 2.0/4                 </div>                 </div>`)[0];
+                popup_5fc64562a631f19c4216a874e8214fc0.setContent(html_ad587c566e4e9fcdcb3f5b7df0e03d52);
+            
+        
+
+        circle_marker_b64f4fd498c819769d5e3420a1563d94.bindPopup(popup_5fc64562a631f19c4216a874e8214fc0)
+        ;
+
+        
+    
+    
+            var marker_8331576defbcea01d50679ee9d548d97 = L.marker(
+                [26.883, 84.38],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_486245caaac356c0dd9a62fcdd060495 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eRASULPUR 2\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_8331576defbcea01d50679ee9d548d97.setIcon(div_icon_486245caaac356c0dd9a62fcdd060495);
+            
+    
+            var circle_marker_7ae27e6a88355d46fc2389b671682727 = L.circleMarker(
+                [26.82, 84.44],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_f03637ef0c0120a7da5194a8962d3ce4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8edde6660bb1015c6767f6601ff7148c = $(`<div id="html_8edde6660bb1015c6767f6601ff7148c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> SHEMRA TOLA<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_f03637ef0c0120a7da5194a8962d3ce4.setContent(html_8edde6660bb1015c6767f6601ff7148c);
+            
+        
+
+        circle_marker_7ae27e6a88355d46fc2389b671682727.bindPopup(popup_f03637ef0c0120a7da5194a8962d3ce4)
+        ;
+
+        
+    
+    
+            var marker_8f93f7e5eefe2cd6699b32549dc7c6d3 = L.marker(
+                [26.823, 84.44],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_7df23995a3199e0086b7aff03454dbd3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eSHEMRA TOLA\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_8f93f7e5eefe2cd6699b32549dc7c6d3.setIcon(div_icon_7df23995a3199e0086b7aff03454dbd3);
+            
+    
+            var circle_marker_925a5f419707a5bb05204fddfde294d7 = L.circleMarker(
+                [26.92, 84.45],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_6ab03566fe0d02bf6ce54d2a1f3a8c47 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ad02e797d3229bfcfe55a3f2f5dedd01 = $(`<div id="html_ad02e797d3229bfcfe55a3f2f5dedd01" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> SINGHPUR<br>                     <b>Beneficiaries:</b> 7<br>                     <b>Dominant Severity:</b> MILD<br>                     <b>Severity Score:</b> 1.0/4                 </div>                 </div>`)[0];
+                popup_6ab03566fe0d02bf6ce54d2a1f3a8c47.setContent(html_ad02e797d3229bfcfe55a3f2f5dedd01);
+            
+        
+
+        circle_marker_925a5f419707a5bb05204fddfde294d7.bindPopup(popup_6ab03566fe0d02bf6ce54d2a1f3a8c47)
+        ;
+
+        
+    
+    
+            var marker_d0c36c1ad42cbc95916a6f52c275a449 = L.marker(
+                [26.923000000000002, 84.45],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_b19ea02c83fca1fffb3471d321bfce69 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eSINGHPUR\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_d0c36c1ad42cbc95916a6f52c275a449.setIcon(div_icon_b19ea02c83fca1fffb3471d321bfce69);
+            
+    
+            var circle_marker_6919fd6d05ba464f0cfd846c09e1a8ea = L.circleMarker(
+                [26.68, 83.03],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_faeb81491b51044cd3975665cfcde695 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a829a49bee6c1f3c869681a444ac3715 = $(`<div id="html_a829a49bee6c1f3c869681a444ac3715" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Beneficiaries:</b> 8<br>                     <b>Dominant Severity:</b> SEVERE<br>                     <b>Severity Score:</b> 3.0/4                 </div>                 </div>`)[0];
+                popup_faeb81491b51044cd3975665cfcde695.setContent(html_a829a49bee6c1f3c869681a444ac3715);
+            
+        
+
+        circle_marker_6919fd6d05ba464f0cfd846c09e1a8ea.bindPopup(popup_faeb81491b51044cd3975665cfcde695)
+        ;
+
+        
+    
+    
+            var marker_6dd243c2857237ae2a7db80c18b16062 = L.marker(
+                [26.683, 83.03],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_0ba365caed7ae9dc242a9dbc89118add = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eVISHWANATHPUR\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_6dd243c2857237ae2a7db80c18b16062.setIcon(div_icon_0ba365caed7ae9dc242a9dbc89118add);
+            
+    
+            var circle_marker_9d82fc0dbe6e64265885dcbc0285aa84 = L.circleMarker(
+                [26.68, 83.03],
+                {"bubblingMouseEvents": true, "color": "#95a5a6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_659f01ea5a87058d3a2e7c5b27f91e27 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_60c1ee55bc3ecc0254b652b3d571401f = $(`<div id="html_60c1ee55bc3ecc0254b652b3d571401f" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> Vishwanthpur<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> PROFOUND<br>                     <b>Severity Score:</b> 0.0/4                 </div>                 </div>`)[0];
+                popup_659f01ea5a87058d3a2e7c5b27f91e27.setContent(html_60c1ee55bc3ecc0254b652b3d571401f);
+            
+        
+
+        circle_marker_9d82fc0dbe6e64265885dcbc0285aa84.bindPopup(popup_659f01ea5a87058d3a2e7c5b27f91e27)
+        ;
+
+        
+    
+    
+            var marker_acf642a0e334ef59a234f217caf0512b = L.marker(
+                [26.683, 83.03],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_87fcac71dc6e31364405a413938e6099 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003eVishwanthpur\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_acf642a0e334ef59a234f217caf0512b.setIcon(div_icon_87fcac71dc6e31364405a413938e6099);
+            
+    
+            var circle_marker_70ed1faff207f20e023342f4291c33da = L.circleMarker(
+                [26.85, 84.3],
+                {"bubblingMouseEvents": true, "color": "#95a5a6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95a5a6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+        var popup_5215f84708e1efa4f5f7c3a2695522d3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0d19a8ccdc8848b16c2d3c307b52e332 = $(`<div id="html_0d19a8ccdc8848b16c2d3c307b52e332" style="width: 100.0%; height: 100.0%;">                 <div style="width: 180px;">                     <b>Village:</b> nadua gyanpur<br>                     <b>Beneficiaries:</b> 1<br>                     <b>Dominant Severity:</b> UNKNOWN<br>                     <b>Severity Score:</b> 0.0/4                 </div>                 </div>`)[0];
+                popup_5215f84708e1efa4f5f7c3a2695522d3.setContent(html_0d19a8ccdc8848b16c2d3c307b52e332);
+            
+        
+
+        circle_marker_70ed1faff207f20e023342f4291c33da.bindPopup(popup_5215f84708e1efa4f5f7c3a2695522d3)
+        ;
+
+        
+    
+    
+            var marker_592b130ec518ff07b9117022a085c486 = L.marker(
+                [26.853, 84.3],
+                {
+}
+            ).addTo(map_ed7c762287f3b882823dad8aa33d21e7);
+        
+    
+            var div_icon_f172048d6f660aa374d67060f90f604a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10px; color: #333; white-space: nowrap;\"\u003enadua gyanpur\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_592b130ec518ff07b9117022a085c486.setIcon(div_icon_f172048d6f660aa374d67060f90f604a);
+            
+</script>
+</html>

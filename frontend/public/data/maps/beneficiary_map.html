@@ -1,0 +1,4637 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4dcaef672868a73a33f8df8c6f85e098 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+        <div style="position: fixed; top: 10px; left: 50px; z-index: 1000; 
+                    background-color: white; padding: 10px; border-radius: 5px;
+                    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
+            <h4 style="margin: 0;">Disability Intelligence - Beneficiary Map</h4>
+            <p style="margin: 5px 0 0 0; font-size: 12px;">Total Beneficiaries: 178</p>
+        </div>
+        
+    
+            <div class="folium-map" id="map_4dcaef672868a73a33f8df8c6f85e098" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4dcaef672868a73a33f8df8c6f85e098 = L.map(
+                "map_4dcaef672868a73a33f8df8c6f85e098",
+                {
+                    center: [27.57, 81.8],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_659703cf5a29c0e240ef13b14b2cabfe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_659703cf5a29c0e240ef13b14b2cabfe.addTo(map_4dcaef672868a73a33f8df8c6f85e098);
+        
+    
+            var marker_cluster_0151758f955d1286bc6bfc482b39529b = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_8105dd55a70d7d361ed897335cd37bec = L.marker(
+                [27.5667, 81.8167],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_62f97cafd8ea7171a2809e17c096d935 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26cb8304f7e2e2fd15ffd8919c6df9e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2bcb855d69cde3e3383529a299b5f9da = $(`<div id="html_2bcb855d69cde3e3383529a299b5f9da" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANNU</b><br>                     <b>ID:</b> HARA9<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> SPEECH AND LANGUAGE<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> HARIYAR<br>                     <b>Gram Panchayat:</b> HARIYAR                 </div>                 </div>`)[0];
+                popup_26cb8304f7e2e2fd15ffd8919c6df9e6.setContent(html_2bcb855d69cde3e3383529a299b5f9da);
+            
+        
+
+        marker_8105dd55a70d7d361ed897335cd37bec.bindPopup(popup_26cb8304f7e2e2fd15ffd8919c6df9e6)
+        ;
+
+        
+    
+    
+                marker_8105dd55a70d7d361ed897335cd37bec.setIcon(icon_62f97cafd8ea7171a2809e17c096d935);
+            
+    
+            var marker_df90fb384ea3d63f04266cc120aee01e = L.marker(
+                [27.5833, 81.8],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_0b23acd01a5519abe639b9b13a0bbd34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c16b5ecfad9d4ac3834e455f4c6cd730 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_64027ae478d8bbfdc7596e2a86a24340 = $(`<div id="html_64027ae478d8bbfdc7596e2a86a24340" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>VIKRAM YADAV</b><br>                     <b>ID:</b> BOHA9<br>                     <b>Age:</b> 15.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MUSCULAR DYSTROPHY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BAHABAR<br>                     <b>Gram Panchayat:</b> BAHAPUR                 </div>                 </div>`)[0];
+                popup_c16b5ecfad9d4ac3834e455f4c6cd730.setContent(html_64027ae478d8bbfdc7596e2a86a24340);
+            
+        
+
+        marker_df90fb384ea3d63f04266cc120aee01e.bindPopup(popup_c16b5ecfad9d4ac3834e455f4c6cd730)
+        ;
+
+        
+    
+    
+                marker_df90fb384ea3d63f04266cc120aee01e.setIcon(icon_0b23acd01a5519abe639b9b13a0bbd34);
+            
+    
+            var marker_323c86fe185ea453b7b9a0456df39c62 = L.marker(
+                [27.5833, 81.8],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_d0359b14c232c8402dba6db264d166b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed947603d5b407c069de3d2bc5581f46 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ddddaad103789f36ef8f551e397b0a7a = $(`<div id="html_ddddaad103789f36ef8f551e397b0a7a" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AYUSH SAHANI</b><br>                     <b>ID:</b> BOHA6<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> BAHABAR<br>                     <b>Gram Panchayat:</b> BAHAPUR                 </div>                 </div>`)[0];
+                popup_ed947603d5b407c069de3d2bc5581f46.setContent(html_ddddaad103789f36ef8f551e397b0a7a);
+            
+        
+
+        marker_323c86fe185ea453b7b9a0456df39c62.bindPopup(popup_ed947603d5b407c069de3d2bc5581f46)
+        ;
+
+        
+    
+    
+                marker_323c86fe185ea453b7b9a0456df39c62.setIcon(icon_d0359b14c232c8402dba6db264d166b8);
+            
+    
+            var marker_88e4ec44848a302cc4c0e775fb7c1df5 = L.marker(
+                [27.5833, 81.8],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_1d9791fdb31b31597497614692fabc96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1508341d9e3768ef559926ff1542257b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_736920fe81a2826e518575f8b8bf11d7 = $(`<div id="html_736920fe81a2826e518575f8b8bf11d7" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>VINITA</b><br>                     <b>ID:</b> BOHA2<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BAHABAR<br>                     <b>Gram Panchayat:</b> BAHAPUR                 </div>                 </div>`)[0];
+                popup_1508341d9e3768ef559926ff1542257b.setContent(html_736920fe81a2826e518575f8b8bf11d7);
+            
+        
+
+        marker_88e4ec44848a302cc4c0e775fb7c1df5.bindPopup(popup_1508341d9e3768ef559926ff1542257b)
+        ;
+
+        
+    
+    
+                marker_88e4ec44848a302cc4c0e775fb7c1df5.setIcon(icon_1d9791fdb31b31597497614692fabc96);
+            
+    
+            var marker_d33b0e0ad388e34265cc0a0ba5746738 = L.marker(
+                [27.5833, 81.8],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_2f89f9d374545e2fe64a6772c6597034 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a8eb121fe60707705c5548ec7a00457 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d4cb1ce7bc22590e1a2964d29317de2a = $(`<div id="html_d4cb1ce7bc22590e1a2964d29317de2a" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RITIK</b><br>                     <b>ID:</b> nan<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> SPEECH AND LANGUAGE<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> BAHABAR<br>                     <b>Gram Panchayat:</b> BAHAPUR                 </div>                 </div>`)[0];
+                popup_6a8eb121fe60707705c5548ec7a00457.setContent(html_d4cb1ce7bc22590e1a2964d29317de2a);
+            
+        
+
+        marker_d33b0e0ad388e34265cc0a0ba5746738.bindPopup(popup_6a8eb121fe60707705c5548ec7a00457)
+        ;
+
+        
+    
+    
+                marker_d33b0e0ad388e34265cc0a0ba5746738.setIcon(icon_2f89f9d374545e2fe64a6772c6597034);
+            
+    
+            var marker_95693bf55d32454724e94654d0cc6602 = L.marker(
+                [27.5667, 81.8167],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_363d08c8e67fb4cad58094c1e919e708 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_190e2e77a3e8b38d4dd7cee5e85ae8bb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_56bb154af64289651fd5736e65998dba = $(`<div id="html_56bb154af64289651fd5736e65998dba" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AMAN KUMAR</b><br>                     <b>ID:</b> HARA8<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> HI<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> HARIYAR<br>                     <b>Gram Panchayat:</b> HARIYAR                 </div>                 </div>`)[0];
+                popup_190e2e77a3e8b38d4dd7cee5e85ae8bb.setContent(html_56bb154af64289651fd5736e65998dba);
+            
+        
+
+        marker_95693bf55d32454724e94654d0cc6602.bindPopup(popup_190e2e77a3e8b38d4dd7cee5e85ae8bb)
+        ;
+
+        
+    
+    
+                marker_95693bf55d32454724e94654d0cc6602.setIcon(icon_363d08c8e67fb4cad58094c1e919e708);
+            
+    
+            var marker_93ceb30e5d3d8b287335881df5b06013 = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_7e9480993cf6590b956365b8236ab220 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b6ab153635eade970724800d0c8c52a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aeadfdc8b579fb87cd72823ba9f425ff = $(`<div id="html_aeadfdc8b579fb87cd72823ba9f425ff" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANSH KUMAR SHARMA</b><br>                     <b>ID:</b> MITH5<br>                     <b>Age:</b> 11.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_0b6ab153635eade970724800d0c8c52a.setContent(html_aeadfdc8b579fb87cd72823ba9f425ff);
+            
+        
+
+        marker_93ceb30e5d3d8b287335881df5b06013.bindPopup(popup_0b6ab153635eade970724800d0c8c52a)
+        ;
+
+        
+    
+    
+                marker_93ceb30e5d3d8b287335881df5b06013.setIcon(icon_7e9480993cf6590b956365b8236ab220);
+            
+    
+            var marker_1b257063a06ae8b335f609958d44c620 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_27a7dbc99a1ec8573c96b3660650c405 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1e5cc378336c307db6a8fefe793c8ce = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_068d149e94f95f62cfed8c26273b75b8 = $(`<div id="html_068d149e94f95f62cfed8c26273b75b8" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KRISHNA GUPTA</b><br>                     <b>ID:</b> VISH6<br>                     <b>Age:</b> 3.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> HI<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_a1e5cc378336c307db6a8fefe793c8ce.setContent(html_068d149e94f95f62cfed8c26273b75b8);
+            
+        
+
+        marker_1b257063a06ae8b335f609958d44c620.bindPopup(popup_a1e5cc378336c307db6a8fefe793c8ce)
+        ;
+
+        
+    
+    
+                marker_1b257063a06ae8b335f609958d44c620.setIcon(icon_27a7dbc99a1ec8573c96b3660650c405);
+            
+    
+            var marker_2ab71baa4d2c25b5ba5339657422c090 = L.marker(
+                [26.88, 83.64],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_546c141b0445ae596b90b47141eaad6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14b3a76109bbdde64dd48146a2382bb1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1dbc8fbccb888a36e9d8baf775365e9c = $(`<div id="html_1dbc8fbccb888a36e9d8baf775365e9c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RAGINI KUMARI</b><br>                     <b>ID:</b> MATH5<br>                     <b>Age:</b> 15.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> HEARING IMPAIRMENT<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> MATHIYA<br>                     <b>Gram Panchayat:</b> MATHIYA                 </div>                 </div>`)[0];
+                popup_14b3a76109bbdde64dd48146a2382bb1.setContent(html_1dbc8fbccb888a36e9d8baf775365e9c);
+            
+        
+
+        marker_2ab71baa4d2c25b5ba5339657422c090.bindPopup(popup_14b3a76109bbdde64dd48146a2382bb1)
+        ;
+
+        
+    
+    
+                marker_2ab71baa4d2c25b5ba5339657422c090.setIcon(icon_546c141b0445ae596b90b47141eaad6a);
+            
+    
+            var marker_57304ef821e782be5b721dc034ecc74b = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_facb38062cb89fb7f993b2fdf6b5d571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_609c9f8805ba79f743020cc7bf2deada = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0aad743dcee6d0627e65fcdb70592ac6 = $(`<div id="html_0aad743dcee6d0627e65fcdb70592ac6" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>YURAJ</b><br>                     <b>ID:</b> MITH7<br>                     <b>Age:</b> nan<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> CEREBRAL POLSY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_609c9f8805ba79f743020cc7bf2deada.setContent(html_0aad743dcee6d0627e65fcdb70592ac6);
+            
+        
+
+        marker_57304ef821e782be5b721dc034ecc74b.bindPopup(popup_609c9f8805ba79f743020cc7bf2deada)
+        ;
+
+        
+    
+    
+                marker_57304ef821e782be5b721dc034ecc74b.setIcon(icon_facb38062cb89fb7f993b2fdf6b5d571);
+            
+    
+            var marker_e27fae183ea85e7bf267d304c06b62aa = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_92f961056b1bd4a83b8fa3d3e3af8496 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_941bbd0d531b920b23c304eec3874bce = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_855be9a19e7a81b981ee15b0ca979728 = $(`<div id="html_855be9a19e7a81b981ee15b0ca979728" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANSHIKA</b><br>                     <b>ID:</b> PARS14<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> CEREBRAL POLSY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_941bbd0d531b920b23c304eec3874bce.setContent(html_855be9a19e7a81b981ee15b0ca979728);
+            
+        
+
+        marker_e27fae183ea85e7bf267d304c06b62aa.bindPopup(popup_941bbd0d531b920b23c304eec3874bce)
+        ;
+
+        
+    
+    
+                marker_e27fae183ea85e7bf267d304c06b62aa.setIcon(icon_92f961056b1bd4a83b8fa3d3e3af8496);
+            
+    
+            var marker_627a9f4cad256edcd42cbc61bef25109 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_00aceab1a665354dba917ac1662aa098 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c42571b7b11eb41de8bfbb2d7b512d0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b11cb05e3187183f088cf48f50707f73 = $(`<div id="html_b11cb05e3187183f088cf48f50707f73" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>NIKI</b><br>                     <b>ID:</b> VISH18<br>                     <b>Age:</b> 19.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_9c42571b7b11eb41de8bfbb2d7b512d0.setContent(html_b11cb05e3187183f088cf48f50707f73);
+            
+        
+
+        marker_627a9f4cad256edcd42cbc61bef25109.bindPopup(popup_9c42571b7b11eb41de8bfbb2d7b512d0)
+        ;
+
+        
+    
+    
+                marker_627a9f4cad256edcd42cbc61bef25109.setIcon(icon_00aceab1a665354dba917ac1662aa098);
+            
+    
+            var marker_f4345bd0786c9ef223e6c12bc3d578f7 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_59dc09565d6053fcd1857e91e74f9ab3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e71a3409885b3f73762f480108ae3208 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_29a5f4d3093042992d1f76a06c1082a7 = $(`<div id="html_29a5f4d3093042992d1f76a06c1082a7" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SANJANA</b><br>                     <b>ID:</b> PARS8<br>                     <b>Age:</b> 12.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_e71a3409885b3f73762f480108ae3208.setContent(html_29a5f4d3093042992d1f76a06c1082a7);
+            
+        
+
+        marker_f4345bd0786c9ef223e6c12bc3d578f7.bindPopup(popup_e71a3409885b3f73762f480108ae3208)
+        ;
+
+        
+    
+    
+                marker_f4345bd0786c9ef223e6c12bc3d578f7.setIcon(icon_59dc09565d6053fcd1857e91e74f9ab3);
+            
+    
+            var marker_8b85f72dcc7d5cb7e3f033e25f975410 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_581d56664b3e8d0bab4f423af9b0a2db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d538ec0d2b2afa655d1ee0e7f1d8b19 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_55f4a6e79b9bea04b45a9c52cbbf5084 = $(`<div id="html_55f4a6e79b9bea04b45a9c52cbbf5084" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KULDEEP</b><br>                     <b>ID:</b> VISH14<br>                     <b>Age:</b> 13.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_8d538ec0d2b2afa655d1ee0e7f1d8b19.setContent(html_55f4a6e79b9bea04b45a9c52cbbf5084);
+            
+        
+
+        marker_8b85f72dcc7d5cb7e3f033e25f975410.bindPopup(popup_8d538ec0d2b2afa655d1ee0e7f1d8b19)
+        ;
+
+        
+    
+    
+                marker_8b85f72dcc7d5cb7e3f033e25f975410.setIcon(icon_581d56664b3e8d0bab4f423af9b0a2db);
+            
+    
+            var marker_51d04db2cf6373c65338b980697c7a8e = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_d83dfa742208ab89d3442152229c3529 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e2a12bc5b0e1dcf99113bceca571f9b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_24c99c14364f789233748810de83123c = $(`<div id="html_24c99c14364f789233748810de83123c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ROHAN</b><br>                     <b>ID:</b> MITH11<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_3e2a12bc5b0e1dcf99113bceca571f9b.setContent(html_24c99c14364f789233748810de83123c);
+            
+        
+
+        marker_51d04db2cf6373c65338b980697c7a8e.bindPopup(popup_3e2a12bc5b0e1dcf99113bceca571f9b)
+        ;
+
+        
+    
+    
+                marker_51d04db2cf6373c65338b980697c7a8e.setIcon(icon_d83dfa742208ab89d3442152229c3529);
+            
+    
+            var marker_12f656d511092ce72ef43734eb25dd66 = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_8e77f878f6da8f4524523eec1a2b44d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47ab0016f42a55fa250f7d8a3d50216a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9c32e3e964796bc8d9c41b6fb5d9fbee = $(`<div id="html_9c32e3e964796bc8d9c41b6fb5d9fbee" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>YUG</b><br>                     <b>ID:</b> MITH15<br>                     <b>Age:</b> 9.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> PHYSICAL IMPAIRMENT<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_47ab0016f42a55fa250f7d8a3d50216a.setContent(html_9c32e3e964796bc8d9c41b6fb5d9fbee);
+            
+        
+
+        marker_12f656d511092ce72ef43734eb25dd66.bindPopup(popup_47ab0016f42a55fa250f7d8a3d50216a)
+        ;
+
+        
+    
+    
+                marker_12f656d511092ce72ef43734eb25dd66.setIcon(icon_8e77f878f6da8f4524523eec1a2b44d7);
+            
+    
+            var marker_a61bb050042f78115f366030787bcde4 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_219b4e3bcd01c72003612300e4fb21b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c77e5077bb50928114412e2ce32ffda5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f86435d5653bf50121c3c8b93365b4ac = $(`<div id="html_f86435d5653bf50121c3c8b93365b4ac" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>VISHWAJEET</b><br>                     <b>ID:</b> PARS1<br>                     <b>Age:</b> 16.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> BLINDNESS<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_c77e5077bb50928114412e2ce32ffda5.setContent(html_f86435d5653bf50121c3c8b93365b4ac);
+            
+        
+
+        marker_a61bb050042f78115f366030787bcde4.bindPopup(popup_c77e5077bb50928114412e2ce32ffda5)
+        ;
+
+        
+    
+    
+                marker_a61bb050042f78115f366030787bcde4.setIcon(icon_219b4e3bcd01c72003612300e4fb21b5);
+            
+    
+            var marker_54eb4c41360907775d9821366c21e495 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_7ce53493fd37c9b88ea127cd153019bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ccfbcc78e65331edfe8ba3f822051e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8432aa677c5d64296b5218cfc14b9b3c = $(`<div id="html_8432aa677c5d64296b5218cfc14b9b3c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>TANANNUM</b><br>                     <b>ID:</b> VISH10<br>                     <b>Age:</b> 21.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> BLINDNESS<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_9ccfbcc78e65331edfe8ba3f822051e6.setContent(html_8432aa677c5d64296b5218cfc14b9b3c);
+            
+        
+
+        marker_54eb4c41360907775d9821366c21e495.bindPopup(popup_9ccfbcc78e65331edfe8ba3f822051e6)
+        ;
+
+        
+    
+    
+                marker_54eb4c41360907775d9821366c21e495.setIcon(icon_7ce53493fd37c9b88ea127cd153019bb);
+            
+    
+            var marker_9e786e1c4d29a80102f6e52eec06a22d = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_7a76a1c45012ee858b08cd5d3ca41863 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f90797390600eeb5b0d4b3a40ef3e9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_62cf14a1374ef527234f60dd7043be32 = $(`<div id="html_62cf14a1374ef527234f60dd7043be32" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SANDHYA</b><br>                     <b>ID:</b> MITH14<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_1f90797390600eeb5b0d4b3a40ef3e9a.setContent(html_62cf14a1374ef527234f60dd7043be32);
+            
+        
+
+        marker_9e786e1c4d29a80102f6e52eec06a22d.bindPopup(popup_1f90797390600eeb5b0d4b3a40ef3e9a)
+        ;
+
+        
+    
+    
+                marker_9e786e1c4d29a80102f6e52eec06a22d.setIcon(icon_7a76a1c45012ee858b08cd5d3ca41863);
+            
+    
+            var marker_446a690a83494eae305e6fb3050a9a84 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_0ba1c6e61afe630e1ee4884cd32eb4e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ff40c6520db8880d137fdf2fd700624 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_93741313c0d6783e19d50264dc494cf1 = $(`<div id="html_93741313c0d6783e19d50264dc494cf1" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ADITYA MAURYA</b><br>                     <b>ID:</b> VISH5<br>                     <b>Age:</b> 12.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_0ff40c6520db8880d137fdf2fd700624.setContent(html_93741313c0d6783e19d50264dc494cf1);
+            
+        
+
+        marker_446a690a83494eae305e6fb3050a9a84.bindPopup(popup_0ff40c6520db8880d137fdf2fd700624)
+        ;
+
+        
+    
+    
+                marker_446a690a83494eae305e6fb3050a9a84.setIcon(icon_0ba1c6e61afe630e1ee4884cd32eb4e4);
+            
+    
+            var marker_585876dfa58e93402b97e7875208d83f = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_5f78281cbeec192477e7bfad759f9405 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0cfa2ea8143cda413febfadbcb522da5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c7b8083341e2b2eeb9b94873633088b1 = $(`<div id="html_c7b8083341e2b2eeb9b94873633088b1" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>DIPANSHU MAURYA</b><br>                     <b>ID:</b> PARS13<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_0cfa2ea8143cda413febfadbcb522da5.setContent(html_c7b8083341e2b2eeb9b94873633088b1);
+            
+        
+
+        marker_585876dfa58e93402b97e7875208d83f.bindPopup(popup_0cfa2ea8143cda413febfadbcb522da5)
+        ;
+
+        
+    
+    
+                marker_585876dfa58e93402b97e7875208d83f.setIcon(icon_5f78281cbeec192477e7bfad759f9405);
+            
+    
+            var marker_4d6baf8eaea452577a56b6369ad3d6b7 = L.marker(
+                [25.3, 83.01],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_2da325f8da7569f3fa5d7eb9b4009bc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fe0e8df6072a8f8729f55f68e235a8b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fcd5ebb2b04c69fd8ba11509d9aa7f30 = $(`<div id="html_fcd5ebb2b04c69fd8ba11509d9aa7f30" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SHIVANG</b><br>                     <b>ID:</b> BELW3<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> SPEECH IMPAIRMENT<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> PANDAY<br>                     <b>Gram Panchayat:</b> BELWA                 </div>                 </div>`)[0];
+                popup_4fe0e8df6072a8f8729f55f68e235a8b.setContent(html_fcd5ebb2b04c69fd8ba11509d9aa7f30);
+            
+        
+
+        marker_4d6baf8eaea452577a56b6369ad3d6b7.bindPopup(popup_4fe0e8df6072a8f8729f55f68e235a8b)
+        ;
+
+        
+    
+    
+                marker_4d6baf8eaea452577a56b6369ad3d6b7.setIcon(icon_2da325f8da7569f3fa5d7eb9b4009bc2);
+            
+    
+            var marker_8f6ff10f6cd800d20add69acb8a63333 = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_47728eec6d91445aa81c6d85a2c61195 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b99560a7aaa8ba916d8076369a5015ad = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dc19d6f6a052234fc8192fe3cf343dbd = $(`<div id="html_dc19d6f6a052234fc8192fe3cf343dbd" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>YASHRAJ DUBEY</b><br>                     <b>ID:</b> MITH13<br>                     <b>Age:</b> 16.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> CEREBRAL POLSY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABE;                 </div>                 </div>`)[0];
+                popup_b99560a7aaa8ba916d8076369a5015ad.setContent(html_dc19d6f6a052234fc8192fe3cf343dbd);
+            
+        
+
+        marker_8f6ff10f6cd800d20add69acb8a63333.bindPopup(popup_b99560a7aaa8ba916d8076369a5015ad)
+        ;
+
+        
+    
+    
+                marker_8f6ff10f6cd800d20add69acb8a63333.setIcon(icon_47728eec6d91445aa81c6d85a2c61195);
+            
+    
+            var marker_a7d041d282bbd2edfcb30e3c2228983b = L.marker(
+                [26.88, 83.64],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_4f7c4a6434976cc5a359ab504c244be5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d2047a6a6051624d241da1ce1220129 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_99eeb986d9465aed3d829bbe3afae019 = $(`<div id="html_99eeb986d9465aed3d829bbe3afae019" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>VISHAL</b><br>                     <b>ID:</b> MATH2<br>                     <b>Age:</b> 11.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> MATHIYA<br>                     <b>Gram Panchayat:</b> MATHIYA                 </div>                 </div>`)[0];
+                popup_1d2047a6a6051624d241da1ce1220129.setContent(html_99eeb986d9465aed3d829bbe3afae019);
+            
+        
+
+        marker_a7d041d282bbd2edfcb30e3c2228983b.bindPopup(popup_1d2047a6a6051624d241da1ce1220129)
+        ;
+
+        
+    
+    
+                marker_a7d041d282bbd2edfcb30e3c2228983b.setIcon(icon_4f7c4a6434976cc5a359ab504c244be5);
+            
+    
+            var marker_1787c3c56a87b511ad0b885f69763af5 = L.marker(
+                [26.9, 84.0],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_cd07089c25756fa349d8b3d316258444 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4a5bcf3d92a48ed318bbcfdbf590af2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe1330bd1d03b0c2db328691874ecec5 = $(`<div id="html_fe1330bd1d03b0c2db328691874ecec5" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ABHIMANYU SINGH</b><br>                     <b>ID:</b> BELW9<br>                     <b>Age:</b> 15.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MUSCULAR DYSTROPHY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BELWA<br>                     <b>Gram Panchayat:</b> BELWA                 </div>                 </div>`)[0];
+                popup_a4a5bcf3d92a48ed318bbcfdbf590af2.setContent(html_fe1330bd1d03b0c2db328691874ecec5);
+            
+        
+
+        marker_1787c3c56a87b511ad0b885f69763af5.bindPopup(popup_a4a5bcf3d92a48ed318bbcfdbf590af2)
+        ;
+
+        
+    
+    
+                marker_1787c3c56a87b511ad0b885f69763af5.setIcon(icon_cd07089c25756fa349d8b3d316258444);
+            
+    
+            var marker_b68dd203d64778dbcadb4ec2cf9fb62e = L.marker(
+                [26.95, 84.25],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_9da7f31f983b8d174f3fc1807a29740e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_645af0ab82334642982b27a1bb1f7ef2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e78d3ac497694be7f8bae7f9a0ee9bf6 = $(`<div id="html_e78d3ac497694be7f8bae7f9a0ee9bf6" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANAMIKA</b><br>                     <b>ID:</b> NIBH3<br>                     <b>Age:</b> 15.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> NIBAHI<br>                     <b>Gram Panchayat:</b> NIBAHI                 </div>                 </div>`)[0];
+                popup_645af0ab82334642982b27a1bb1f7ef2.setContent(html_e78d3ac497694be7f8bae7f9a0ee9bf6);
+            
+        
+
+        marker_b68dd203d64778dbcadb4ec2cf9fb62e.bindPopup(popup_645af0ab82334642982b27a1bb1f7ef2)
+        ;
+
+        
+    
+    
+                marker_b68dd203d64778dbcadb4ec2cf9fb62e.setIcon(icon_9da7f31f983b8d174f3fc1807a29740e);
+            
+    
+            var marker_73c30c0e992ed048f0db05b79e882925 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_f6c8b84791403b1d21a49e5d01c87a7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_230f1546a56b067923b8a9eb06b5022e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f85135008bafd56d1f08877a1188f954 = $(`<div id="html_f85135008bafd56d1f08877a1188f954" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>PRIYANSH PANDEY</b><br>                     <b>ID:</b> PARS12<br>                     <b>Age:</b> 15.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> BLINDNESS<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_230f1546a56b067923b8a9eb06b5022e.setContent(html_f85135008bafd56d1f08877a1188f954);
+            
+        
+
+        marker_73c30c0e992ed048f0db05b79e882925.bindPopup(popup_230f1546a56b067923b8a9eb06b5022e)
+        ;
+
+        
+    
+    
+                marker_73c30c0e992ed048f0db05b79e882925.setIcon(icon_f6c8b84791403b1d21a49e5d01c87a7b);
+            
+    
+            var marker_f88cb37d1be5397c2c8fccb5965bcbff = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_6e2a5685ddee2967e4033e04edb79cd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3895e0133a113e619c7f59c36755b18e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ef2bd0700eb0ccdd562e85ed1c638a28 = $(`<div id="html_ef2bd0700eb0ccdd562e85ed1c638a28" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>CHANCHAL</b><br>                     <b>ID:</b> NADU6<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_3895e0133a113e619c7f59c36755b18e.setContent(html_ef2bd0700eb0ccdd562e85ed1c638a28);
+            
+        
+
+        marker_f88cb37d1be5397c2c8fccb5965bcbff.bindPopup(popup_3895e0133a113e619c7f59c36755b18e)
+        ;
+
+        
+    
+    
+                marker_f88cb37d1be5397c2c8fccb5965bcbff.setIcon(icon_6e2a5685ddee2967e4033e04edb79cd2);
+            
+    
+            var marker_a6647bca40b49a55f80bb4c7de51eb21 = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_3897ad13948393292dd51387a9877cd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a78dc0ef0d663642fcbeec3200ce2486 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a1cc56f12df513fab36290b456c7687c = $(`<div id="html_a1cc56f12df513fab36290b456c7687c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>DUGAWATI</b><br>                     <b>ID:</b> MITH4<br>                     <b>Age:</b> 3.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> CEREBRAL POLSY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_a78dc0ef0d663642fcbeec3200ce2486.setContent(html_a1cc56f12df513fab36290b456c7687c);
+            
+        
+
+        marker_a6647bca40b49a55f80bb4c7de51eb21.bindPopup(popup_a78dc0ef0d663642fcbeec3200ce2486)
+        ;
+
+        
+    
+    
+                marker_a6647bca40b49a55f80bb4c7de51eb21.setIcon(icon_3897ad13948393292dd51387a9877cd5);
+            
+    
+            var marker_82bfd83c13e44ccb45b6629390b72042 = L.marker(
+                [26.9, 84.0],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_6537606bbaff543ddb71ca23e79fb748 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70af463b9e7b064184e909008e78c05b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_366bace87f264200ce9baa6ad38fa38c = $(`<div id="html_366bace87f264200ce9baa6ad38fa38c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KISHAN YADAV</b><br>                     <b>ID:</b> BELW6<br>                     <b>Age:</b> 12.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> PHYSICAL IMPAIRMENT<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> BELWA<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_70af463b9e7b064184e909008e78c05b.setContent(html_366bace87f264200ce9baa6ad38fa38c);
+            
+        
+
+        marker_82bfd83c13e44ccb45b6629390b72042.bindPopup(popup_70af463b9e7b064184e909008e78c05b)
+        ;
+
+        
+    
+    
+                marker_82bfd83c13e44ccb45b6629390b72042.setIcon(icon_6537606bbaff543ddb71ca23e79fb748);
+            
+    
+            var marker_efdc3c88939bd71706375dd7581d05a9 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_c3e1f9e14b8fbdfde1ca54dcb1b952a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e58fcdece5c34cfda90f648570fe83dd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8989bc3b5d4eeddd33fdfb6ad82525e8 = $(`<div id="html_8989bc3b5d4eeddd33fdfb6ad82525e8" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>MAHADEV PAL</b><br>                     <b>ID:</b> PARS6<br>                     <b>Age:</b> 3.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> HEARING IMPAIRMENT<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_e58fcdece5c34cfda90f648570fe83dd.setContent(html_8989bc3b5d4eeddd33fdfb6ad82525e8);
+            
+        
+
+        marker_efdc3c88939bd71706375dd7581d05a9.bindPopup(popup_e58fcdece5c34cfda90f648570fe83dd)
+        ;
+
+        
+    
+    
+                marker_efdc3c88939bd71706375dd7581d05a9.setIcon(icon_c3e1f9e14b8fbdfde1ca54dcb1b952a8);
+            
+    
+            var marker_6c7dbee7d19c7d4c50b44eafbf828b6a = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_cc114d03a1b7cff286c6fb24e19796ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5bc23cf7f36d51bfe18fb670877fb814 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_890ddfc6a0ded1a4f5673017b9ce284d = $(`<div id="html_890ddfc6a0ded1a4f5673017b9ce284d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ABHINASH NISHAD</b><br>                     <b>ID:</b> NADU10<br>                     <b>Age:</b> 18.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_5bc23cf7f36d51bfe18fb670877fb814.setContent(html_890ddfc6a0ded1a4f5673017b9ce284d);
+            
+        
+
+        marker_6c7dbee7d19c7d4c50b44eafbf828b6a.bindPopup(popup_5bc23cf7f36d51bfe18fb670877fb814)
+        ;
+
+        
+    
+    
+                marker_6c7dbee7d19c7d4c50b44eafbf828b6a.setIcon(icon_cc114d03a1b7cff286c6fb24e19796ed);
+            
+    
+            var marker_112d922292a2397eaa26787bee89fc84 = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_1328478edbcd83a2de311ace683fd0dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa00ec3ed18472985c6be4cf1b2312f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eac2cb6885b39cd580fc28638fd4fd40 = $(`<div id="html_eac2cb6885b39cd580fc28638fd4fd40" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KAINA KUMARI</b><br>                     <b>ID:</b> MITH8<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOW VISION<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_aa00ec3ed18472985c6be4cf1b2312f1.setContent(html_eac2cb6885b39cd580fc28638fd4fd40);
+            
+        
+
+        marker_112d922292a2397eaa26787bee89fc84.bindPopup(popup_aa00ec3ed18472985c6be4cf1b2312f1)
+        ;
+
+        
+    
+    
+                marker_112d922292a2397eaa26787bee89fc84.setIcon(icon_1328478edbcd83a2de311ace683fd0dc);
+            
+    
+            var marker_6095724684c4248e9694daf46a13e056 = L.marker(
+                [26.9, 84.0],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_009da266bd2795aff082a90f91199287 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8a8a28af4dffd496858d013a8343c9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a57ee2853bb34a1ddefc777abc6ba125 = $(`<div id="html_a57ee2853bb34a1ddefc777abc6ba125" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>DEEPAK YADAV</b><br>                     <b>ID:</b> BELW5<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> BLINDNESS<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BELWA<br>                     <b>Gram Panchayat:</b> BELWA                 </div>                 </div>`)[0];
+                popup_d8a8a28af4dffd496858d013a8343c9a.setContent(html_a57ee2853bb34a1ddefc777abc6ba125);
+            
+        
+
+        marker_6095724684c4248e9694daf46a13e056.bindPopup(popup_d8a8a28af4dffd496858d013a8343c9a)
+        ;
+
+        
+    
+    
+                marker_6095724684c4248e9694daf46a13e056.setIcon(icon_009da266bd2795aff082a90f91199287);
+            
+    
+            var marker_fae8c629bc281c47785ade2dccbd5036 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_ca887019fa28ee4d900450ed522ad222 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7263c385b5a261369e09acc8025ada64 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c94dfa7f989228a50dbe6b1146c603ec = $(`<div id="html_c94dfa7f989228a50dbe6b1146c603ec" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AARUSHI</b><br>                     <b>ID:</b> PARS15<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_7263c385b5a261369e09acc8025ada64.setContent(html_c94dfa7f989228a50dbe6b1146c603ec);
+            
+        
+
+        marker_fae8c629bc281c47785ade2dccbd5036.bindPopup(popup_7263c385b5a261369e09acc8025ada64)
+        ;
+
+        
+    
+    
+                marker_fae8c629bc281c47785ade2dccbd5036.setIcon(icon_ca887019fa28ee4d900450ed522ad222);
+            
+    
+            var marker_a51b1e52ad6ec68cd07d3d90402e7e74 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_a4e63f5c6766b1ba2725e2ea6151ee0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69c0da22f8973568dc6bbe92590f4e28 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_de31f2b7dcb0da256d382fde5875a2b7 = $(`<div id="html_de31f2b7dcb0da256d382fde5875a2b7" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>GOLDI KUMARI YADAV </b><br>                     <b>ID:</b> NADU11<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> TOTALY BLIND<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_69c0da22f8973568dc6bbe92590f4e28.setContent(html_de31f2b7dcb0da256d382fde5875a2b7);
+            
+        
+
+        marker_a51b1e52ad6ec68cd07d3d90402e7e74.bindPopup(popup_69c0da22f8973568dc6bbe92590f4e28)
+        ;
+
+        
+    
+    
+                marker_a51b1e52ad6ec68cd07d3d90402e7e74.setIcon(icon_a4e63f5c6766b1ba2725e2ea6151ee0f);
+            
+    
+            var marker_89380e37f2d27ca314f04d818c4104cb = L.marker(
+                [26.9, 84.0],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_fa2e470c3830442924ed64378a8ac583 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c54431d1b82770525b6322d9367da63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6c90e4b4a755c2bb548fd59141a288cc = $(`<div id="html_6c90e4b4a755c2bb548fd59141a288cc" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AMAN YADAV</b><br>                     <b>ID:</b> BELW1<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> VISUAL IMPAIRMENT<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BELWA<br>                     <b>Gram Panchayat:</b> BELWA                 </div>                 </div>`)[0];
+                popup_9c54431d1b82770525b6322d9367da63.setContent(html_6c90e4b4a755c2bb548fd59141a288cc);
+            
+        
+
+        marker_89380e37f2d27ca314f04d818c4104cb.bindPopup(popup_9c54431d1b82770525b6322d9367da63)
+        ;
+
+        
+    
+    
+                marker_89380e37f2d27ca314f04d818c4104cb.setIcon(icon_fa2e470c3830442924ed64378a8ac583);
+            
+    
+            var marker_58037d87457e9b43d706f02d1ba7954e = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_e53247b4e481a12413941b5b30aa6a88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_901fa06a31e8eeb217bfa1eb3b2cff1f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1f8e9c319edf6e764655f53c41f9472 = $(`<div id="html_c1f8e9c319edf6e764655f53c41f9472" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KAJAL KUMARI</b><br>                     <b>ID:</b> MITH9<br>                     <b>Age:</b> 16.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_901fa06a31e8eeb217bfa1eb3b2cff1f.setContent(html_c1f8e9c319edf6e764655f53c41f9472);
+            
+        
+
+        marker_58037d87457e9b43d706f02d1ba7954e.bindPopup(popup_901fa06a31e8eeb217bfa1eb3b2cff1f)
+        ;
+
+        
+    
+    
+                marker_58037d87457e9b43d706f02d1ba7954e.setIcon(icon_e53247b4e481a12413941b5b30aa6a88);
+            
+    
+            var marker_76034d0c9220328ba4ddb5cd480eb6d2 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_c8f0473f346889216f7fa5d2208ebb64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11b7d534242b1774f71f73c61e5b9040 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_989de26c172a5354cc5bd74b624f1ff8 = $(`<div id="html_989de26c172a5354cc5bd74b624f1ff8" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>HARDIK</b><br>                     <b>ID:</b> PARS4<br>                     <b>Age:</b> 6.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_11b7d534242b1774f71f73c61e5b9040.setContent(html_989de26c172a5354cc5bd74b624f1ff8);
+            
+        
+
+        marker_76034d0c9220328ba4ddb5cd480eb6d2.bindPopup(popup_11b7d534242b1774f71f73c61e5b9040)
+        ;
+
+        
+    
+    
+                marker_76034d0c9220328ba4ddb5cd480eb6d2.setIcon(icon_c8f0473f346889216f7fa5d2208ebb64);
+            
+    
+            var marker_c959c611cbff2a5ba530cd9150a156bc = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_63a9878b619bddaf6fe26c0f58698fe9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_844b64a49d202afcb5104b0a8a814f1f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1e663a78400139cd6987e797371afd96 = $(`<div id="html_1e663a78400139cd6987e797371afd96" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SHIVA </b><br>                     <b>ID:</b> NADU3<br>                     <b>Age:</b> 8.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_844b64a49d202afcb5104b0a8a814f1f.setContent(html_1e663a78400139cd6987e797371afd96);
+            
+        
+
+        marker_c959c611cbff2a5ba530cd9150a156bc.bindPopup(popup_844b64a49d202afcb5104b0a8a814f1f)
+        ;
+
+        
+    
+    
+                marker_c959c611cbff2a5ba530cd9150a156bc.setIcon(icon_63a9878b619bddaf6fe26c0f58698fe9);
+            
+    
+            var marker_018642e23b1e45dd06b95f6e36e46d80 = L.marker(
+                [26.9, 84.0],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_cd6b46a3b39ad4f40f1d92106fb43c64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53379a1f730f0314db52068a7f7cc75c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_29545fb986763f07d863fd3350dcdef2 = $(`<div id="html_29545fb986763f07d863fd3350dcdef2" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RAJ SINGH</b><br>                     <b>ID:</b> BELW4<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BELWA<br>                     <b>Gram Panchayat:</b> BELWA                 </div>                 </div>`)[0];
+                popup_53379a1f730f0314db52068a7f7cc75c.setContent(html_29545fb986763f07d863fd3350dcdef2);
+            
+        
+
+        marker_018642e23b1e45dd06b95f6e36e46d80.bindPopup(popup_53379a1f730f0314db52068a7f7cc75c)
+        ;
+
+        
+    
+    
+                marker_018642e23b1e45dd06b95f6e36e46d80.setIcon(icon_cd6b46a3b39ad4f40f1d92106fb43c64);
+            
+    
+            var marker_8814c228ce9cbabedc4d946abe2c9259 = L.marker(
+                [26.95, 84.25],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_077f071ad42971880877a45c3636f88a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e403e4609b4e68c12e3ef6987717829 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fc35e78a0eb69e7284e585cd02053c97 = $(`<div id="html_fc35e78a0eb69e7284e585cd02053c97" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SANOJ</b><br>                     <b>ID:</b> NIBH1<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> NIBAHI<br>                     <b>Gram Panchayat:</b> NIBAHI                 </div>                 </div>`)[0];
+                popup_8e403e4609b4e68c12e3ef6987717829.setContent(html_fc35e78a0eb69e7284e585cd02053c97);
+            
+        
+
+        marker_8814c228ce9cbabedc4d946abe2c9259.bindPopup(popup_8e403e4609b4e68c12e3ef6987717829)
+        ;
+
+        
+    
+    
+                marker_8814c228ce9cbabedc4d946abe2c9259.setIcon(icon_077f071ad42971880877a45c3636f88a);
+            
+    
+            var marker_1109fe95ff523297519337024a813118 = L.marker(
+                [26.88, 83.64],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_7939626e354d5c3ac043e7d197f6d88d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f2a1499943c67b8026f43c8a45125dc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_663303ffb111857bf24328e9abb1783d = $(`<div id="html_663303ffb111857bf24328e9abb1783d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SAMAR PASWAN</b><br>                     <b>ID:</b> MATH4<br>                     <b>Age:</b> 8.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> MATHIYA<br>                     <b>Gram Panchayat:</b> MATHIYA                 </div>                 </div>`)[0];
+                popup_2f2a1499943c67b8026f43c8a45125dc.setContent(html_663303ffb111857bf24328e9abb1783d);
+            
+        
+
+        marker_1109fe95ff523297519337024a813118.bindPopup(popup_2f2a1499943c67b8026f43c8a45125dc)
+        ;
+
+        
+    
+    
+                marker_1109fe95ff523297519337024a813118.setIcon(icon_7939626e354d5c3ac043e7d197f6d88d);
+            
+    
+            var marker_ef1d2b10b121a12260a577e8b6273af9 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_8f7d1c1dc3ef9e89b087de253df554c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9418fb576910e52648e9ee3e8f2e29eb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c71b0e3176d9d0b9c34a146b93d72413 = $(`<div id="html_c71b0e3176d9d0b9c34a146b93d72413" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>HANSH MAURYA</b><br>                     <b>ID:</b> NADU8<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_9418fb576910e52648e9ee3e8f2e29eb.setContent(html_c71b0e3176d9d0b9c34a146b93d72413);
+            
+        
+
+        marker_ef1d2b10b121a12260a577e8b6273af9.bindPopup(popup_9418fb576910e52648e9ee3e8f2e29eb)
+        ;
+
+        
+    
+    
+                marker_ef1d2b10b121a12260a577e8b6273af9.setIcon(icon_8f7d1c1dc3ef9e89b087de253df554c4);
+            
+    
+            var marker_147c9dc16dcecfe719cf360a46785daa = L.marker(
+                [26.9, 84.0],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_fbbd53be345eff4afce8fb63abf9d3e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7ded2cc622f066a663ec5b39e29063f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5cb7861dfb09900c70c26917e40fdd8 = $(`<div id="html_c5cb7861dfb09900c70c26917e40fdd8" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>NAINA</b><br>                     <b>ID:</b> BELW8<br>                     <b>Age:</b> 6.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> BELWA<br>                     <b>Gram Panchayat:</b> BELWA                 </div>                 </div>`)[0];
+                popup_f7ded2cc622f066a663ec5b39e29063f.setContent(html_c5cb7861dfb09900c70c26917e40fdd8);
+            
+        
+
+        marker_147c9dc16dcecfe719cf360a46785daa.bindPopup(popup_f7ded2cc622f066a663ec5b39e29063f)
+        ;
+
+        
+    
+    
+                marker_147c9dc16dcecfe719cf360a46785daa.setIcon(icon_fbbd53be345eff4afce8fb63abf9d3e4);
+            
+    
+            var marker_33ca83c59cf8109d32dc494743308dae = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_054b55687a08ac24bff428d884b59324 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d92366820e9bcd12dbbe573d9561734e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc06995884b222a19aefedcb418f53a2 = $(`<div id="html_cc06995884b222a19aefedcb418f53a2" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SUNNY</b><br>                     <b>ID:</b> MITH12<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_d92366820e9bcd12dbbe573d9561734e.setContent(html_cc06995884b222a19aefedcb418f53a2);
+            
+        
+
+        marker_33ca83c59cf8109d32dc494743308dae.bindPopup(popup_d92366820e9bcd12dbbe573d9561734e)
+        ;
+
+        
+    
+    
+                marker_33ca83c59cf8109d32dc494743308dae.setIcon(icon_054b55687a08ac24bff428d884b59324);
+            
+    
+            var marker_9a296bb9fd6733c4afc0086a1a649aef = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_6c42c34fd374092c2c9ac3fd07ffb5ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea436fc343ba038bb0bb067d6865e656 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cee015c8938a2117869508d405fc5755 = $(`<div id="html_cee015c8938a2117869508d405fc5755" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>JYOTI</b><br>                     <b>ID:</b> NADU15<br>                     <b>Age:</b> 12.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> N ADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_ea436fc343ba038bb0bb067d6865e656.setContent(html_cee015c8938a2117869508d405fc5755);
+            
+        
+
+        marker_9a296bb9fd6733c4afc0086a1a649aef.bindPopup(popup_ea436fc343ba038bb0bb067d6865e656)
+        ;
+
+        
+    
+    
+                marker_9a296bb9fd6733c4afc0086a1a649aef.setIcon(icon_6c42c34fd374092c2c9ac3fd07ffb5ea);
+            
+    
+            var marker_d603b3b1eff90931d088e2f7b663fcbe = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_2f8f3da0d117314df62bbf1b12f461bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64ae107bb40144e09ed5969e945beee0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2d4b0368bb323917ba6cde13e8cd2cf8 = $(`<div id="html_2d4b0368bb323917ba6cde13e8cd2cf8" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SONI</b><br>                     <b>ID:</b> PARS3<br>                     <b>Age:</b> 21.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_64ae107bb40144e09ed5969e945beee0.setContent(html_2d4b0368bb323917ba6cde13e8cd2cf8);
+            
+        
+
+        marker_d603b3b1eff90931d088e2f7b663fcbe.bindPopup(popup_64ae107bb40144e09ed5969e945beee0)
+        ;
+
+        
+    
+    
+                marker_d603b3b1eff90931d088e2f7b663fcbe.setIcon(icon_2f8f3da0d117314df62bbf1b12f461bf);
+            
+    
+            var marker_1bc03534b6461d670db9268c6f0c305d = L.marker(
+                [26.9, 84.0],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_559224e223f89fe8bb4a56cf8a532b2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d274ac1ada504faa9c2b9fe502b019c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d29316e058c6c9526b17363ca1ce0825 = $(`<div id="html_d29316e058c6c9526b17363ca1ce0825" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>VIPESH GUPTA</b><br>                     <b>ID:</b> BELW2<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTOR DISABILITY ( MUSCULAR DYSTROPHY)<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> BELWA<br>                     <b>Gram Panchayat:</b> BELWA                 </div>                 </div>`)[0];
+                popup_7d274ac1ada504faa9c2b9fe502b019c.setContent(html_d29316e058c6c9526b17363ca1ce0825);
+            
+        
+
+        marker_1bc03534b6461d670db9268c6f0c305d.bindPopup(popup_7d274ac1ada504faa9c2b9fe502b019c)
+        ;
+
+        
+    
+    
+                marker_1bc03534b6461d670db9268c6f0c305d.setIcon(icon_559224e223f89fe8bb4a56cf8a532b2a);
+            
+    
+            var marker_985177f71fb984b2a92358e7186c8144 = L.marker(
+                [26.95, 84.25],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_38f3a01ead020c870258574ca96b1d43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c477173b1c19e9c44779d1051a89d950 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bcce96a25e218d596cafcc60f026729b = $(`<div id="html_bcce96a25e218d596cafcc60f026729b" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KAJAL </b><br>                     <b>ID:</b> NIBH2<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> CEREBRAL POLSY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> NIBAHI<br>                     <b>Gram Panchayat:</b> nan                 </div>                 </div>`)[0];
+                popup_c477173b1c19e9c44779d1051a89d950.setContent(html_bcce96a25e218d596cafcc60f026729b);
+            
+        
+
+        marker_985177f71fb984b2a92358e7186c8144.bindPopup(popup_c477173b1c19e9c44779d1051a89d950)
+        ;
+
+        
+    
+    
+                marker_985177f71fb984b2a92358e7186c8144.setIcon(icon_38f3a01ead020c870258574ca96b1d43);
+            
+    
+            var marker_633f213d05402f6a4b28af9aba9e7dfb = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_ef75e914360f10000cf0587ba463d811 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48d77392881ceeb1767f9af8dfd48438 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d99258129af3b812d1392c500936282e = $(`<div id="html_d99258129af3b812d1392c500936282e" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>PIYUSH PRAJAPATI </b><br>                     <b>ID:</b> PARS10<br>                     <b>Age:</b> 8.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_48d77392881ceeb1767f9af8dfd48438.setContent(html_d99258129af3b812d1392c500936282e);
+            
+        
+
+        marker_633f213d05402f6a4b28af9aba9e7dfb.bindPopup(popup_48d77392881ceeb1767f9af8dfd48438)
+        ;
+
+        
+    
+    
+                marker_633f213d05402f6a4b28af9aba9e7dfb.setIcon(icon_ef75e914360f10000cf0587ba463d811);
+            
+    
+            var marker_bd2e443c8f7a3d16db969c3116ec9af5 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_98e0d1c5baf8cdeda4d5dbc2b26f7cbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_003d308802fa288df02e6f26cda44c76 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eb994d995c902d16e916bcac4944063e = $(`<div id="html_eb994d995c902d16e916bcac4944063e" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ASMITA</b><br>                     <b>ID:</b> NADU1<br>                     <b>Age:</b> 6.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOW VISION<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_003d308802fa288df02e6f26cda44c76.setContent(html_eb994d995c902d16e916bcac4944063e);
+            
+        
+
+        marker_bd2e443c8f7a3d16db969c3116ec9af5.bindPopup(popup_003d308802fa288df02e6f26cda44c76)
+        ;
+
+        
+    
+    
+                marker_bd2e443c8f7a3d16db969c3116ec9af5.setIcon(icon_98e0d1c5baf8cdeda4d5dbc2b26f7cbe);
+            
+    
+            var marker_3e299d9c32063217055e905ac06a7cfe = L.marker(
+                [26.92, 84.45],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_391377f28f0b411410c464063ac651ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b484a5f3d3c86dfc86fc2c6432a692d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f931b186dfdf214949f2bf762fdd6590 = $(`<div id="html_f931b186dfdf214949f2bf762fdd6590" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>M.SAHIL</b><br>                     <b>ID:</b> SING6<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOW VISION<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> SINGHPUR<br>                     <b>Gram Panchayat:</b> SINGHPUR                 </div>                 </div>`)[0];
+                popup_5b484a5f3d3c86dfc86fc2c6432a692d.setContent(html_f931b186dfdf214949f2bf762fdd6590);
+            
+        
+
+        marker_3e299d9c32063217055e905ac06a7cfe.bindPopup(popup_5b484a5f3d3c86dfc86fc2c6432a692d)
+        ;
+
+        
+    
+    
+                marker_3e299d9c32063217055e905ac06a7cfe.setIcon(icon_391377f28f0b411410c464063ac651ab);
+            
+    
+            var marker_15c90be682940b6f8f8f38821b99a9a8 = L.marker(
+                [26.92, 84.45],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_27135cd5825b5f0733c6e47877240314 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c332c8c71292d07e61efc6893e360a3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_155b35952a9bc1daa420c0dfc0f0b41d = $(`<div id="html_155b35952a9bc1daa420c0dfc0f0b41d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>CHHOTI SHARMA</b><br>                     <b>ID:</b> SING4<br>                     <b>Age:</b> 7.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> SINGHPUR<br>                     <b>Gram Panchayat:</b> SINGHPUR                 </div>                 </div>`)[0];
+                popup_9c332c8c71292d07e61efc6893e360a3.setContent(html_155b35952a9bc1daa420c0dfc0f0b41d);
+            
+        
+
+        marker_15c90be682940b6f8f8f38821b99a9a8.bindPopup(popup_9c332c8c71292d07e61efc6893e360a3)
+        ;
+
+        
+    
+    
+                marker_15c90be682940b6f8f8f38821b99a9a8.setIcon(icon_27135cd5825b5f0733c6e47877240314);
+            
+    
+            var marker_9164adba5b72665dd516905fe90f7aa4 = L.marker(
+                [26.88, 83.64],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_d8b250e3f201170e472441202cec4f55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3c300e79f6f923e3977cc85433f5ae4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d2047904280af472c4b8efbac6ebe99 = $(`<div id="html_0d2047904280af472c4b8efbac6ebe99" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KRISHNA</b><br>                     <b>ID:</b> MATH1<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> MATHIYA<br>                     <b>Gram Panchayat:</b> MATHIYA                 </div>                 </div>`)[0];
+                popup_e3c300e79f6f923e3977cc85433f5ae4.setContent(html_0d2047904280af472c4b8efbac6ebe99);
+            
+        
+
+        marker_9164adba5b72665dd516905fe90f7aa4.bindPopup(popup_e3c300e79f6f923e3977cc85433f5ae4)
+        ;
+
+        
+    
+    
+                marker_9164adba5b72665dd516905fe90f7aa4.setIcon(icon_d8b250e3f201170e472441202cec4f55);
+            
+    
+            var marker_b2334c3cdcfc89e3cb7000373914e4fc = L.marker(
+                [26.92, 84.45],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_273e1ed98fdb75d9e6272fe284b57694 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22139b1a6fda6569c9aac348fca88eb3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4307634014647183836a6e00578ae350 = $(`<div id="html_4307634014647183836a6e00578ae350" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANGADPAL</b><br>                     <b>ID:</b> SING<br>                     <b>Age:</b> 13.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> SINGHPUR<br>                     <b>Gram Panchayat:</b> SINGHPUR                 </div>                 </div>`)[0];
+                popup_22139b1a6fda6569c9aac348fca88eb3.setContent(html_4307634014647183836a6e00578ae350);
+            
+        
+
+        marker_b2334c3cdcfc89e3cb7000373914e4fc.bindPopup(popup_22139b1a6fda6569c9aac348fca88eb3)
+        ;
+
+        
+    
+    
+                marker_b2334c3cdcfc89e3cb7000373914e4fc.setIcon(icon_273e1ed98fdb75d9e6272fe284b57694);
+            
+    
+            var marker_1749af1e7ccbffbefa8879d78843cb89 = L.marker(
+                [26.88, 84.38],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_7ba42c95c48e1245e21aef2e867b8955 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1085a7673343827b905c1dcf7a9491f2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ece03b0191c8a4797aa72efe9f13b1f5 = $(`<div id="html_ece03b0191c8a4797aa72efe9f13b1f5" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>VISHNU</b><br>                     <b>ID:</b> JR02-6<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MD(IDD,SPEECH)<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> RASULPUR<br>                     <b>Gram Panchayat:</b> RASULPUR                 </div>                 </div>`)[0];
+                popup_1085a7673343827b905c1dcf7a9491f2.setContent(html_ece03b0191c8a4797aa72efe9f13b1f5);
+            
+        
+
+        marker_1749af1e7ccbffbefa8879d78843cb89.bindPopup(popup_1085a7673343827b905c1dcf7a9491f2)
+        ;
+
+        
+    
+    
+                marker_1749af1e7ccbffbefa8879d78843cb89.setIcon(icon_7ba42c95c48e1245e21aef2e867b8955);
+            
+    
+            var marker_1ac30c1097ff83fe68359802494624e0 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_71f42a588b2d68da7f60b1b6d5c210bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0574e0779ceb6bc595f169d92f010d02 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0455a856a6fa11d4e56b77561c0b87e3 = $(`<div id="html_0455a856a6fa11d4e56b77561c0b87e3" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANKUSH</b><br>                     <b>ID:</b> BRAH14<br>                     <b>Age:</b> 9.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> SPEECH IMPAIRMENT<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_0574e0779ceb6bc595f169d92f010d02.setContent(html_0455a856a6fa11d4e56b77561c0b87e3);
+            
+        
+
+        marker_1ac30c1097ff83fe68359802494624e0.bindPopup(popup_0574e0779ceb6bc595f169d92f010d02)
+        ;
+
+        
+    
+    
+                marker_1ac30c1097ff83fe68359802494624e0.setIcon(icon_71f42a588b2d68da7f60b1b6d5c210bf);
+            
+    
+            var marker_7236a67884582817a52ae7033db49200 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_6647e5ca1dece5fa662e3faca9945246 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_356d2b32e371a04fab4e3b74aa3a9fcd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2ea4c4441b2a53e8de7e99e50a6eb90 = $(`<div id="html_c2ea4c4441b2a53e8de7e99e50a6eb90" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ADITYA</b><br>                     <b>ID:</b> NADU14<br>                     <b>Age:</b> 4.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> CEREBRAL PALSE<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_356d2b32e371a04fab4e3b74aa3a9fcd.setContent(html_c2ea4c4441b2a53e8de7e99e50a6eb90);
+            
+        
+
+        marker_7236a67884582817a52ae7033db49200.bindPopup(popup_356d2b32e371a04fab4e3b74aa3a9fcd)
+        ;
+
+        
+    
+    
+                marker_7236a67884582817a52ae7033db49200.setIcon(icon_6647e5ca1dece5fa662e3faca9945246);
+            
+    
+            var marker_19b39ee46db5abb6498e248189282836 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_71811a76f373638fd3832d48d6918405 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_749aed87fb54077f67e2f666622b6780 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_849f837c8dccde56a8833b063d4e2664 = $(`<div id="html_849f837c8dccde56a8833b063d4e2664" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SONIKA GOND</b><br>                     <b>ID:</b> BRAH12<br>                     <b>Age:</b> 15.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> BLINDNESS<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_749aed87fb54077f67e2f666622b6780.setContent(html_849f837c8dccde56a8833b063d4e2664);
+            
+        
+
+        marker_19b39ee46db5abb6498e248189282836.bindPopup(popup_749aed87fb54077f67e2f666622b6780)
+        ;
+
+        
+    
+    
+                marker_19b39ee46db5abb6498e248189282836.setIcon(icon_71811a76f373638fd3832d48d6918405);
+            
+    
+            var marker_fe092b4048798bfbb832246e6914a396 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_dd1085d890e856f7949f3f5a6ebe0a64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8143f567f254b0526bd52cd45d3c4db = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_785d6c1a4d542e0ba6ffd5b922d28fe1 = $(`<div id="html_785d6c1a4d542e0ba6ffd5b922d28fe1" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SANTOSHI</b><br>                     <b>ID:</b> NADU4<br>                     <b>Age:</b> 4.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> CEREBRAL PALSE<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_f8143f567f254b0526bd52cd45d3c4db.setContent(html_785d6c1a4d542e0ba6ffd5b922d28fe1);
+            
+        
+
+        marker_fe092b4048798bfbb832246e6914a396.bindPopup(popup_f8143f567f254b0526bd52cd45d3c4db)
+        ;
+
+        
+    
+    
+                marker_fe092b4048798bfbb832246e6914a396.setIcon(icon_dd1085d890e856f7949f3f5a6ebe0a64);
+            
+    
+            var marker_41bbf110609c4a7d704f35e37bfe40a2 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_d4123eed3cf637fd12f108174197dd61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57749a883bb5552f0fed07c7e0862a38 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eee733af9342d411729f93add33afe06 = $(`<div id="html_eee733af9342d411729f93add33afe06" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANSH</b><br>                     <b>ID:</b> BRAH17<br>                     <b>Age:</b> 6.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> SPEECH AND LANGUAGE DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_57749a883bb5552f0fed07c7e0862a38.setContent(html_eee733af9342d411729f93add33afe06);
+            
+        
+
+        marker_41bbf110609c4a7d704f35e37bfe40a2.bindPopup(popup_57749a883bb5552f0fed07c7e0862a38)
+        ;
+
+        
+    
+    
+                marker_41bbf110609c4a7d704f35e37bfe40a2.setIcon(icon_d4123eed3cf637fd12f108174197dd61);
+            
+    
+            var marker_94107eb77e8b384a9a8d612e04245827 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_2c949f8783004229f7064615239d2fbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fdb13219396da1e4d93ddfd20ec40b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_51e0a365127f85b961dbbf1d49709c7c = $(`<div id="html_51e0a365127f85b961dbbf1d49709c7c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>DEEPIKA YADAV</b><br>                     <b>ID:</b> NADU9<br>                     <b>Age:</b> 16.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_8fdb13219396da1e4d93ddfd20ec40b7.setContent(html_51e0a365127f85b961dbbf1d49709c7c);
+            
+        
+
+        marker_94107eb77e8b384a9a8d612e04245827.bindPopup(popup_8fdb13219396da1e4d93ddfd20ec40b7)
+        ;
+
+        
+    
+    
+                marker_94107eb77e8b384a9a8d612e04245827.setIcon(icon_2c949f8783004229f7064615239d2fbe);
+            
+    
+            var marker_acd49a143efbf340b1fec156bdc03645 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_3dcb5f93174768adeefcc7b17ceaa512 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3bbf905236cee8666bda74f2b475973 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bc3fa416033e6dd422e5d0c8441585e0 = $(`<div id="html_bc3fa416033e6dd422e5d0c8441585e0" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AWANI</b><br>                     <b>ID:</b> BRAH11<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_e3bbf905236cee8666bda74f2b475973.setContent(html_bc3fa416033e6dd422e5d0c8441585e0);
+            
+        
+
+        marker_acd49a143efbf340b1fec156bdc03645.bindPopup(popup_e3bbf905236cee8666bda74f2b475973)
+        ;
+
+        
+    
+    
+                marker_acd49a143efbf340b1fec156bdc03645.setIcon(icon_3dcb5f93174768adeefcc7b17ceaa512);
+            
+    
+            var marker_ecc672930e6e00ff38afd8b24e2b0123 = L.marker(
+                [26.92, 84.45],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_f8b999f47281a03adc0bbde6f72c2e6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eac6115d7b59bad9e0893f91925e6095 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_45c7e5463545e2c47d2eb57f357e82a2 = $(`<div id="html_45c7e5463545e2c47d2eb57f357e82a2" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AASMA</b><br>                     <b>ID:</b> SING7<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> SPEECH AND LANGUAGE DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> SINGHPUR<br>                     <b>Gram Panchayat:</b> SINGHPUR                 </div>                 </div>`)[0];
+                popup_eac6115d7b59bad9e0893f91925e6095.setContent(html_45c7e5463545e2c47d2eb57f357e82a2);
+            
+        
+
+        marker_ecc672930e6e00ff38afd8b24e2b0123.bindPopup(popup_eac6115d7b59bad9e0893f91925e6095)
+        ;
+
+        
+    
+    
+                marker_ecc672930e6e00ff38afd8b24e2b0123.setIcon(icon_f8b999f47281a03adc0bbde6f72c2e6d);
+            
+    
+            var marker_a5b69c70b32a1188c93a96ae9e2e3142 = L.marker(
+                [26.95, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_cd8770acf27f691bcbefe0b092f7708f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fe8e52c8063930b1e7810a88171ff54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b4d386264a210bf3de652086bb8513d = $(`<div id="html_7b4d386264a210bf3de652086bb8513d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AMRITA</b><br>                     <b>ID:</b> JR025<br>                     <b>Age:</b> 11.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> IDD , SPEECH , LD(MD)<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> NEKAVAR JR02<br>                     <b>Gram Panchayat:</b> JR02                 </div>                 </div>`)[0];
+                popup_2fe8e52c8063930b1e7810a88171ff54.setContent(html_7b4d386264a210bf3de652086bb8513d);
+            
+        
+
+        marker_a5b69c70b32a1188c93a96ae9e2e3142.bindPopup(popup_2fe8e52c8063930b1e7810a88171ff54)
+        ;
+
+        
+    
+    
+                marker_a5b69c70b32a1188c93a96ae9e2e3142.setIcon(icon_cd8770acf27f691bcbefe0b092f7708f);
+            
+    
+            var marker_cdab1e9f90a4bbc3d6be0cfa43acc077 = L.marker(
+                [26.82, 84.42],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_8a91d503ce7d04fe32964127dea7c368 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d32258f3de658514a0df98f5a662055 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_53d0513891e84eeab5caf09edda4b9e1 = $(`<div id="html_53d0513891e84eeab5caf09edda4b9e1" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RAGINI NISHAD</b><br>                     <b>ID:</b> BRAH8<br>                     <b>Age:</b> 13.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> HI+ID<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> PIPRAHIYA<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_0d32258f3de658514a0df98f5a662055.setContent(html_53d0513891e84eeab5caf09edda4b9e1);
+            
+        
+
+        marker_cdab1e9f90a4bbc3d6be0cfa43acc077.bindPopup(popup_0d32258f3de658514a0df98f5a662055)
+        ;
+
+        
+    
+    
+                marker_cdab1e9f90a4bbc3d6be0cfa43acc077.setIcon(icon_8a91d503ce7d04fe32964127dea7c368);
+            
+    
+            var marker_d52d1c2cf4d28a81e2e6ddd8f60c8f51 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_381ee93d085063efde1e0eee9b747f73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b615648023dc09230f8fb9fe74a6c21 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d371ccf74bdb8aa0359d605b718fabe = $(`<div id="html_7d371ccf74bdb8aa0359d605b718fabe" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANURAG</b><br>                     <b>ID:</b> NADU12<br>                     <b>Age:</b> 13.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_6b615648023dc09230f8fb9fe74a6c21.setContent(html_7d371ccf74bdb8aa0359d605b718fabe);
+            
+        
+
+        marker_d52d1c2cf4d28a81e2e6ddd8f60c8f51.bindPopup(popup_6b615648023dc09230f8fb9fe74a6c21)
+        ;
+
+        
+    
+    
+                marker_d52d1c2cf4d28a81e2e6ddd8f60c8f51.setIcon(icon_381ee93d085063efde1e0eee9b747f73);
+            
+    
+            var marker_00a3c8f839a19dd08bf7e51004f74750 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_e35f2722057317dde3e4365ffa58414b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce8e6f8cca316fade2fc50bc7426f70c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3521d8981de30c825e3794dfc265ae4a = $(`<div id="html_3521d8981de30c825e3794dfc265ae4a" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANSH KUMAR MADHESHIYA</b><br>                     <b>ID:</b> BRAH5<br>                     <b>Age:</b> 8.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_ce8e6f8cca316fade2fc50bc7426f70c.setContent(html_3521d8981de30c825e3794dfc265ae4a);
+            
+        
+
+        marker_00a3c8f839a19dd08bf7e51004f74750.bindPopup(popup_ce8e6f8cca316fade2fc50bc7426f70c)
+        ;
+
+        
+    
+    
+                marker_00a3c8f839a19dd08bf7e51004f74750.setIcon(icon_e35f2722057317dde3e4365ffa58414b);
+            
+    
+            var marker_be262378e050d7dd7123a697bf58c963 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_65d0952a1c4e4467678e2c5cf4d6ec0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30b58a050998b2c460ad3f1e6319a1c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_46e7a9a2d02bab3e875130516ae264d5 = $(`<div id="html_46e7a9a2d02bab3e875130516ae264d5" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ATUL</b><br>                     <b>ID:</b> BRAH1<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_30b58a050998b2c460ad3f1e6319a1c5.setContent(html_46e7a9a2d02bab3e875130516ae264d5);
+            
+        
+
+        marker_be262378e050d7dd7123a697bf58c963.bindPopup(popup_30b58a050998b2c460ad3f1e6319a1c5)
+        ;
+
+        
+    
+    
+                marker_be262378e050d7dd7123a697bf58c963.setIcon(icon_65d0952a1c4e4467678e2c5cf4d6ec0c);
+            
+    
+            var marker_9ba5c03a4d3ece352fa2fca624a37978 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_4064aa6b7723c71c363552510ed1e555 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7c714df1750db0edc110a274d5c99b8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74a3ab838a4747bf602f1bfbce8b0126 = $(`<div id="html_74a3ab838a4747bf602f1bfbce8b0126" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RITIKA YADAV</b><br>                     <b>ID:</b> NADU16<br>                     <b>Age:</b> 7.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_e7c714df1750db0edc110a274d5c99b8.setContent(html_74a3ab838a4747bf602f1bfbce8b0126);
+            
+        
+
+        marker_9ba5c03a4d3ece352fa2fca624a37978.bindPopup(popup_e7c714df1750db0edc110a274d5c99b8)
+        ;
+
+        
+    
+    
+                marker_9ba5c03a4d3ece352fa2fca624a37978.setIcon(icon_4064aa6b7723c71c363552510ed1e555);
+            
+    
+            var marker_d1ddd668306b975e3ce6fe966b8bf208 = L.marker(
+                [26.92, 84.45],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_98bb01338a08970c5d797e6d16fc9f2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20a663d8321e66a20fcabfd505fb96b8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3a9ca03c8b20afaae742b5cfc5a47985 = $(`<div id="html_3a9ca03c8b20afaae742b5cfc5a47985" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SHREYANSH</b><br>                     <b>ID:</b> SING2<br>                     <b>Age:</b> 4.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> SINGHPUR<br>                     <b>Gram Panchayat:</b> SINGHPUR                   </div>                 </div>`)[0];
+                popup_20a663d8321e66a20fcabfd505fb96b8.setContent(html_3a9ca03c8b20afaae742b5cfc5a47985);
+            
+        
+
+        marker_d1ddd668306b975e3ce6fe966b8bf208.bindPopup(popup_20a663d8321e66a20fcabfd505fb96b8)
+        ;
+
+        
+    
+    
+                marker_d1ddd668306b975e3ce6fe966b8bf208.setIcon(icon_98bb01338a08970c5d797e6d16fc9f2c);
+            
+    
+            var marker_b2ca766b3fac7ca9af5ce3c2e305cc93 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_033f6a1c1d677fd68a596a230023a0df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86fc2a1b1a428d48085f0afff3cc3e62 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21e0d0203e2f9f39c6c03b013738bd41 = $(`<div id="html_21e0d0203e2f9f39c6c03b013738bd41" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANSHU NISHAD</b><br>                     <b>ID:</b> BRAH10<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_86fc2a1b1a428d48085f0afff3cc3e62.setContent(html_21e0d0203e2f9f39c6c03b013738bd41);
+            
+        
+
+        marker_b2ca766b3fac7ca9af5ce3c2e305cc93.bindPopup(popup_86fc2a1b1a428d48085f0afff3cc3e62)
+        ;
+
+        
+    
+    
+                marker_b2ca766b3fac7ca9af5ce3c2e305cc93.setIcon(icon_033f6a1c1d677fd68a596a230023a0df);
+            
+    
+            var marker_6b40a8e3f0ead74f44ea209f1c968e49 = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_adf824b1c7708967f1650f47ac120fb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_193cb15ae82b2e24ed510fd4be168d3b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e37b069b46b99047d95db2fe64f37e17 = $(`<div id="html_e37b069b46b99047d95db2fe64f37e17" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>Arjun Nishad</b><br>                     <b>ID:</b> NADU7<br>                     <b>Age:</b> 15.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MD, SPEECH<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> nadua gyanpur<br>                     <b>Gram Panchayat:</b> nadua gyanpur                 </div>                 </div>`)[0];
+                popup_193cb15ae82b2e24ed510fd4be168d3b.setContent(html_e37b069b46b99047d95db2fe64f37e17);
+            
+        
+
+        marker_6b40a8e3f0ead74f44ea209f1c968e49.bindPopup(popup_193cb15ae82b2e24ed510fd4be168d3b)
+        ;
+
+        
+    
+    
+                marker_6b40a8e3f0ead74f44ea209f1c968e49.setIcon(icon_adf824b1c7708967f1650f47ac120fb6);
+            
+    
+            var marker_4d4374f823678046c2c0910ae69e6f21 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_53e2d6267b9c463c71599087569774d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b17a086c04356199b0ad37fe13f9f33 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_22ee9fd3df828ae76771b5d835a2fdf8 = $(`<div id="html_22ee9fd3df828ae76771b5d835a2fdf8" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>Sandeep</b><br>                     <b>ID:</b> VISH13<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MD<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> Vishwanthpur<br>                     <b>Gram Panchayat:</b> Vishwanthpur                 </div>                 </div>`)[0];
+                popup_3b17a086c04356199b0ad37fe13f9f33.setContent(html_22ee9fd3df828ae76771b5d835a2fdf8);
+            
+        
+
+        marker_4d4374f823678046c2c0910ae69e6f21.bindPopup(popup_3b17a086c04356199b0ad37fe13f9f33)
+        ;
+
+        
+    
+    
+                marker_4d4374f823678046c2c0910ae69e6f21.setIcon(icon_53e2d6267b9c463c71599087569774d2);
+            
+    
+            var marker_a87fde1aabf69f484e2f2b9a52773966 = L.marker(
+                [26.82, 84.44],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_1f55e1d694147eb77c4bf4933824d29f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7070066b6eea194a0fdaf70ec4a76c3c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a6d1410926b67624136b60017747e1d3 = $(`<div id="html_a6d1410926b67624136b60017747e1d3" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KARTIK MOURY</b><br>                     <b>ID:</b> VISH11<br>                     <b>Age:</b> 6.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MD<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> SHEMRA TOLA<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_7070066b6eea194a0fdaf70ec4a76c3c.setContent(html_a6d1410926b67624136b60017747e1d3);
+            
+        
+
+        marker_a87fde1aabf69f484e2f2b9a52773966.bindPopup(popup_7070066b6eea194a0fdaf70ec4a76c3c)
+        ;
+
+        
+    
+    
+                marker_a87fde1aabf69f484e2f2b9a52773966.setIcon(icon_1f55e1d694147eb77c4bf4933824d29f);
+            
+    
+            var marker_a37af004b2e5aec1e88af468af5a1b3a = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_77213c0cafac1e926a5b3b7748c184d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18c1b522aacf310d1395f0d89bfb8c1b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2fd8dac56813faeb4fadcc458854d54 = $(`<div id="html_a2fd8dac56813faeb4fadcc458854d54" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SALONI</b><br>                     <b>ID:</b> MITH6<br>                     <b>Age:</b> 8.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> HEARING IMPAIRMENT<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_18c1b522aacf310d1395f0d89bfb8c1b.setContent(html_a2fd8dac56813faeb4fadcc458854d54);
+            
+        
+
+        marker_a37af004b2e5aec1e88af468af5a1b3a.bindPopup(popup_18c1b522aacf310d1395f0d89bfb8c1b)
+        ;
+
+        
+    
+    
+                marker_a37af004b2e5aec1e88af468af5a1b3a.setIcon(icon_77213c0cafac1e926a5b3b7748c184d2);
+            
+    
+            var marker_d4905af69ed35c3479cf8d8cf7a48b1d = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_a721fc24af33d9fe19b9f43c9e9106c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba2466b856f0d3007a2e7bc73d702a64 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9ebcde5f32903a3bb32add7a5ef7021a = $(`<div id="html_9ebcde5f32903a3bb32add7a5ef7021a" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AVANISH MAURYA</b><br>                     <b>ID:</b> PARS7<br>                     <b>Age:</b> 9.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_ba2466b856f0d3007a2e7bc73d702a64.setContent(html_9ebcde5f32903a3bb32add7a5ef7021a);
+            
+        
+
+        marker_d4905af69ed35c3479cf8d8cf7a48b1d.bindPopup(popup_ba2466b856f0d3007a2e7bc73d702a64)
+        ;
+
+        
+    
+    
+                marker_d4905af69ed35c3479cf8d8cf7a48b1d.setIcon(icon_a721fc24af33d9fe19b9f43c9e9106c0);
+            
+    
+            var marker_e56c2daf75c82c0b82467f0403415ab4 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_f776e7120ac6dd9fa80f612f5a9df5c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0323bd03751a2db3c12ff944e4dc548e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1c1ec0d8abb7edaa89705c1c7a8ef3a4 = $(`<div id="html_1c1ec0d8abb7edaa89705c1c7a8ef3a4" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>MUSKAN</b><br>                     <b>ID:</b> VISH17<br>                     <b>Age:</b> 24.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOW VISION<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_0323bd03751a2db3c12ff944e4dc548e.setContent(html_1c1ec0d8abb7edaa89705c1c7a8ef3a4);
+            
+        
+
+        marker_e56c2daf75c82c0b82467f0403415ab4.bindPopup(popup_0323bd03751a2db3c12ff944e4dc548e)
+        ;
+
+        
+    
+    
+                marker_e56c2daf75c82c0b82467f0403415ab4.setIcon(icon_f776e7120ac6dd9fa80f612f5a9df5c9);
+            
+    
+            var marker_fd6ff60c0a10fce2b0176b7c69109d03 = L.marker(
+                [26.88, 83.64],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_5f76ef6480fd4b777ba2963f6046434b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f4887d5a115e54e92815710cc25a04c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f87c32589de83233c063f6e336c73b75 = $(`<div id="html_f87c32589de83233c063f6e336c73b75" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AARUSHI</b><br>                     <b>ID:</b> MATH3<br>                     <b>Age:</b> 16.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> SPEECH LANGAUGE<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> MATHIYA<br>                     <b>Gram Panchayat:</b> MATHIYA                 </div>                 </div>`)[0];
+                popup_3f4887d5a115e54e92815710cc25a04c.setContent(html_f87c32589de83233c063f6e336c73b75);
+            
+        
+
+        marker_fd6ff60c0a10fce2b0176b7c69109d03.bindPopup(popup_3f4887d5a115e54e92815710cc25a04c)
+        ;
+
+        
+    
+    
+                marker_fd6ff60c0a10fce2b0176b7c69109d03.setIcon(icon_5f76ef6480fd4b777ba2963f6046434b);
+            
+    
+            var marker_0b7b8c4ce5d947c1a6a0751a69462a96 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_19f1e5a9f1117a199d05fe55efe58bb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a78ce95d89211e6ad97ae6a8b8d80cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1a9c653910a4fe9d88a164ea109563e5 = $(`<div id="html_1a9c653910a4fe9d88a164ea109563e5" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ADITYA MAURYA</b><br>                     <b>ID:</b> VISH07<br>                     <b>Age:</b> 9.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_2a78ce95d89211e6ad97ae6a8b8d80cc.setContent(html_1a9c653910a4fe9d88a164ea109563e5);
+            
+        
+
+        marker_0b7b8c4ce5d947c1a6a0751a69462a96.bindPopup(popup_2a78ce95d89211e6ad97ae6a8b8d80cc)
+        ;
+
+        
+    
+    
+                marker_0b7b8c4ce5d947c1a6a0751a69462a96.setIcon(icon_19f1e5a9f1117a199d05fe55efe58bb9);
+            
+    
+            var marker_2d04ad485596d584cc8b7f5495f7b12d = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_7ef927a2a7281dcd2d6c2ecc247eda43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe1fa53fb1901689ba45886b9ae69970 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5bf2abbedf6d0dbf6c3ad5642d90b82d = $(`<div id="html_5bf2abbedf6d0dbf6c3ad5642d90b82d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SIKHA</b><br>                     <b>ID:</b> MITH3<br>                     <b>Age:</b> 16.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_fe1fa53fb1901689ba45886b9ae69970.setContent(html_5bf2abbedf6d0dbf6c3ad5642d90b82d);
+            
+        
+
+        marker_2d04ad485596d584cc8b7f5495f7b12d.bindPopup(popup_fe1fa53fb1901689ba45886b9ae69970)
+        ;
+
+        
+    
+    
+                marker_2d04ad485596d584cc8b7f5495f7b12d.setIcon(icon_7ef927a2a7281dcd2d6c2ecc247eda43);
+            
+    
+            var marker_a3af2901742cb2a61e731c9778a6f3dc = L.marker(
+                [26.92, 84.45],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_68c4e7f69369faa260b7491c702db1f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_504f21e37c7c08a217648dc33160a059 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b6e3292c59ae6f77014c91056b80369e = $(`<div id="html_b6e3292c59ae6f77014c91056b80369e" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SIKHA YADAV</b><br>                     <b>ID:</b> SING8<br>                     <b>Age:</b> 12.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY(DOWN SYNDROME)<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> SINGHPUR<br>                     <b>Gram Panchayat:</b> SINGHPUR                 </div>                 </div>`)[0];
+                popup_504f21e37c7c08a217648dc33160a059.setContent(html_b6e3292c59ae6f77014c91056b80369e);
+            
+        
+
+        marker_a3af2901742cb2a61e731c9778a6f3dc.bindPopup(popup_504f21e37c7c08a217648dc33160a059)
+        ;
+
+        
+    
+    
+                marker_a3af2901742cb2a61e731c9778a6f3dc.setIcon(icon_68c4e7f69369faa260b7491c702db1f6);
+            
+    
+            var marker_66e08ea044c47614ca125bad832f2e5f = L.marker(
+                [26.95, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_6758a420b91223b3a2848601eed3f618 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cf3b04022aa2a9c29cd0378aa0bc784 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_da194ec2be4dc26830a0160bb80d5c0d = $(`<div id="html_da194ec2be4dc26830a0160bb80d5c0d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ARPIT</b><br>                     <b>ID:</b> JR-02-22<br>                     <b>Age:</b> 4.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LD, SPEECH<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> JR02<br>                     <b>Gram Panchayat:</b> JR02                 </div>                 </div>`)[0];
+                popup_9cf3b04022aa2a9c29cd0378aa0bc784.setContent(html_da194ec2be4dc26830a0160bb80d5c0d);
+            
+        
+
+        marker_66e08ea044c47614ca125bad832f2e5f.bindPopup(popup_9cf3b04022aa2a9c29cd0378aa0bc784)
+        ;
+
+        
+    
+    
+                marker_66e08ea044c47614ca125bad832f2e5f.setIcon(icon_6758a420b91223b3a2848601eed3f618);
+            
+    
+            var marker_98650d1b7daec163235e2da40c48dc94 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_7c802bb9edf4a5667f4d2f5f55c9b03c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0178012f2d2594e5cde0670203d4ec15 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_16c3057f14ecea1ac388a56f2735249d = $(`<div id="html_16c3057f14ecea1ac388a56f2735249d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KRISHAN</b><br>                     <b>ID:</b> BRAH16<br>                     <b>Age:</b> 11.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_0178012f2d2594e5cde0670203d4ec15.setContent(html_16c3057f14ecea1ac388a56f2735249d);
+            
+        
+
+        marker_98650d1b7daec163235e2da40c48dc94.bindPopup(popup_0178012f2d2594e5cde0670203d4ec15)
+        ;
+
+        
+    
+    
+                marker_98650d1b7daec163235e2da40c48dc94.setIcon(icon_7c802bb9edf4a5667f4d2f5f55c9b03c);
+            
+    
+            var marker_4be0f175d34264d5b8475b389f8e8ea7 = L.marker(
+                [26.92, 84.45],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_0cc43b309e09e1b24d5c510fde610cfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d84f609dc3809d789a17046dd480311a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d190beaf50b3bf790e19b126e1b97f25 = $(`<div id="html_d190beaf50b3bf790e19b126e1b97f25" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>PAWAN</b><br>                     <b>ID:</b> SING3<br>                     <b>Age:</b> 8.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> SINGHPUR<br>                     <b>Gram Panchayat:</b> SINGHPUR                 </div>                 </div>`)[0];
+                popup_d84f609dc3809d789a17046dd480311a.setContent(html_d190beaf50b3bf790e19b126e1b97f25);
+            
+        
+
+        marker_4be0f175d34264d5b8475b389f8e8ea7.bindPopup(popup_d84f609dc3809d789a17046dd480311a)
+        ;
+
+        
+    
+    
+                marker_4be0f175d34264d5b8475b389f8e8ea7.setIcon(icon_0cc43b309e09e1b24d5c510fde610cfd);
+            
+    
+            var marker_0ad2a8062803e5390c99e9af4db7b579 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_a4924be303512610b55975296a385644 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68dc58bfa577c363241d0fcbb16e1bc3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d240b46e27327f655a56ba282b14380e = $(`<div id="html_d240b46e27327f655a56ba282b14380e" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANKITA</b><br>                     <b>ID:</b> PARS2<br>                     <b>Age:</b> 12.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_68dc58bfa577c363241d0fcbb16e1bc3.setContent(html_d240b46e27327f655a56ba282b14380e);
+            
+        
+
+        marker_0ad2a8062803e5390c99e9af4db7b579.bindPopup(popup_68dc58bfa577c363241d0fcbb16e1bc3)
+        ;
+
+        
+    
+    
+                marker_0ad2a8062803e5390c99e9af4db7b579.setIcon(icon_a4924be303512610b55975296a385644);
+            
+    
+            var marker_34d47de8ed3227a3ad56656e7258196a = L.marker(
+                [26.85, 84.3],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_c36d0b5a58d735e99b38d4f213e30428 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0eba7f6bdc9d1ac1a48d7bda399272b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e89cfb6f5561ccbb68ef9a2aea9b32c4 = $(`<div id="html_e89cfb6f5561ccbb68ef9a2aea9b32c4" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ASHWANI KUMAR</b><br>                     <b>ID:</b> NADU2<br>                     <b>Age:</b> 15.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> NADUA GYANPUR<br>                     <b>Gram Panchayat:</b> NADUA GYANPUR                 </div>                 </div>`)[0];
+                popup_d0eba7f6bdc9d1ac1a48d7bda399272b.setContent(html_e89cfb6f5561ccbb68ef9a2aea9b32c4);
+            
+        
+
+        marker_34d47de8ed3227a3ad56656e7258196a.bindPopup(popup_d0eba7f6bdc9d1ac1a48d7bda399272b)
+        ;
+
+        
+    
+    
+                marker_34d47de8ed3227a3ad56656e7258196a.setIcon(icon_c36d0b5a58d735e99b38d4f213e30428);
+            
+    
+            var marker_db76179147660ff2ec6010e2f40d44a6 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_c356074f12cfd6c35e8cfffde37a05d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c11a06fe1ad270f121e755209bada7f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_29d869d85b81ad9bcdaa3c63b269c5bf = $(`<div id="html_29d869d85b81ad9bcdaa3c63b269c5bf" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ABHISHEK</b><br>                     <b>ID:</b> BRAH3<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_6c11a06fe1ad270f121e755209bada7f.setContent(html_29d869d85b81ad9bcdaa3c63b269c5bf);
+            
+        
+
+        marker_db76179147660ff2ec6010e2f40d44a6.bindPopup(popup_6c11a06fe1ad270f121e755209bada7f)
+        ;
+
+        
+    
+    
+                marker_db76179147660ff2ec6010e2f40d44a6.setIcon(icon_c356074f12cfd6c35e8cfffde37a05d6);
+            
+    
+            var marker_03e0589896e0ea442a65ff55d93194cd = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_8e3771d3363517f211dd5062b5934083 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e219f2937fb3c1096bec01f5a3d5021 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cba1c309361e0fb6d6803b0e3edd4a94 = $(`<div id="html_cba1c309361e0fb6d6803b0e3edd4a94" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ASHUTOSH</b><br>                     <b>ID:</b> BRAH13<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> SPEECH AND LANGUAGE DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_2e219f2937fb3c1096bec01f5a3d5021.setContent(html_cba1c309361e0fb6d6803b0e3edd4a94);
+            
+        
+
+        marker_03e0589896e0ea442a65ff55d93194cd.bindPopup(popup_2e219f2937fb3c1096bec01f5a3d5021)
+        ;
+
+        
+    
+    
+                marker_03e0589896e0ea442a65ff55d93194cd.setIcon(icon_8e3771d3363517f211dd5062b5934083);
+            
+    
+            var marker_cfd7bd36b2195b10ad2d57c0343e03fa = L.marker(
+                [26.72, 84.28],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_972b310b2a81e9c65b83d3c236d0efbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8382e60ea9b6bc222eec0f2049a4ab18 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b3e98a7ab5e508f61aa8dce35d927947 = $(`<div id="html_b3e98a7ab5e508f61aa8dce35d927947" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>LALU PATEL</b><br>                     <b>ID:</b> BAIJ4<br>                     <b>Age:</b> nan<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> BAIJUDIHA<br>                     <b>Gram Panchayat:</b> BAIJUDIHA                 </div>                 </div>`)[0];
+                popup_8382e60ea9b6bc222eec0f2049a4ab18.setContent(html_b3e98a7ab5e508f61aa8dce35d927947);
+            
+        
+
+        marker_cfd7bd36b2195b10ad2d57c0343e03fa.bindPopup(popup_8382e60ea9b6bc222eec0f2049a4ab18)
+        ;
+
+        
+    
+    
+                marker_cfd7bd36b2195b10ad2d57c0343e03fa.setIcon(icon_972b310b2a81e9c65b83d3c236d0efbe);
+            
+    
+            var marker_1a665cedc15bdcca4fe87063ee223117 = L.marker(
+                [26.72, 84.28],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_9f0eb5b94b0cfea411fa50196b383d27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fe61334f2d5120dea36749623fc98fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_22021469a82abcb9da57027564bd825f = $(`<div id="html_22021469a82abcb9da57027564bd825f" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>KULDEEP YADAV</b><br>                     <b>ID:</b> BAIJ6<br>                     <b>Age:</b> nan<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> BAIJUDIHA<br>                     <b>Gram Panchayat:</b> BAIJUDIHA                 </div>                 </div>`)[0];
+                popup_7fe61334f2d5120dea36749623fc98fc.setContent(html_22021469a82abcb9da57027564bd825f);
+            
+        
+
+        marker_1a665cedc15bdcca4fe87063ee223117.bindPopup(popup_7fe61334f2d5120dea36749623fc98fc)
+        ;
+
+        
+    
+    
+                marker_1a665cedc15bdcca4fe87063ee223117.setIcon(icon_9f0eb5b94b0cfea411fa50196b383d27);
+            
+    
+            var marker_ccc2f8d6987f10460b1e88a76a28a3bd = L.marker(
+                [26.72, 84.28],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_58800d5f6483978fad7296945692c9fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdd6ed8e48a5e71bb3ce80e6f6cc67fb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_95c0991d15274941346f2493a84a28e7 = $(`<div id="html_95c0991d15274941346f2493a84a28e7" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RIYA SINGH </b><br>                     <b>ID:</b> BAIJ2<br>                     <b>Age:</b> nan<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> BAIJUDIHA<br>                     <b>Gram Panchayat:</b> BAIJUDIHA                 </div>                 </div>`)[0];
+                popup_bdd6ed8e48a5e71bb3ce80e6f6cc67fb.setContent(html_95c0991d15274941346f2493a84a28e7);
+            
+        
+
+        marker_ccc2f8d6987f10460b1e88a76a28a3bd.bindPopup(popup_bdd6ed8e48a5e71bb3ce80e6f6cc67fb)
+        ;
+
+        
+    
+    
+                marker_ccc2f8d6987f10460b1e88a76a28a3bd.setIcon(icon_58800d5f6483978fad7296945692c9fb);
+            
+    
+            var marker_a34b216dc202d2895ae2cf96d6fd8f93 = L.marker(
+                [26.95, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_555b103650aa5af1b51be522ed0cacbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b82f7828143f2c32395fd72cf547f66 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aa1f15b0d017eafca9dbaa021a57027c = $(`<div id="html_aa1f15b0d017eafca9dbaa021a57027c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RAJ</b><br>                     <b>ID:</b> HARA6<br>                     <b>Age:</b> 12.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTOR DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> HARAIYA<br>                     <b>Gram Panchayat:</b> HARIYA                 </div>                 </div>`)[0];
+                popup_1b82f7828143f2c32395fd72cf547f66.setContent(html_aa1f15b0d017eafca9dbaa021a57027c);
+            
+        
+
+        marker_a34b216dc202d2895ae2cf96d6fd8f93.bindPopup(popup_1b82f7828143f2c32395fd72cf547f66)
+        ;
+
+        
+    
+    
+                marker_a34b216dc202d2895ae2cf96d6fd8f93.setIcon(icon_555b103650aa5af1b51be522ed0cacbc);
+            
+    
+            var marker_5dc4716c823e79b8bbd017c151951274 = L.marker(
+                [26.72, 84.28],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_1786ad274c08ab08642490a97487ec4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33ae1a4e0eba1f5fe1315447bd3e260d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d5e36849efcdf22f036d3015040b0938 = $(`<div id="html_d5e36849efcdf22f036d3015040b0938" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RAJAN</b><br>                     <b>ID:</b> BAIJ5<br>                     <b>Age:</b> nan<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> HI<br>                     <b>Severity:</b> MID<br>                     <b>Village:</b> BAIJUDIHA<br>                     <b>Gram Panchayat:</b> BAIJUDIHA                 </div>                 </div>`)[0];
+                popup_33ae1a4e0eba1f5fe1315447bd3e260d.setContent(html_d5e36849efcdf22f036d3015040b0938);
+            
+        
+
+        marker_5dc4716c823e79b8bbd017c151951274.bindPopup(popup_33ae1a4e0eba1f5fe1315447bd3e260d)
+        ;
+
+        
+    
+    
+                marker_5dc4716c823e79b8bbd017c151951274.setIcon(icon_1786ad274c08ab08642490a97487ec4c);
+            
+    
+            var marker_867479f1a282d5d5dff2c56ea916cce7 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_b916897e9c3121c68a05a8d00904daba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56d882acfd0b12166bcffb99e86ca274 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1815193f7a00ef2099a8ea6391fdb45c = $(`<div id="html_1815193f7a00ef2099a8ea6391fdb45c" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>PRIYANSHU KUMARI</b><br>                     <b>ID:</b> BRAH4<br>                     <b>Age:</b> nan<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTOR DISABILITY<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_56d882acfd0b12166bcffb99e86ca274.setContent(html_1815193f7a00ef2099a8ea6391fdb45c);
+            
+        
+
+        marker_867479f1a282d5d5dff2c56ea916cce7.bindPopup(popup_56d882acfd0b12166bcffb99e86ca274)
+        ;
+
+        
+    
+    
+                marker_867479f1a282d5d5dff2c56ea916cce7.setIcon(icon_b916897e9c3121c68a05a8d00904daba);
+            
+    
+            var marker_b53d5c2cc19194203dac6353db4d5fef = L.marker(
+                [27.5833, 81.8],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_261662bcbb0f1a9a3458b59735e5d82a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0534a43f7002a091b3c334d788a88a65 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_143073ce48e5fdc7ff089933ae32f362 = $(`<div id="html_143073ce48e5fdc7ff089933ae32f362" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RAJ PASWAN</b><br>                     <b>ID:</b> BOHA1<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BAHABAR<br>                     <b>Gram Panchayat:</b> BAHABAR                 </div>                 </div>`)[0];
+                popup_0534a43f7002a091b3c334d788a88a65.setContent(html_143073ce48e5fdc7ff089933ae32f362);
+            
+        
+
+        marker_b53d5c2cc19194203dac6353db4d5fef.bindPopup(popup_0534a43f7002a091b3c334d788a88a65)
+        ;
+
+        
+    
+    
+                marker_b53d5c2cc19194203dac6353db4d5fef.setIcon(icon_261662bcbb0f1a9a3458b59735e5d82a);
+            
+    
+            var marker_4c09da6f27b2aca0a2060d758ecd3954 = L.marker(
+                [27.5833, 81.8],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_0ddc5bd1017f89032a15beffbd5af9e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ede5d3fbb798330b082c8299c2238fdd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bffdfa5b5b292febb3c83cefe1681774 = $(`<div id="html_bffdfa5b5b292febb3c83cefe1681774" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>PINKI SAHANI</b><br>                     <b>ID:</b> BOHA7<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> LOCOMOTER DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BAHABAR<br>                     <b>Gram Panchayat:</b> BAHABAR                 </div>                 </div>`)[0];
+                popup_ede5d3fbb798330b082c8299c2238fdd.setContent(html_bffdfa5b5b292febb3c83cefe1681774);
+            
+        
+
+        marker_4c09da6f27b2aca0a2060d758ecd3954.bindPopup(popup_ede5d3fbb798330b082c8299c2238fdd)
+        ;
+
+        
+    
+    
+                marker_4c09da6f27b2aca0a2060d758ecd3954.setIcon(icon_0ddc5bd1017f89032a15beffbd5af9e0);
+            
+    
+            var marker_eec8942db1a220a70c05c9be51d0febe = L.marker(
+                [26.72, 84.28],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_c1c28fc4e042cab5379bc58dd5570054 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8979e903795afcf470774b0477bf256 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_088d355a5c1e8ede61d2428f0f857eef = $(`<div id="html_088d355a5c1e8ede61d2428f0f857eef" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SHUDHANSHU</b><br>                     <b>ID:</b> BAIJ1<br>                     <b>Age:</b> nan<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> SPEECH<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BAIJUDIHA<br>                     <b>Gram Panchayat:</b> BISHAPUR                 </div>                 </div>`)[0];
+                popup_b8979e903795afcf470774b0477bf256.setContent(html_088d355a5c1e8ede61d2428f0f857eef);
+            
+        
+
+        marker_eec8942db1a220a70c05c9be51d0febe.bindPopup(popup_b8979e903795afcf470774b0477bf256)
+        ;
+
+        
+    
+    
+                marker_eec8942db1a220a70c05c9be51d0febe.setIcon(icon_c1c28fc4e042cab5379bc58dd5570054);
+            
+    
+            var marker_6bf484d933c3c9ca1e71f6c8624d2333 = L.marker(
+                [26.72, 84.28],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_74b5ff115c015eec954a9398a9de8126 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3aef27673af990608702f6b425149fe7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c7d9410691a505134b09752fb6e314d = $(`<div id="html_3c7d9410691a505134b09752fb6e314d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ARUN</b><br>                     <b>ID:</b> BAIJ7<br>                     <b>Age:</b> nan<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MUSCULAR DISTROPHY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BAIJUDIHA<br>                     <b>Gram Panchayat:</b> BAIJUDIHA                 </div>                 </div>`)[0];
+                popup_3aef27673af990608702f6b425149fe7.setContent(html_3c7d9410691a505134b09752fb6e314d);
+            
+        
+
+        marker_6bf484d933c3c9ca1e71f6c8624d2333.bindPopup(popup_3aef27673af990608702f6b425149fe7)
+        ;
+
+        
+    
+    
+                marker_6bf484d933c3c9ca1e71f6c8624d2333.setIcon(icon_74b5ff115c015eec954a9398a9de8126);
+            
+    
+            var marker_3c18d7370f97ef6c4dfa13922a3d65a6 = L.marker(
+                [26.75, 84.4],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_875603e35fcd28a9ea32bb2809298069 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_459b5e92d7024d3487e37ebe71d94665 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cb39b6e3daaa0e6141fc8e8bdaa1deed = $(`<div id="html_cb39b6e3daaa0e6141fc8e8bdaa1deed" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>NITISH YADAV</b><br>                     <b>ID:</b> BOHA10<br>                     <b>Age:</b> 17.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LOCOMOTOR DISABILITY<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> KHURHRI<br>                     <b>Gram Panchayat:</b> BAHABAR                 </div>                 </div>`)[0];
+                popup_459b5e92d7024d3487e37ebe71d94665.setContent(html_cb39b6e3daaa0e6141fc8e8bdaa1deed);
+            
+        
+
+        marker_3c18d7370f97ef6c4dfa13922a3d65a6.bindPopup(popup_459b5e92d7024d3487e37ebe71d94665)
+        ;
+
+        
+    
+    
+                marker_3c18d7370f97ef6c4dfa13922a3d65a6.setIcon(icon_875603e35fcd28a9ea32bb2809298069);
+            
+    
+            var marker_edc6eec300670620f4819836ec427628 = L.marker(
+                [26.95, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_8da92fc3694b9bda2c926925ba96cb79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_160b7fe82930234858b927cd3042e636 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a60da122683ffcda7ba2312804b104e = $(`<div id="html_2a60da122683ffcda7ba2312804b104e" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ARJUN KUMAR</b><br>                     <b>ID:</b> HARA1<br>                     <b>Age:</b> 11.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> CEREBRAL PALSY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> HARAIYA TOLA<br>                     <b>Gram Panchayat:</b> HARAIYA                 </div>                 </div>`)[0];
+                popup_160b7fe82930234858b927cd3042e636.setContent(html_2a60da122683ffcda7ba2312804b104e);
+            
+        
+
+        marker_edc6eec300670620f4819836ec427628.bindPopup(popup_160b7fe82930234858b927cd3042e636)
+        ;
+
+        
+    
+    
+                marker_edc6eec300670620f4819836ec427628.setIcon(icon_8da92fc3694b9bda2c926925ba96cb79);
+            
+    
+            var marker_57f66c27fbe481f2078e46f2d32ebe1e = L.marker(
+                [26.95, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_b0cca4bb263cb7e3f1267e53d255efed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d936d5b2590ffbc988d42d7438d812b4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_880ac99ac7e08191700b0a8461e4b125 = $(`<div id="html_880ac99ac7e08191700b0a8461e4b125" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SIDDHI</b><br>                     <b>ID:</b> HARA7<br>                     <b>Age:</b> 4.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> TOTAL BLINDNESS<br>                     <b>Severity:</b> PROFIUND<br>                     <b>Village:</b> HARAIYA TOLA<br>                     <b>Gram Panchayat:</b> HARAIYA                 </div>                 </div>`)[0];
+                popup_d936d5b2590ffbc988d42d7438d812b4.setContent(html_880ac99ac7e08191700b0a8461e4b125);
+            
+        
+
+        marker_57f66c27fbe481f2078e46f2d32ebe1e.bindPopup(popup_d936d5b2590ffbc988d42d7438d812b4)
+        ;
+
+        
+    
+    
+                marker_57f66c27fbe481f2078e46f2d32ebe1e.setIcon(icon_b0cca4bb263cb7e3f1267e53d255efed);
+            
+    
+            var marker_480b0baa997d734411cc300a05721c68 = L.marker(
+                [26.95, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_2de76c1dd8a2613d9d095685a730ad83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ba1eef0fad28fab7201d76faaec6b02 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_819e8840448a9bace3131f2e90a337eb = $(`<div id="html_819e8840448a9bace3131f2e90a337eb" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>NIKITA</b><br>                     <b>ID:</b> HARA3<br>                     <b>Age:</b> 12.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> CEREBRAL PALSY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> HARAIYA TOLA<br>                     <b>Gram Panchayat:</b> HARAIYA                  </div>                 </div>`)[0];
+                popup_3ba1eef0fad28fab7201d76faaec6b02.setContent(html_819e8840448a9bace3131f2e90a337eb);
+            
+        
+
+        marker_480b0baa997d734411cc300a05721c68.bindPopup(popup_3ba1eef0fad28fab7201d76faaec6b02)
+        ;
+
+        
+    
+    
+                marker_480b0baa997d734411cc300a05721c68.setIcon(icon_2de76c1dd8a2613d9d095685a730ad83);
+            
+    
+            var marker_0ab447edb82186a6f1004cf64be158ff = L.marker(
+                [26.95, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_e4204b85c81bf35413650db1d8779604 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64975109c92cefae0c40a2bb0b09c0bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_be8d358c1a593a1d78ffd1e778b76520 = $(`<div id="html_be8d358c1a593a1d78ffd1e778b76520" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SATYAM</b><br>                     <b>ID:</b> HARA2<br>                     <b>Age:</b> 6.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> HARAIYA TOLA<br>                     <b>Gram Panchayat:</b> HARAIYA                 </div>                 </div>`)[0];
+                popup_64975109c92cefae0c40a2bb0b09c0bf.setContent(html_be8d358c1a593a1d78ffd1e778b76520);
+            
+        
+
+        marker_0ab447edb82186a6f1004cf64be158ff.bindPopup(popup_64975109c92cefae0c40a2bb0b09c0bf)
+        ;
+
+        
+    
+    
+                marker_0ab447edb82186a6f1004cf64be158ff.setIcon(icon_e4204b85c81bf35413650db1d8779604);
+            
+    
+            var marker_9128f76168566f47fd703e551d629258 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_2063a1467aa052cfacdad86d8f8d058d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_003c682f41b88703398eb3bde49d61ef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d5e56d76922ba49796bc8bb9907c447 = $(`<div id="html_7d5e56d76922ba49796bc8bb9907c447" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ADITYA</b><br>                     <b>ID:</b> BRAH7<br>                     <b>Age:</b> 14.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_003c682f41b88703398eb3bde49d61ef.setContent(html_7d5e56d76922ba49796bc8bb9907c447);
+            
+        
+
+        marker_9128f76168566f47fd703e551d629258.bindPopup(popup_003c682f41b88703398eb3bde49d61ef)
+        ;
+
+        
+    
+    
+                marker_9128f76168566f47fd703e551d629258.setIcon(icon_2063a1467aa052cfacdad86d8f8d058d);
+            
+    
+            var marker_fd6f3ed29f8b545c8bd7ed20be4db5c8 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_33f53fecc184ffa2ea288e751b2de861 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9e2714ee2d126241e5bfe9bbeeb9964 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce4930d5c0f82c51827c31f22bc945ac = $(`<div id="html_ce4930d5c0f82c51827c31f22bc945ac" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANISHA</b><br>                     <b>ID:</b> BRAH9<br>                     <b>Age:</b> 9.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_c9e2714ee2d126241e5bfe9bbeeb9964.setContent(html_ce4930d5c0f82c51827c31f22bc945ac);
+            
+        
+
+        marker_fd6f3ed29f8b545c8bd7ed20be4db5c8.bindPopup(popup_c9e2714ee2d126241e5bfe9bbeeb9964)
+        ;
+
+        
+    
+    
+                marker_fd6f3ed29f8b545c8bd7ed20be4db5c8.setIcon(icon_33f53fecc184ffa2ea288e751b2de861);
+            
+    
+            var marker_6c3a8a760809d8fdac237370ab517160 = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_941c14620e7ad0d6a830c127dc8c1de7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c58dd4b431a91c15632311aaad1753ec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4835912e133809c957174a9fbd3e155b = $(`<div id="html_4835912e133809c957174a9fbd3e155b" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SHITAL</b><br>                     <b>ID:</b> BRAH6<br>                     <b>Age:</b> 18.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_c58dd4b431a91c15632311aaad1753ec.setContent(html_4835912e133809c957174a9fbd3e155b);
+            
+        
+
+        marker_6c3a8a760809d8fdac237370ab517160.bindPopup(popup_c58dd4b431a91c15632311aaad1753ec)
+        ;
+
+        
+    
+    
+                marker_6c3a8a760809d8fdac237370ab517160.setIcon(icon_941c14620e7ad0d6a830c127dc8c1de7);
+            
+    
+            var marker_a865a8f089b31934fef8d096ef28219c = L.marker(
+                [27.58, 81.81],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_367f557c2fb78ad67bc0ca930c309393 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28ee8919fb7407ad7401d118e8a2bc63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_654704235eba1ac9064e2410d7e14ada = $(`<div id="html_654704235eba1ac9064e2410d7e14ada" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANSHU NISHAD</b><br>                     <b>ID:</b> BRAH15<br>                     <b>Age:</b> 16.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> HI<br>                     <b>Severity:</b> MILD<br>                     <b>Village:</b> BRAHMPUR<br>                     <b>Gram Panchayat:</b> BRAHMPUR                 </div>                 </div>`)[0];
+                popup_28ee8919fb7407ad7401d118e8a2bc63.setContent(html_654704235eba1ac9064e2410d7e14ada);
+            
+        
+
+        marker_a865a8f089b31934fef8d096ef28219c.bindPopup(popup_28ee8919fb7407ad7401d118e8a2bc63)
+        ;
+
+        
+    
+    
+                marker_a865a8f089b31934fef8d096ef28219c.setIcon(icon_367f557c2fb78ad67bc0ca930c309393);
+            
+    
+            var marker_a26e5c4bdd9f247df348b77b17810c4a = L.marker(
+                [26.95, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_24a405fd146fc25094168e9c3e484c3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c630dd33b17eab3a1fc4f4024e8f2a62 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7695a347f970c7c325a12b17b9ec3b59 = $(`<div id="html_7695a347f970c7c325a12b17b9ec3b59" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RISHI KUMAR</b><br>                     <b>ID:</b> JR02-21<br>                     <b>Age:</b> 9.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> (LD + IDD) MD<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> JR02<br>                     <b>Gram Panchayat:</b> JR02                 </div>                 </div>`)[0];
+                popup_c630dd33b17eab3a1fc4f4024e8f2a62.setContent(html_7695a347f970c7c325a12b17b9ec3b59);
+            
+        
+
+        marker_a26e5c4bdd9f247df348b77b17810c4a.bindPopup(popup_c630dd33b17eab3a1fc4f4024e8f2a62)
+        ;
+
+        
+    
+    
+                marker_a26e5c4bdd9f247df348b77b17810c4a.setIcon(icon_24a405fd146fc25094168e9c3e484c3e);
+            
+    
+            var marker_c9063d282265cc117aa7a3d088cebf38 = L.marker(
+                [26.88, 84.38],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_2bb48b60c0430d9d4e24979c6a040fb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e53bc4f54a256055782a44c25a70eb9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_714246b3cae4b40eed6d4d31c519561d = $(`<div id="html_714246b3cae4b40eed6d4d31c519561d" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>SATYAM</b><br>                     <b>ID:</b> JR02-3<br>                     <b>Age:</b> 10.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> (PHYSICAL,SPEECH + IDD) MD<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> RASULPUR 2<br>                     <b>Gram Panchayat:</b> RASULPUR2                 </div>                 </div>`)[0];
+                popup_e53bc4f54a256055782a44c25a70eb9a.setContent(html_714246b3cae4b40eed6d4d31c519561d);
+            
+        
+
+        marker_c9063d282265cc117aa7a3d088cebf38.bindPopup(popup_e53bc4f54a256055782a44c25a70eb9a)
+        ;
+
+        
+    
+    
+                marker_c9063d282265cc117aa7a3d088cebf38.setIcon(icon_2bb48b60c0430d9d4e24979c6a040fb1);
+            
+    
+            var marker_e13b76399a7336ff2ec24c41d3ecd297 = L.marker(
+                [26.95, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_867d50d82ab65549ec96d9d1826be0ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9669d841d6ffef27cdd67552269ce2f7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_56758dcc89d9cdc94b607550790dd8ca = $(`<div id="html_56758dcc89d9cdc94b607550790dd8ca" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>AMAN</b><br>                     <b>ID:</b> JR02-13<br>                     <b>Age:</b> 7.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MD<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> JR02<br>                     <b>Gram Panchayat:</b> JR02                 </div>                 </div>`)[0];
+                popup_9669d841d6ffef27cdd67552269ce2f7.setContent(html_56758dcc89d9cdc94b607550790dd8ca);
+            
+        
+
+        marker_e13b76399a7336ff2ec24c41d3ecd297.bindPopup(popup_9669d841d6ffef27cdd67552269ce2f7)
+        ;
+
+        
+    
+    
+                marker_e13b76399a7336ff2ec24c41d3ecd297.setIcon(icon_867d50d82ab65549ec96d9d1826be0ea);
+            
+    
+            var marker_fae0e84ffe94e3cd816285138b7e67d1 = L.marker(
+                [26.95, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_f2d452ac62042901e818ba9229acc907 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed9ed497b3318fa6ca77a232a1d11c87 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48a21d5eece542e5646cbbcc26b0f16a = $(`<div id="html_48a21d5eece542e5646cbbcc26b0f16a" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>NITISH CHAND</b><br>                     <b>ID:</b> JR02-14<br>                     <b>Age:</b> 9.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> LD + IDD (MD)<br>                     <b>Severity:</b> MODERATE<br>                     <b>Village:</b> JR02<br>                     <b>Gram Panchayat:</b> JR2                 </div>                 </div>`)[0];
+                popup_ed9ed497b3318fa6ca77a232a1d11c87.setContent(html_48a21d5eece542e5646cbbcc26b0f16a);
+            
+        
+
+        marker_fae0e84ffe94e3cd816285138b7e67d1.bindPopup(popup_ed9ed497b3318fa6ca77a232a1d11c87)
+        ;
+
+        
+    
+    
+                marker_fae0e84ffe94e3cd816285138b7e67d1.setIcon(icon_f2d452ac62042901e818ba9229acc907);
+            
+    
+            var marker_0b3b2c4f0e359305f8b014b34c3696a8 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_d9798d92b5458843805d87ac295bea4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cef4136ac29d26ba6d2b25c0103c17b5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74c90d7700505e129440b89234f89b73 = $(`<div id="html_74c90d7700505e129440b89234f89b73" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ARYAN</b><br>                     <b>ID:</b> PARS5<br>                     <b>Age:</b> 5.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_cef4136ac29d26ba6d2b25c0103c17b5.setContent(html_74c90d7700505e129440b89234f89b73);
+            
+        
+
+        marker_0b3b2c4f0e359305f8b014b34c3696a8.bindPopup(popup_cef4136ac29d26ba6d2b25c0103c17b5)
+        ;
+
+        
+    
+    
+                marker_0b3b2c4f0e359305f8b014b34c3696a8.setIcon(icon_d9798d92b5458843805d87ac295bea4c);
+            
+    
+            var marker_37d8633bc79843d553455c7f62522a65 = L.marker(
+                [26.68, 83.03],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_000fa760ba02a9575c9ee966c7eac3ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1aa7979aecd6d242b42cb8f11f21391c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_32c805ef6e04ed93b9a4f4b738029107 = $(`<div id="html_32c805ef6e04ed93b9a4f4b738029107" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>RAJ</b><br>                     <b>ID:</b> VISH8<br>                     <b>Age:</b> 9.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> VISHWANATHPUR<br>                     <b>Gram Panchayat:</b> VISHWANATHPUR                 </div>                 </div>`)[0];
+                popup_1aa7979aecd6d242b42cb8f11f21391c.setContent(html_32c805ef6e04ed93b9a4f4b738029107);
+            
+        
+
+        marker_37d8633bc79843d553455c7f62522a65.bindPopup(popup_1aa7979aecd6d242b42cb8f11f21391c)
+        ;
+
+        
+    
+    
+                marker_37d8633bc79843d553455c7f62522a65.setIcon(icon_000fa760ba02a9575c9ee966c7eac3ca);
+            
+    
+            var marker_e4eec32f9dd4dc0909196407b6018922 = L.marker(
+                [26.78, 84.35],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_1e8748d578c3c10e458c7a68d3e7e38c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3d34fbe54e09eb897f7d14d08518d29 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_98784eb79bdcdeeb40b67829467cff75 = $(`<div id="html_98784eb79bdcdeeb40b67829467cff75" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>DIMPLE</b><br>                     <b>ID:</b> MTH10<br>                     <b>Age:</b> 7.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> MULTIPLE DISABILITY<br>                     <b>Severity:</b> PROFOUND<br>                     <b>Village:</b> MITHABEL<br>                     <b>Gram Panchayat:</b> MITHABEL                 </div>                 </div>`)[0];
+                popup_d3d34fbe54e09eb897f7d14d08518d29.setContent(html_98784eb79bdcdeeb40b67829467cff75);
+            
+        
+
+        marker_e4eec32f9dd4dc0909196407b6018922.bindPopup(popup_d3d34fbe54e09eb897f7d14d08518d29)
+        ;
+
+        
+    
+    
+                marker_e4eec32f9dd4dc0909196407b6018922.setIcon(icon_1e8748d578c3c10e458c7a68d3e7e38c);
+            
+    
+            var marker_018b13a01d06c6f2542c6d9d49f113b6 = L.marker(
+                [26.75, 84.5],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_543cfc14e9a052a2cd0c023c98c16e6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_729da3f6238a2c285b371248816fc466 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_90b264709e0ac7127bd0598fb5bafe4b = $(`<div id="html_90b264709e0ac7127bd0598fb5bafe4b" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>JAGRITI KUMARI</b><br>                     <b>ID:</b> PARS11<br>                     <b>Age:</b> 16.0<br>                     <b>Gender:</b> FEMALE<br>                     <b>Disability:</b> HI<br>                     <b>Severity:</b> UNKNOWN<br>                     <b>Village:</b> PARSAUNI<br>                     <b>Gram Panchayat:</b> PARSAUNI                 </div>                 </div>`)[0];
+                popup_729da3f6238a2c285b371248816fc466.setContent(html_90b264709e0ac7127bd0598fb5bafe4b);
+            
+        
+
+        marker_018b13a01d06c6f2542c6d9d49f113b6.bindPopup(popup_729da3f6238a2c285b371248816fc466)
+        ;
+
+        
+    
+    
+                marker_018b13a01d06c6f2542c6d9d49f113b6.setIcon(icon_543cfc14e9a052a2cd0c023c98c16e6e);
+            
+    
+            var marker_00d927b4d4bb2392dd5a4af375490583 = L.marker(
+                [27.5667, 81.8167],
+                {
+}
+            ).addTo(marker_cluster_0151758f955d1286bc6bfc482b39529b);
+        
+    
+            var icon_8121ab20037f90bbfde71e2a64f4c061 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f024efd91b8a7baca0711cbf88bb148b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b1195666a9dcb66b5b0e5b523671ef1 = $(`<div id="html_3b1195666a9dcb66b5b0e5b523671ef1" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <b>ANSH  </b><br>                     <b>ID:</b> HARA5<br>                     <b>Age:</b> 6.0<br>                     <b>Gender:</b> MALE<br>                     <b>Disability:</b> INTELLECTUAL DISABILITY<br>                     <b>Severity:</b> SEVERE<br>                     <b>Village:</b> HARIYA<br>                     <b>Gram Panchayat:</b> HARAIYA                  </div>                 </div>`)[0];
+                popup_f024efd91b8a7baca0711cbf88bb148b.setContent(html_3b1195666a9dcb66b5b0e5b523671ef1);
+            
+        
+
+        marker_00d927b4d4bb2392dd5a4af375490583.bindPopup(popup_f024efd91b8a7baca0711cbf88bb148b)
+        ;
+
+        
+    
+    
+                marker_00d927b4d4bb2392dd5a4af375490583.setIcon(icon_8121ab20037f90bbfde71e2a64f4c061);
+            
+    
+            marker_cluster_0151758f955d1286bc6bfc482b39529b.addTo(map_4dcaef672868a73a33f8df8c6f85e098);
+        
+    
+            var layer_control_996a083087fb88ddf2e338e33263b6a8_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_659703cf5a29c0e240ef13b14b2cabfe,
+                },
+                overlays :  {
+                    "Beneficiaries" : marker_cluster_0151758f955d1286bc6bfc482b39529b,
+                },
+            };
+            let layer_control_996a083087fb88ddf2e338e33263b6a8 = L.control.layers(
+                layer_control_996a083087fb88ddf2e338e33263b6a8_layers.base_layers,
+                layer_control_996a083087fb88ddf2e338e33263b6a8_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_4dcaef672868a73a33f8df8c6f85e098);
+
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_4dcaef672868a73a33f8df8c6f85e098);
+        
+</script>
+</html>

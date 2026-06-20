@@ -1,0 +1,2119 @@
+{
+  "village_clusters": {
+    "HARIYAR": [
+      {
+        "unique_id": "HARA8",
+        "child_name": "AMAN KUMAR",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARA9",
+        "child_name": "ANNU",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "BAHABAR": [
+      {
+        "unique_id": "BOHA9",
+        "child_name": "VIKRAM YADAV",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "BOHA2",
+        "child_name": "VINITA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BOHA1",
+        "child_name": "RAJ PASWAN",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "BOHA7",
+        "child_name": "PINKI SAHANI",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "nan",
+        "child_name": "RITIK",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BOHA6",
+        "child_name": "AYUSH SAHANI",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "PANCHDEORI": [
+      {
+        "unique_id": "PACH7",
+        "child_name": "VISHAL KUMAR",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PACH5",
+        "child_name": "RAMNAYAN",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PACH6",
+        "child_name": "ANUGRAH PRATAP NISHAD",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PACH2",
+        "child_name": "SANJHANA",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PACH1",
+        "child_name": "GARIMA",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PACH4",
+        "child_name": "SHIKHA SHARMA",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PACH8",
+        "child_name": "AMIT YADAV",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PACH9",
+        "child_name": "SHIVANI",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PACH3",
+        "child_name": "KHUSHABOO",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "MITHABEL": [
+      {
+        "unique_id": "MITH5",
+        "child_name": "ANSH KUMAR SHARMA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "MITH11",
+        "child_name": "ROHAN",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MITH15",
+        "child_name": "YUG",
+        "priority": "HIGH",
+        "severity": "MILD",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "MITH4",
+        "child_name": "DUGAWATI",
+        "priority": "HIGH",
+        "severity": "PROFOUND",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "MITH12",
+        "child_name": "SUNNY",
+        "priority": "HIGH",
+        "severity": "PROFOUND",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "MITH14",
+        "child_name": "SANDHYA",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MITH7",
+        "child_name": "YURAJ",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MITH13",
+        "child_name": "YASHRAJ DUBEY",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MITH8",
+        "child_name": "KAINA KUMARI",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MITH9",
+        "child_name": "KAJAL KUMARI",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MITH6",
+        "child_name": "SALONI",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MITH3",
+        "child_name": "SIKHA",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MTH10",
+        "child_name": "DIMPLE",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "VISHWANATHPUR": [
+      {
+        "unique_id": "VISH14",
+        "child_name": "KULDEEP",
+        "priority": "HIGH",
+        "severity": "PROFOUND",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "VISH10",
+        "child_name": "TANANNUM",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "VISH5",
+        "child_name": "ADITYA MAURYA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "VISH17",
+        "child_name": "MUSKAN",
+        "priority": "HIGH",
+        "severity": "MILD",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "VISH07",
+        "child_name": "ADITYA MAURYA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "VISH8",
+        "child_name": "RAJ",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "VISH6",
+        "child_name": "KRISHNA GUPTA",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "VISH18",
+        "child_name": "NIKI",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "MATHIYA": [
+      {
+        "unique_id": "MATH1",
+        "child_name": "KRISHNA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MATH3",
+        "child_name": "AARUSHI",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MATH5",
+        "child_name": "RAGINI KUMARI",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MATH2",
+        "child_name": "VISHAL",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "MATH4",
+        "child_name": "SAMAR PASWAN",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "PARSAUNI": [
+      {
+        "unique_id": "PARS14",
+        "child_name": "ANSHIKA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS8",
+        "child_name": "SANJANA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS4",
+        "child_name": "HARDIK",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS10",
+        "child_name": "PIYUSH PRAJAPATI ",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS1",
+        "child_name": "VISHWAJEET",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS6",
+        "child_name": "MAHADEV PAL",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS3",
+        "child_name": "SONI",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS2",
+        "child_name": "ANKITA",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS13",
+        "child_name": "DIPANSHU MAURYA",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS12",
+        "child_name": "PRIYANSH PANDEY",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS15",
+        "child_name": "AARUSHI",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS7",
+        "child_name": "AVANISH MAURYA",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS5",
+        "child_name": "ARYAN",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "PARS11",
+        "child_name": "JAGRITI KUMARI",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "NIBATI": [
+      {
+        "unique_id": "NIBH4",
+        "child_name": "AYANSH",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "PANDAY": [
+      {
+        "unique_id": "BELW3",
+        "child_name": "SHIVANG",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "BELWA": [
+      {
+        "unique_id": "BELW9",
+        "child_name": "ABHIMANYU SINGH",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "BELW8",
+        "child_name": "NAINA",
+        "priority": "HIGH",
+        "severity": "PROFOUND",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "BELW2",
+        "child_name": "VIPESH GUPTA",
+        "priority": "HIGH",
+        "severity": "MODERATE",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "BELW6",
+        "child_name": "KISHAN YADAV",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BELW5",
+        "child_name": "DEEPAK YADAV",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BELW1",
+        "child_name": "AMAN YADAV",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BELW4",
+        "child_name": "RAJ SINGH",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "NIBAHI": [
+      {
+        "unique_id": "NIBH2",
+        "child_name": "KAJAL ",
+        "priority": "HIGH",
+        "severity": "PROFOUND",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "NIBH3",
+        "child_name": "ANAMIKA",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NIBH1",
+        "child_name": "SANOJ",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "NADUA GYANPUR": [
+      {
+        "unique_id": "NADU14",
+        "child_name": "ADITYA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU16",
+        "child_name": "RITIKA YADAV",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU3",
+        "child_name": "SHIVA ",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU2",
+        "child_name": "ASHWANI KUMAR",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU6",
+        "child_name": "CHANCHAL",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU10",
+        "child_name": "ABHINASH NISHAD",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU11",
+        "child_name": "GOLDI KUMARI YADAV ",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU8",
+        "child_name": "HANSH MAURYA",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU15",
+        "child_name": "JYOTI",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU1",
+        "child_name": "ASMITA",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU4",
+        "child_name": "SANTOSHI",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU9",
+        "child_name": "DEEPIKA YADAV",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "NADU12",
+        "child_name": "ANURAG",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "SINGHPUR": [
+      {
+        "unique_id": "SING",
+        "child_name": "ANGADPAL",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "SING8",
+        "child_name": "SIKHA YADAV",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "SING6",
+        "child_name": "M.SAHIL",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "SING4",
+        "child_name": "CHHOTI SHARMA",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "SING7",
+        "child_name": "AASMA",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "SING2",
+        "child_name": "SHREYANSH",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "SING3",
+        "child_name": "PAWAN",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "RASULPUR": [
+      {
+        "unique_id": "JR02-6",
+        "child_name": "VISHNU",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "BRAHMPUR": [
+      {
+        "unique_id": "BRAH1",
+        "child_name": "ATUL",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH10",
+        "child_name": "ANSHU NISHAD",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH3",
+        "child_name": "ABHISHEK",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH7",
+        "child_name": "ADITYA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH6",
+        "child_name": "SHITAL",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH12",
+        "child_name": "SONIKA GOND",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH11",
+        "child_name": "AWANI",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH14",
+        "child_name": "ANKUSH",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH17",
+        "child_name": "ANSH",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH5",
+        "child_name": "ANSH KUMAR MADHESHIYA",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH16",
+        "child_name": "KRISHAN",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH13",
+        "child_name": "ASHUTOSH",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH4",
+        "child_name": "PRIYANSHU KUMARI",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH9",
+        "child_name": "ANISHA",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BRAH15",
+        "child_name": "ANSHU NISHAD",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR. NO-2": [
+      {
+        "unique_id": "JR02-10",
+        "child_name": "SANSKAR",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "NA ": [
+      {
+        "unique_id": "JR-02",
+        "child_name": "ANIKET",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR-2": [
+      {
+        "unique_id": "JR02-11",
+        "child_name": "VIRAJ CHAUHAN",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR NO-2": [
+      {
+        "unique_id": "JR02-27",
+        "child_name": "SUNAUNA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-25",
+        "child_name": "URMILA KUMARI",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-8",
+        "child_name": "ADITI",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-15",
+        "child_name": "PRIYANKA DUBEY",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "NEKAVAR JR02": [
+      {
+        "unique_id": "JR025",
+        "child_name": "AMRITA",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "PIPRAHIYA": [
+      {
+        "unique_id": "BRAH8",
+        "child_name": "RAGINI NISHAD",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR NO 2 ": [
+      {
+        "unique_id": "JR02-1",
+        "child_name": "HIMANSHU",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR-02": [
+      {
+        "unique_id": "JR02-24",
+        "child_name": "SATYAM",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-23",
+        "child_name": "PRIYANSH NISHAD ",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "nadua gyanpur": [
+      {
+        "unique_id": "NADU7",
+        "child_name": "Arjun Nishad",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "vishanthpur": [
+      {
+        "unique_id": "VISH7",
+        "child_name": "Janavi Gupta",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "Vishwanthpur": [
+      {
+        "unique_id": "VISH13",
+        "child_name": "Sandeep",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "SHEMRA TOLA": [
+      {
+        "unique_id": "VISH11",
+        "child_name": "KARTIK MOURY",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "URGENT"
+      }
+    ],
+    "JRNO 02": [
+      {
+        "unique_id": "JR02 28",
+        "child_name": "MANVI",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-9",
+        "child_name": "AMRITA KUMARI",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR02": [
+      {
+        "unique_id": "JR02-21",
+        "child_name": "RISHI KUMAR",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-14",
+        "child_name": "NITISH CHAND",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR-02-22",
+        "child_name": "ARPIT",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-13",
+        "child_name": "AMAN",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR-2 ": [
+      {
+        "unique_id": "JR02-12",
+        "child_name": "ANAMIKA CHAHUHAN",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR2 ": [
+      {
+        "unique_id": "JR02-20",
+        "child_name": "SAPTANSHU NISHAD",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JRNO -02": [
+      {
+        "unique_id": "JR02-7",
+        "child_name": "AMAN",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "BAIJUDIHA": [
+      {
+        "unique_id": "BAIJ7",
+        "child_name": "ARUN",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BAIJ4",
+        "child_name": "LALU PATEL",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BAIJ6",
+        "child_name": "KULDEEP YADAV",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BAIJ2",
+        "child_name": "RIYA SINGH ",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BAIJ5",
+        "child_name": "RAJAN",
+        "priority": "LOW",
+        "severity": "MID",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "BAIJ1",
+        "child_name": "SHUDHANSHU",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "HARAIYA": [
+      {
+        "unique_id": "HARA6",
+        "child_name": "RAJ",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "KHURHRI": [
+      {
+        "unique_id": "BOHA10",
+        "child_name": "NITISH YADAV",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "HARAIYA TOLA": [
+      {
+        "unique_id": "HARA3",
+        "child_name": "NIKITA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARA1",
+        "child_name": "ARJUN KUMAR",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARA7",
+        "child_name": "SIDDHI",
+        "priority": "LOW",
+        "severity": "PROFIUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARA2",
+        "child_name": "SATYAM",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "RASULPUR 2": [
+      {
+        "unique_id": "JR02-3",
+        "child_name": "SATYAM",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "RASUL 02": [
+      {
+        "unique_id": "RJ02-4",
+        "child_name": "KRISHANA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JR NO-02": [
+      {
+        "unique_id": "JRO2-17",
+        "child_name": "ATIL DUBEY",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-19",
+        "child_name": "RIKESH DUBEY",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "JR02-16",
+        "child_name": "UPENDRA DUBEY",
+        "priority": "LOW",
+        "severity": "MILD",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "JRNO-02": [
+      {
+        "unique_id": "JR02-18",
+        "child_name": "ADITI",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "BOHABAR": [
+      {
+        "unique_id": "BOHA12",
+        "child_name": "ARCHANA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "BABUTOLA": [
+      {
+        "unique_id": "HARA4",
+        "child_name": "ANKUSH",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "HARIYA": [
+      {
+        "unique_id": "HARA5",
+        "child_name": "ANSH  ",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "RAJI JAGDISHPUR": [
+      {
+        "unique_id": "RAJI17",
+        "child_name": "ARUN KUMAR",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI22",
+        "child_name": "RIDDHI",
+        "priority": "HIGH",
+        "severity": "MODERATE",
+        "visit_type": "URGENT"
+      },
+      {
+        "unique_id": "RAJ18",
+        "child_name": "RAJ",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI26",
+        "child_name": "DEEPAK",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI25",
+        "child_name": "VAIBHAV",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI23",
+        "child_name": "SUNNY",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI21",
+        "child_name": "SIDDHI",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI19",
+        "child_name": "KHUSHBOO",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI4",
+        "child_name": "ABHAY",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI3",
+        "child_name": "SHIVAM",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJ16",
+        "child_name": "SUNDARAM",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI18",
+        "child_name": "LUCKY",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI7",
+        "child_name": "PRINCE",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI13",
+        "child_name": "ANSHIKA",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI15",
+        "child_name": "ARSH",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI12",
+        "child_name": "KAJAL",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "HARPUR": [
+      {
+        "unique_id": "HARP7",
+        "child_name": "RESHAMI",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARP10",
+        "child_name": "NIKITA GUPTA",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARP9",
+        "child_name": "AMIT BHARTI",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARP8",
+        "child_name": "RAUNAK",
+        "priority": "HIGH",
+        "severity": "SEVERE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARP6",
+        "child_name": "ANAMIKA",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARP2",
+        "child_name": "ANIKET SHARMA",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARP4",
+        "child_name": "DSP SHARMA",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARP3",
+        "child_name": "ARYAN SHARMA",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "HARP1",
+        "child_name": "SHLOK",
+        "priority": "LOW",
+        "severity": "PROFOUND",
+        "visit_type": "INITIAL"
+      }
+    ],
+    "RAJIJAGDISHPUR": [
+      {
+        "unique_id": "RAJI",
+        "child_name": "KAUSHLYA",
+        "priority": "MEDIUM",
+        "severity": "MODERATE",
+        "visit_type": "INITIAL"
+      },
+      {
+        "unique_id": "RAJI2",
+        "child_name": "ASHISH",
+        "priority": "LOW",
+        "severity": "NAN",
+        "visit_type": "INITIAL"
+      }
+    ]
+  },
+  "weekly_routes": [
+    {
+      "date": "2026-06-22",
+      "visits": [
+        {
+          "unique_id": "PACH7",
+          "child_name": "VISHAL KUMAR",
+          "village": "PANCHDEORI",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "PACH5",
+          "child_name": "RAMNAYAN",
+          "village": "PANCHDEORI",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "PACH6",
+          "child_name": "ANUGRAH PRATAP NISHAD",
+          "village": "PANCHDEORI",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "MITH5",
+          "child_name": "ANSH KUMAR SHARMA",
+          "village": "MITHABEL",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "BOHA9",
+          "child_name": "VIKRAM YADAV",
+          "village": "BAHABAR",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "BOHA2",
+          "child_name": "VINITA",
+          "village": "BAHABAR",
+          "priority": "HIGH"
+        }
+      ],
+      "total_distance_km": 1.48,
+      "beneficiaries_covered": 6,
+      "efficiency": 1.31
+    },
+    {
+      "date": "2026-06-23",
+      "visits": [
+        {
+          "unique_id": "HARA6",
+          "child_name": "RAJ",
+          "village": "HARAIYA",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "BAIJ7",
+          "child_name": "ARUN",
+          "village": "BAIJUDIHA",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "HARP9",
+          "child_name": "AMIT BHARTI",
+          "village": "HARPUR",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "HARP8",
+          "child_name": "RAUNAK",
+          "village": "HARPUR",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "HARP7",
+          "child_name": "RESHAMI",
+          "village": "HARPUR",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "HARA4",
+          "child_name": "ANKUSH",
+          "village": "BABUTOLA",
+          "priority": "HIGH"
+        }
+      ],
+      "total_distance_km": 0.0,
+      "beneficiaries_covered": 6,
+      "efficiency": 1.33
+    },
+    {
+      "date": "2026-06-24",
+      "visits": [
+        {
+          "unique_id": "RAJI22",
+          "child_name": "RIDDHI",
+          "village": "RAJI JAGDISHPUR",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "BELW2",
+          "child_name": "VIPESH GUPTA",
+          "village": "BELWA",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "VISH17",
+          "child_name": "MUSKAN",
+          "village": "VISHWANATHPUR",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "HARP6",
+          "child_name": "ANAMIKA",
+          "village": "HARPUR",
+          "priority": "MEDIUM"
+        },
+        {
+          "unique_id": "RAJI4",
+          "child_name": "ABHAY",
+          "village": "RAJI JAGDISHPUR",
+          "priority": "MEDIUM"
+        },
+        {
+          "unique_id": "JRO2-17",
+          "child_name": "ATIL DUBEY",
+          "village": "JR NO-02",
+          "priority": "MEDIUM"
+        },
+        {
+          "unique_id": "RAJ18",
+          "child_name": "RAJ",
+          "village": "RAJI JAGDISHPUR",
+          "priority": "MEDIUM"
+        },
+        {
+          "unique_id": "PACH1",
+          "child_name": "GARIMA",
+          "village": "PANCHDEORI",
+          "priority": "MEDIUM"
+        }
+      ],
+      "total_distance_km": 0.0,
+      "beneficiaries_covered": 8,
+      "efficiency": 2.09
+    },
+    {
+      "date": "2026-06-25",
+      "visits": [
+        {
+          "unique_id": "MITH15",
+          "child_name": "YUG",
+          "village": "MITHABEL",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "VISH14",
+          "child_name": "KULDEEP",
+          "village": "VISHWANATHPUR",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "MITH6",
+          "child_name": "SALONI",
+          "village": "MITHABEL",
+          "priority": "LOW"
+        },
+        {
+          "unique_id": "BELW4",
+          "child_name": "RAJ SINGH",
+          "village": "BELWA",
+          "priority": "LOW"
+        },
+        {
+          "unique_id": "BELW5",
+          "child_name": "DEEPAK YADAV",
+          "village": "BELWA",
+          "priority": "LOW"
+        },
+        {
+          "unique_id": "SING4",
+          "child_name": "CHHOTI SHARMA",
+          "village": "SINGHPUR",
+          "priority": "LOW"
+        },
+        {
+          "unique_id": "NADU15",
+          "child_name": "JYOTI",
+          "village": "NADUA GYANPUR",
+          "priority": "LOW"
+        },
+        {
+          "unique_id": "NADU1",
+          "child_name": "ASMITA",
+          "village": "NADUA GYANPUR",
+          "priority": "LOW"
+        }
+      ],
+      "total_distance_km": 0.0,
+      "beneficiaries_covered": 8,
+      "efficiency": 2.82
+    },
+    {
+      "date": "2026-06-26",
+      "visits": [
+        {
+          "unique_id": "MITH4",
+          "child_name": "DUGAWATI",
+          "village": "MITHABEL",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "BELW8",
+          "child_name": "NAINA",
+          "village": "BELWA",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "MITH12",
+          "child_name": "SUNNY",
+          "village": "MITHABEL",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "NIBH2",
+          "child_name": "KAJAL ",
+          "village": "NIBAHI",
+          "priority": "HIGH"
+        },
+        {
+          "unique_id": "VISH13",
+          "child_name": "Sandeep",
+          "village": "Vishwanthpur",
+          "priority": "LOW"
+        },
+        {
+          "unique_id": "VISH7",
+          "child_name": "Janavi Gupta",
+          "village": "vishanthpur",
+          "priority": "LOW"
+        },
+        {
+          "unique_id": "NADU7",
+          "child_name": "Arjun Nishad",
+          "village": "nadua gyanpur",
+          "priority": "LOW"
+        },
+        {
+          "unique_id": "PARS7",
+          "child_name": "AVANISH MAURYA",
+          "village": "PARSAUNI",
+          "priority": "LOW"
+        }
+      ],
+      "total_distance_km": 0.0,
+      "beneficiaries_covered": 8,
+      "efficiency": 2.0
+    }
+  ],
+  "travel_efficiency": {
+    "total_days": 5,
+    "total_distance_km": 1.48,
+    "total_visits": 36,
+    "total_villages": 25,
+    "avg_distance_per_day": 0.3,
+    "avg_visits_per_day": 7.2,
+    "avg_efficiency": 1.82,
+    "distance_per_visit": 0.04,
+    "villages_per_day": 5.0
+  },
+  "team_assignments": [
+    {
+      "worker_id": "WORKER_1",
+      "assigned_villages": [
+        "BRAHMPUR"
+      ],
+      "beneficiaries": 15,
+      "critical_count": 0,
+      "severe_count": 5,
+      "workers_assigned": 2,
+      "priority": "HIGH"
+    },
+    {
+      "worker_id": "WORKER_2",
+      "assigned_villages": [
+        "PARSAUNI"
+      ],
+      "beneficiaries": 14,
+      "critical_count": 0,
+      "severe_count": 4,
+      "workers_assigned": 1,
+      "priority": "HIGH"
+    },
+    {
+      "worker_id": "WORKER_3",
+      "assigned_villages": [
+        "RAJI JAGDISHPUR"
+      ],
+      "beneficiaries": 16,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_4",
+      "assigned_villages": [
+        "VISHWANATHPUR"
+      ],
+      "beneficiaries": 8,
+      "critical_count": 0,
+      "severe_count": 4,
+      "workers_assigned": 1,
+      "priority": "HIGH"
+    },
+    {
+      "worker_id": "WORKER_5",
+      "assigned_villages": [
+        "PANCHDEORI"
+      ],
+      "beneficiaries": 9,
+      "critical_count": 0,
+      "severe_count": 3,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_6",
+      "assigned_villages": [
+        "NADUA GYANPUR"
+      ],
+      "beneficiaries": 13,
+      "critical_count": 0,
+      "severe_count": 2,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_7",
+      "assigned_villages": [
+        "HARPUR"
+      ],
+      "beneficiaries": 9,
+      "critical_count": 0,
+      "severe_count": 4,
+      "workers_assigned": 1,
+      "priority": "HIGH"
+    },
+    {
+      "worker_id": "WORKER_8",
+      "assigned_villages": [
+        "BAHABAR"
+      ],
+      "beneficiaries": 5,
+      "critical_count": 0,
+      "severe_count": 4,
+      "workers_assigned": 1,
+      "priority": "HIGH"
+    },
+    {
+      "worker_id": "WORKER_9",
+      "assigned_villages": [
+        "MITHABEL"
+      ],
+      "beneficiaries": 13,
+      "critical_count": 0,
+      "severe_count": 2,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_10",
+      "assigned_villages": [
+        "JR NO-2"
+      ],
+      "beneficiaries": 4,
+      "critical_count": 0,
+      "severe_count": 2,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_11",
+      "assigned_villages": [
+        "SINGHPUR"
+      ],
+      "beneficiaries": 7,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_12",
+      "assigned_villages": [
+        "BELWA"
+      ],
+      "beneficiaries": 7,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_13",
+      "assigned_villages": [
+        "BAIJUDIHA"
+      ],
+      "beneficiaries": 6,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_14",
+      "assigned_villages": [
+        "MATHIYA"
+      ],
+      "beneficiaries": 5,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_15",
+      "assigned_villages": [
+        "JR-02"
+      ],
+      "beneficiaries": 2,
+      "critical_count": 0,
+      "severe_count": 2,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_16",
+      "assigned_villages": [
+        "JRNO 02"
+      ],
+      "beneficiaries": 2,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_17",
+      "assigned_villages": [
+        "JR NO-02"
+      ],
+      "beneficiaries": 3,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_18",
+      "assigned_villages": [
+        "JR02"
+      ],
+      "beneficiaries": 4,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_19",
+      "assigned_villages": [
+        "HARAIYA"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_20",
+      "assigned_villages": [
+        "BOHABAR"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_21",
+      "assigned_villages": [
+        "BABUTOLA"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_22",
+      "assigned_villages": [
+        "HARIYAR"
+      ],
+      "beneficiaries": 2,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_23",
+      "assigned_villages": [
+        "RASULPUR"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_24",
+      "assigned_villages": [
+        "HARAIYA TOLA"
+      ],
+      "beneficiaries": 4,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_25",
+      "assigned_villages": [
+        "HARIYA"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_26",
+      "assigned_villages": [
+        "PIPRAHIYA"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_27",
+      "assigned_villages": [
+        "PANDAY"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_28",
+      "assigned_villages": [
+        "RASUL 02"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_29",
+      "assigned_villages": [
+        "JRNO -02"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_30",
+      "assigned_villages": [
+        "SHEMRA TOLA"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 1,
+      "workers_assigned": 1,
+      "priority": "MEDIUM"
+    },
+    {
+      "worker_id": "WORKER_31",
+      "assigned_villages": [
+        "KHURHRI"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_32",
+      "assigned_villages": [
+        "JR2 "
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_33",
+      "assigned_villages": [
+        "RASULPUR 2"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_34",
+      "assigned_villages": [
+        "RAJIJAGDISHPUR"
+      ],
+      "beneficiaries": 2,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_35",
+      "assigned_villages": [
+        "NIBAHI"
+      ],
+      "beneficiaries": 3,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_36",
+      "assigned_villages": [
+        "JR NO 2 "
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_37",
+      "assigned_villages": [
+        "JR-2"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_38",
+      "assigned_villages": [
+        "JR. NO-2"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_39",
+      "assigned_villages": [
+        "NEKAVAR JR02"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_40",
+      "assigned_villages": [
+        "NA "
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_41",
+      "assigned_villages": [
+        "JRNO-02"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_42",
+      "assigned_villages": [
+        "JR-2 "
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_43",
+      "assigned_villages": [
+        "NIBATI"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_44",
+      "assigned_villages": [
+        "Vishwanthpur"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_45",
+      "assigned_villages": [
+        "nadua gyanpur"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    },
+    {
+      "worker_id": "WORKER_46",
+      "assigned_villages": [
+        "vishanthpur"
+      ],
+      "beneficiaries": 1,
+      "critical_count": 0,
+      "severe_count": 0,
+      "workers_assigned": 1,
+      "priority": "LOW"
+    }
+  ]
+}

@@ -1,0 +1,637 @@
+[
+  {
+    "id": "INSIGHT_0003",
+    "category": "geographic_hotspot",
+    "title": "High-Need Village: BRAHMPUR",
+    "description": "BRAHMPUR has 5 SEVERE/CRITICAL cases out of 15 total beneficiaries",
+    "evidence": [
+      "Total beneficiaries: 15",
+      "High-severity cases: 5",
+      "Dominant disability types: ['INTELLECTUAL DISABILITY', 'SPEECH AND LANGUAGE DISABILITY']"
+    ],
+    "impact_score": 90,
+    "confidence": 0.88,
+    "urgency": "HIGH",
+    "recommendations": [
+      "Deploy dedicated field worker",
+      "Organize village-level camp",
+      "Priority home visits",
+      "Community awareness program"
+    ],
+    "affected_count": 15,
+    "location": "BRAHMPUR"
+  },
+  {
+    "id": "INSIGHT_0001",
+    "category": "high_risk",
+    "title": "Progressive Conditions Showing Deterioration",
+    "description": "5 beneficiaries with progressive disabilities showing increasing symptoms",
+    "evidence": [
+      "Neuromuscular conditions require regular monitoring",
+      "Risk of further functional decline"
+    ],
+    "impact_score": 88,
+    "confidence": 0.9,
+    "urgency": "HIGH",
+    "recommendations": [
+      "Medical review referral",
+      "Increased physiotherapy frequency",
+      "Equipment assessment for progression",
+      "Caregiver training for monitoring"
+    ],
+    "affected_count": 5,
+    "location": "Multiple Villages"
+  },
+  {
+    "id": "INSIGHT_0002",
+    "category": "high_risk",
+    "title": "Severe Cases Not Accessing Education",
+    "description": "3 beneficiaries with SEVERE/CRITICAL disability are not in school",
+    "evidence": [
+      "Education is critical for development",
+      "Social isolation risk",
+      "Missed learning opportunities"
+    ],
+    "impact_score": 85,
+    "confidence": 0.92,
+    "urgency": "HIGH",
+    "recommendations": [
+      "Special school enrollment",
+      "Home-based education program",
+      "Transport assistance",
+      "IEP (Individualized Education Plan) development"
+    ],
+    "affected_count": 3,
+    "location": "Multiple Villages"
+  },
+  {
+    "id": "INSIGHT_0012",
+    "category": "service_gap",
+    "title": "School Enrollment Gap for School-Age Children",
+    "description": "4 of 86 school-age children (6-14 years) are not enrolled in school",
+    "evidence": [
+      "School-age beneficiaries: 86",
+      "Not currently studying: 4"
+    ],
+    "impact_score": 82,
+    "confidence": 0.92,
+    "urgency": "HIGH",
+    "recommendations": [
+      "School enrollment campaign",
+      "Transport assistance program",
+      "Special school awareness",
+      "Home-based education option"
+    ],
+    "affected_count": 4,
+    "location": "Multiple Villages"
+  },
+  {
+    "id": "INSIGHT_0011",
+    "category": "service_gap",
+    "title": "Physiotherapy Services Gap",
+    "description": "~65% of 13 beneficiaries with mobility needs may lack physiotherapy",
+    "evidence": [
+      "Total mobility-affected cases: 13",
+      "Estimated gap: 65%"
+    ],
+    "impact_score": 78,
+    "confidence": 0.7,
+    "urgency": "HIGH",
+    "recommendations": [
+      "Deploy physiotherapist to high-need villages",
+      "Train family members in home exercises",
+      "Provide exercise equipment",
+      "Establish physiotherapy camp"
+    ],
+    "affected_count": 8,
+    "location": "Multiple Villages"
+  },
+  {
+    "id": "INSIGHT_0004",
+    "category": "geographic_hotspot",
+    "title": "High-Need Village: BAHABAR",
+    "description": "BAHABAR has 4 SEVERE/CRITICAL cases out of 5 total beneficiaries",
+    "evidence": [
+      "Total beneficiaries: 5",
+      "High-severity cases: 4",
+      "Dominant disability types: ['MULTIPLE DISABILITY', 'MUSCULAR DYSTROPHY']"
+    ],
+    "impact_score": 90,
+    "confidence": 0.88,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Deploy dedicated field worker",
+      "Organize village-level camp",
+      "Priority home visits",
+      "Community awareness program"
+    ],
+    "affected_count": 5,
+    "location": "BAHABAR"
+  },
+  {
+    "id": "INSIGHT_0005",
+    "category": "geographic_hotspot",
+    "title": "High-Need Village: HARPUR",
+    "description": "HARPUR has 4 SEVERE/CRITICAL cases out of 9 total beneficiaries",
+    "evidence": [
+      "Total beneficiaries: 9",
+      "High-severity cases: 4",
+      "Dominant disability types: ['HI', 'CP']"
+    ],
+    "impact_score": 90,
+    "confidence": 0.88,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Deploy dedicated field worker",
+      "Organize village-level camp",
+      "Priority home visits",
+      "Community awareness program"
+    ],
+    "affected_count": 9,
+    "location": "HARPUR"
+  },
+  {
+    "id": "INSIGHT_0006",
+    "category": "geographic_hotspot",
+    "title": "High-Need Village: PARSAUNI",
+    "description": "PARSAUNI has 4 SEVERE/CRITICAL cases out of 14 total beneficiaries",
+    "evidence": [
+      "Total beneficiaries: 14",
+      "High-severity cases: 4",
+      "Dominant disability types: ['INTELLECTUAL DISABILITY', 'LOCOMOTER DISABILITY']"
+    ],
+    "impact_score": 90,
+    "confidence": 0.88,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Deploy dedicated field worker",
+      "Organize village-level camp",
+      "Priority home visits",
+      "Community awareness program"
+    ],
+    "affected_count": 14,
+    "location": "PARSAUNI"
+  },
+  {
+    "id": "INSIGHT_0007",
+    "category": "geographic_hotspot",
+    "title": "High-Need Village: VISHWANATHPUR",
+    "description": "VISHWANATHPUR has 4 SEVERE/CRITICAL cases out of 8 total beneficiaries",
+    "evidence": [
+      "Total beneficiaries: 8",
+      "High-severity cases: 4",
+      "Dominant disability types: ['INTELLECTUAL DISABILITY', 'HI']"
+    ],
+    "impact_score": 90,
+    "confidence": 0.88,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Deploy dedicated field worker",
+      "Organize village-level camp",
+      "Priority home visits",
+      "Community awareness program"
+    ],
+    "affected_count": 8,
+    "location": "VISHWANATHPUR"
+  },
+  {
+    "id": "INSIGHT_0008",
+    "category": "geographic_hotspot",
+    "title": "High-Need Village: PANCHDEORI",
+    "description": "PANCHDEORI has 3 SEVERE/CRITICAL cases out of 9 total beneficiaries",
+    "evidence": [
+      "Total beneficiaries: 9",
+      "High-severity cases: 3",
+      "Dominant disability types: ['LD', 'IDD']"
+    ],
+    "impact_score": 80,
+    "confidence": 0.88,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Deploy dedicated field worker",
+      "Organize village-level camp",
+      "Priority home visits",
+      "Community awareness program"
+    ],
+    "affected_count": 9,
+    "location": "PANCHDEORI"
+  },
+  {
+    "id": "INSIGHT_0009",
+    "category": "geographic_hotspot",
+    "title": "Regional Intervention Zone Required",
+    "description": "6 villages form a high-need cluster requiring coordinated intervention",
+    "evidence": [
+      "Combined high-severity cases: 24",
+      "Villages: BRAHMPUR, BAHABAR, HARPUR, PARSAUNI, VISHWANATHPUR",
+      "Geographic proximity allows resource optimization"
+    ],
+    "impact_score": 80,
+    "confidence": 0.75,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Establish regional camp",
+      "Coordinate multi-village visits",
+      "Shared resource pool",
+      "Unified intervention plan"
+    ],
+    "affected_count": 24,
+    "location": "Regional Cluster"
+  },
+  {
+    "id": "INSIGHT_0031",
+    "category": "opportunity",
+    "title": "Ayushman Card Enrollment Opportunity",
+    "description": "61 beneficiaries are eligible for Ayushman card but not enrolled",
+    "evidence": [
+      "Ayushman provides \u20b95 lakh health coverage",
+      "High healthcare needs in disabled population",
+      "Easy enrollment process"
+    ],
+    "impact_score": 78,
+    "confidence": 0.95,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Organize Ayushman card camp",
+      "Partner with local CSC",
+      "Provide enrollment assistance",
+      "Track enrollment progress"
+    ],
+    "affected_count": 61,
+    "location": "Multiple Villages"
+  },
+  {
+    "id": "INSIGHT_0010",
+    "category": "service_gap",
+    "title": "Speech Therapy Services Gap",
+    "description": "~60% of 22 beneficiaries with speech needs may lack communication interventions",
+    "evidence": [
+      "Total speech/language cases: 22",
+      "Estimated gap: 60%"
+    ],
+    "impact_score": 75,
+    "confidence": 0.7,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Recruit speech therapist",
+      "Train CBR workers in basic speech techniques",
+      "Partner with speech therapy NGO",
+      "Tele-rehabilitation option"
+    ],
+    "affected_count": 13,
+    "location": "All Villages"
+  },
+  {
+    "id": "INSIGHT_0013",
+    "category": "service_gap",
+    "title": "High-Need Village: RAJI JAGDISHPUR",
+    "description": "RAJI JAGDISHPUR has 16 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 16"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 16,
+    "location": "RAJI JAGDISHPUR"
+  },
+  {
+    "id": "INSIGHT_0014",
+    "category": "service_gap",
+    "title": "High-Need Village: BRAHMPUR",
+    "description": "BRAHMPUR has 15 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 15"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 15,
+    "location": "BRAHMPUR"
+  },
+  {
+    "id": "INSIGHT_0015",
+    "category": "service_gap",
+    "title": "High-Need Village: PARSAUNI",
+    "description": "PARSAUNI has 14 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 14"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 14,
+    "location": "PARSAUNI"
+  },
+  {
+    "id": "INSIGHT_0016",
+    "category": "service_gap",
+    "title": "High-Need Village: NADUA GYANPUR",
+    "description": "NADUA GYANPUR has 13 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 13"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 13,
+    "location": "NADUA GYANPUR"
+  },
+  {
+    "id": "INSIGHT_0017",
+    "category": "service_gap",
+    "title": "High-Need Village: MITHABEL",
+    "description": "MITHABEL has 13 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 13"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 13,
+    "location": "MITHABEL"
+  },
+  {
+    "id": "INSIGHT_0018",
+    "category": "service_gap",
+    "title": "High-Need Village: PANCHDEORI",
+    "description": "PANCHDEORI has 9 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 9"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 9,
+    "location": "PANCHDEORI"
+  },
+  {
+    "id": "INSIGHT_0019",
+    "category": "service_gap",
+    "title": "High-Need Village: HARPUR",
+    "description": "HARPUR has 9 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 9"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 9,
+    "location": "HARPUR"
+  },
+  {
+    "id": "INSIGHT_0020",
+    "category": "service_gap",
+    "title": "High-Need Village: VISHWANATHPUR",
+    "description": "VISHWANATHPUR has 8 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 8"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 8,
+    "location": "VISHWANATHPUR"
+  },
+  {
+    "id": "INSIGHT_0021",
+    "category": "service_gap",
+    "title": "High-Need Village: BELWA",
+    "description": "BELWA has 7 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 7"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 7,
+    "location": "BELWA"
+  },
+  {
+    "id": "INSIGHT_0022",
+    "category": "service_gap",
+    "title": "High-Need Village: SINGHPUR",
+    "description": "SINGHPUR has 7 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 7"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 7,
+    "location": "SINGHPUR"
+  },
+  {
+    "id": "INSIGHT_0023",
+    "category": "service_gap",
+    "title": "High-Need Village: BAHABAR",
+    "description": "BAHABAR has 6 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 6"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 6,
+    "location": "BAHABAR"
+  },
+  {
+    "id": "INSIGHT_0024",
+    "category": "service_gap",
+    "title": "High-Need Village: BAIJUDIHA",
+    "description": "BAIJUDIHA has 6 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 6"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 6,
+    "location": "BAIJUDIHA"
+  },
+  {
+    "id": "INSIGHT_0025",
+    "category": "service_gap",
+    "title": "High-Need Village: MATHIYA",
+    "description": "MATHIYA has 5 beneficiaries requiring field worker attention",
+    "evidence": [
+      "Total beneficiaries: 5"
+    ],
+    "impact_score": 70,
+    "confidence": 0.8,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority field worker visit",
+      "Comprehensive needs assessment",
+      "Intervention plan development"
+    ],
+    "affected_count": 5,
+    "location": "MATHIYA"
+  },
+  {
+    "id": "INSIGHT_0027",
+    "category": "data_anomaly",
+    "title": "Missing Disability Severity Data",
+    "description": "20 records have no disability degree/severity recorded",
+    "evidence": [
+      "Affects prioritization",
+      "Limits severity-based analysis",
+      "Requires reassessment"
+    ],
+    "impact_score": 65,
+    "confidence": 0.95,
+    "urgency": "MEDIUM",
+    "recommendations": [
+      "Priority reassessment for affected cases",
+      "Train field workers on severity assessment",
+      "Implement mandatory severity field"
+    ],
+    "affected_count": 20,
+    "location": "Data Quality"
+  },
+  {
+    "id": "INSIGHT_0030",
+    "category": "opportunity",
+    "title": "Group Intervention Opportunity: INTELLECTUAL DISABILITY",
+    "description": "23 beneficiaries have INTELLECTUAL DISABILITY - ideal for group therapy sessions",
+    "evidence": [
+      "Most common disability: INTELLECTUAL DISABILITY",
+      "Count: 23",
+      "Group interventions more cost-effective"
+    ],
+    "impact_score": 72,
+    "confidence": 0.88,
+    "urgency": "LOW",
+    "recommendations": [
+      "Organize group therapy sessions",
+      "Create peer support groups",
+      "Batch equipment distribution",
+      "Shared training programs"
+    ],
+    "affected_count": 23,
+    "location": "All Villages"
+  },
+  {
+    "id": "INSIGHT_0026",
+    "category": "data_anomaly",
+    "title": "Missing Unique IDs",
+    "description": "1 records have missing Unique IDs, affecting data linkage",
+    "evidence": [
+      "Cannot track individual progress",
+      "Duplicate risk",
+      "Reporting accuracy impact"
+    ],
+    "impact_score": 60,
+    "confidence": 0.98,
+    "urgency": "LOW",
+    "recommendations": [
+      "Assign unique IDs to incomplete records",
+      "Implement data entry validation",
+      "Manual ID assignment for orphan records"
+    ],
+    "affected_count": 1,
+    "location": "Data Quality"
+  },
+  {
+    "id": "INSIGHT_0028",
+    "category": "data_anomaly",
+    "title": "Potential Duplicate Records",
+    "description": "4 records may be duplicates (same name and village)",
+    "evidence": [
+      "Same child name in same village with different IDs",
+      "Could be data entry error or genuine siblings",
+      "Requires verification"
+    ],
+    "impact_score": 55,
+    "confidence": 0.7,
+    "urgency": "LOW",
+    "recommendations": [
+      "Manual verification of potential duplicates",
+      "Cross-reference with family information",
+      "Merge or confirm as separate records"
+    ],
+    "affected_count": 4,
+    "location": "Data Quality"
+  },
+  {
+    "id": "INSIGHT_0029",
+    "category": "data_anomaly",
+    "title": "Age Data Outliers",
+    "description": "20 records have age values outside the expected range (0-18 years)",
+    "evidence": [
+      "Age values may be data entry errors",
+      "Affects age-group analysis",
+      "Could impact program eligibility"
+    ],
+    "impact_score": 50,
+    "confidence": 0.92,
+    "urgency": "LOW",
+    "recommendations": [
+      "Review and correct age values",
+      "Implement age validation (0-18)",
+      "Cross-reference with school grade if available"
+    ],
+    "affected_count": 20,
+    "location": "Data Quality"
+  }
+]

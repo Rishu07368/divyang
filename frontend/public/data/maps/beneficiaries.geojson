@@ -1,0 +1,2483 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8167,
+          27.5667
+        ]
+      },
+      "properties": {
+        "id": "HARA9",
+        "name": "ANNU",
+        "age": 10,
+        "gender": "FEMALE",
+        "disability_type": "SPEECH AND LANGUAGE",
+        "disability_degree": "MILD",
+        "village": "HARIYAR",
+        "gram_panchayat": "HARIYAR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8,
+          27.5833
+        ]
+      },
+      "properties": {
+        "id": "BOHA9",
+        "name": "VIKRAM YADAV",
+        "age": 15,
+        "gender": "MALE",
+        "disability_type": "MUSCULAR DYSTROPHY",
+        "disability_degree": "SEVERE",
+        "village": "BAHABAR",
+        "gram_panchayat": "BAHAPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8,
+          27.5833
+        ]
+      },
+      "properties": {
+        "id": "BOHA6",
+        "name": "AYUSH SAHANI",
+        "age": 5,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "BAHABAR",
+        "gram_panchayat": "BAHAPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8,
+          27.5833
+        ]
+      },
+      "properties": {
+        "id": "BOHA2",
+        "name": "VINITA",
+        "age": 10,
+        "gender": "FEMALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "BAHABAR",
+        "gram_panchayat": "BAHAPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8,
+          27.5833
+        ]
+      },
+      "properties": {
+        "id": "nan",
+        "name": "RITIK",
+        "age": 5,
+        "gender": "MALE",
+        "disability_type": "SPEECH AND LANGUAGE",
+        "disability_degree": "MODERATE",
+        "village": "BAHABAR",
+        "gram_panchayat": "BAHAPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8167,
+          27.5667
+        ]
+      },
+      "properties": {
+        "id": "HARA8",
+        "name": "AMAN KUMAR",
+        "age": 5,
+        "gender": "MALE",
+        "disability_type": "HI",
+        "disability_degree": "MODERATE",
+        "village": "HARIYAR",
+        "gram_panchayat": "HARIYAR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH5",
+        "name": "ANSH KUMAR SHARMA",
+        "age": 11,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH6",
+        "name": "KRISHNA GUPTA",
+        "age": 3,
+        "gender": "MALE",
+        "disability_type": "HI",
+        "disability_degree": "MODERATE",
+        "village": "VISHWANATHPUR",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.64,
+          26.88
+        ]
+      },
+      "properties": {
+        "id": "MATH5",
+        "name": "RAGINI KUMARI",
+        "age": 15,
+        "gender": "FEMALE",
+        "disability_type": "HEARING IMPAIRMENT",
+        "disability_degree": "MILD",
+        "village": "MATHIYA",
+        "gram_panchayat": "MATHIYA",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH7",
+        "name": "YURAJ",
+        "age": null,
+        "gender": "MALE",
+        "disability_type": "CEREBRAL POLSY",
+        "disability_degree": "PROFOUND",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "nan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS14",
+        "name": "ANSHIKA",
+        "age": 5,
+        "gender": "FEMALE",
+        "disability_type": "CEREBRAL POLSY",
+        "disability_degree": "SEVERE",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH18",
+        "name": "NIKI",
+        "age": 19,
+        "gender": "FEMALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "VISHWANATHPUR",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS8",
+        "name": "SANJANA",
+        "age": 12,
+        "gender": "FEMALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH14",
+        "name": "KULDEEP",
+        "age": 13,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "VISHWANATHPUR",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH11",
+        "name": "ROHAN",
+        "age": 10,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH15",
+        "name": "YUG",
+        "age": 9,
+        "gender": "MALE",
+        "disability_type": "PHYSICAL IMPAIRMENT",
+        "disability_degree": "MILD",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS1",
+        "name": "VISHWAJEET",
+        "age": 16,
+        "gender": "MALE",
+        "disability_type": "BLINDNESS",
+        "disability_degree": "MODERATE",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH10",
+        "name": "TANANNUM",
+        "age": 21,
+        "gender": "FEMALE",
+        "disability_type": "BLINDNESS",
+        "disability_degree": "SEVERE",
+        "village": "VISHWANATHPUR",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH14",
+        "name": "SANDHYA",
+        "age": 10,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH5",
+        "name": "ADITYA MAURYA",
+        "age": 12,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "VISHWANATHPUR",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS13",
+        "name": "DIPANSHU MAURYA",
+        "age": 14,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.01,
+          25.3
+        ]
+      },
+      "properties": {
+        "id": "BELW3",
+        "name": "SHIVANG",
+        "age": 5,
+        "gender": "MALE",
+        "disability_type": "SPEECH IMPAIRMENT",
+        "disability_degree": "SEVERE",
+        "village": "PANDAY",
+        "gram_panchayat": "BELWA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH13",
+        "name": "YASHRAJ DUBEY",
+        "age": 16,
+        "gender": "MALE",
+        "disability_type": "CEREBRAL POLSY",
+        "disability_degree": "PROFOUND",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABE;",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.64,
+          26.88
+        ]
+      },
+      "properties": {
+        "id": "MATH2",
+        "name": "VISHAL",
+        "age": 11,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "MATHIYA",
+        "gram_panchayat": "MATHIYA",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0,
+          26.9
+        ]
+      },
+      "properties": {
+        "id": "BELW9",
+        "name": "ABHIMANYU SINGH",
+        "age": 15,
+        "gender": "MALE",
+        "disability_type": "MUSCULAR DYSTROPHY",
+        "disability_degree": "SEVERE",
+        "village": "BELWA",
+        "gram_panchayat": "BELWA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "NIBH3",
+        "name": "ANAMIKA",
+        "age": 15,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "NIBAHI",
+        "gram_panchayat": "NIBAHI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS12",
+        "name": "PRIYANSH PANDEY",
+        "age": 15,
+        "gender": "MALE",
+        "disability_type": "BLINDNESS",
+        "disability_degree": "MILD",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU6",
+        "name": "CHANCHAL",
+        "age": 17,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH4",
+        "name": "DUGAWATI",
+        "age": 3,
+        "gender": "FEMALE",
+        "disability_type": "CEREBRAL POLSY",
+        "disability_degree": "PROFOUND",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0,
+          26.9
+        ]
+      },
+      "properties": {
+        "id": "BELW6",
+        "name": "KISHAN YADAV",
+        "age": 12,
+        "gender": "MALE",
+        "disability_type": "PHYSICAL IMPAIRMENT",
+        "disability_degree": "nan",
+        "village": "BELWA",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS6",
+        "name": "MAHADEV PAL",
+        "age": 3,
+        "gender": "MALE",
+        "disability_type": "HEARING IMPAIRMENT",
+        "disability_degree": "MODERATE",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU10",
+        "name": "ABHINASH NISHAD",
+        "age": 18,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH8",
+        "name": "KAINA KUMARI",
+        "age": 14,
+        "gender": "FEMALE",
+        "disability_type": "LOW VISION",
+        "disability_degree": "MILD",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0,
+          26.9
+        ]
+      },
+      "properties": {
+        "id": "BELW5",
+        "name": "DEEPAK YADAV",
+        "age": 17,
+        "gender": "MALE",
+        "disability_type": "BLINDNESS",
+        "disability_degree": "MILD",
+        "village": "BELWA",
+        "gram_panchayat": "BELWA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS15",
+        "name": "AARUSHI",
+        "age": 14,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU11",
+        "name": "GOLDI KUMARI YADAV ",
+        "age": 17,
+        "gender": "FEMALE",
+        "disability_type": "TOTALY BLIND",
+        "disability_degree": "MILD",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0,
+          26.9
+        ]
+      },
+      "properties": {
+        "id": "BELW1",
+        "name": "AMAN YADAV",
+        "age": 17,
+        "gender": "MALE",
+        "disability_type": "VISUAL IMPAIRMENT",
+        "disability_degree": "MILD",
+        "village": "BELWA",
+        "gram_panchayat": "BELWA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH9",
+        "name": "KAJAL KUMARI",
+        "age": 16,
+        "gender": "FEMALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS4",
+        "name": "HARDIK",
+        "age": 6,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU3",
+        "name": "SHIVA ",
+        "age": 8,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0,
+          26.9
+        ]
+      },
+      "properties": {
+        "id": "BELW4",
+        "name": "RAJ SINGH",
+        "age": 14,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "MILD",
+        "village": "BELWA",
+        "gram_panchayat": "BELWA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "NIBH1",
+        "name": "SANOJ",
+        "age": 10,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "nan",
+        "village": "NIBAHI",
+        "gram_panchayat": "NIBAHI",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.64,
+          26.88
+        ]
+      },
+      "properties": {
+        "id": "MATH4",
+        "name": "SAMAR PASWAN",
+        "age": 8,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "MATHIYA",
+        "gram_panchayat": "MATHIYA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU8",
+        "name": "HANSH MAURYA",
+        "age": 14,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0,
+          26.9
+        ]
+      },
+      "properties": {
+        "id": "BELW8",
+        "name": "NAINA",
+        "age": 6,
+        "gender": "FEMALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "BELWA",
+        "gram_panchayat": "BELWA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH12",
+        "name": "SUNNY",
+        "age": 5,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU15",
+        "name": "JYOTI",
+        "age": 12,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "N ADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS3",
+        "name": "SONI",
+        "age": 21,
+        "gender": "FEMALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.0,
+          26.9
+        ]
+      },
+      "properties": {
+        "id": "BELW2",
+        "name": "VIPESH GUPTA",
+        "age": 10,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTOR DISABILITY ( MUSCULAR DYSTROPHY)",
+        "disability_degree": "MODERATE",
+        "village": "BELWA",
+        "gram_panchayat": "BELWA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.25,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "NIBH2",
+        "name": "KAJAL ",
+        "age": 17,
+        "gender": "FEMALE",
+        "disability_type": "CEREBRAL POLSY",
+        "disability_degree": "PROFOUND",
+        "village": "NIBAHI",
+        "gram_panchayat": "nan",
+        "block": "nan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS10",
+        "name": "PIYUSH PRAJAPATI ",
+        "age": 8,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU1",
+        "name": "ASMITA",
+        "age": 6,
+        "gender": "FEMALE",
+        "disability_type": "LOW VISION",
+        "disability_degree": "MILD",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.45,
+          26.92
+        ]
+      },
+      "properties": {
+        "id": "SING6",
+        "name": "M.SAHIL",
+        "age": 5,
+        "gender": "MALE",
+        "disability_type": "LOW VISION",
+        "disability_degree": "MILD",
+        "village": "SINGHPUR",
+        "gram_panchayat": "SINGHPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.45,
+          26.92
+        ]
+      },
+      "properties": {
+        "id": "SING4",
+        "name": "CHHOTI SHARMA",
+        "age": 7,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "SINGHPUR",
+        "gram_panchayat": "SINGHPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.64,
+          26.88
+        ]
+      },
+      "properties": {
+        "id": "MATH1",
+        "name": "KRISHNA",
+        "age": 14,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "MATHIYA",
+        "gram_panchayat": "MATHIYA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.45,
+          26.92
+        ]
+      },
+      "properties": {
+        "id": "SING",
+        "name": "ANGADPAL",
+        "age": 13,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "SINGHPUR",
+        "gram_panchayat": "SINGHPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.38,
+          26.88
+        ]
+      },
+      "properties": {
+        "id": "JR02-6",
+        "name": "VISHNU",
+        "age": 17,
+        "gender": "MALE",
+        "disability_type": "MD(IDD,SPEECH)",
+        "disability_degree": "SEVERE",
+        "village": "RASULPUR",
+        "gram_panchayat": "RASULPUR",
+        "block": "nan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH14",
+        "name": "ANKUSH",
+        "age": 9,
+        "gender": "MALE",
+        "disability_type": "SPEECH IMPAIRMENT",
+        "disability_degree": "MILD",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU14",
+        "name": "ADITYA",
+        "age": 4,
+        "gender": "MALE",
+        "disability_type": "CEREBRAL PALSE",
+        "disability_degree": "SEVERE",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH12",
+        "name": "SONIKA GOND",
+        "age": 15,
+        "gender": "FEMALE",
+        "disability_type": "BLINDNESS",
+        "disability_degree": "MODERATE",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU4",
+        "name": "SANTOSHI",
+        "age": 4,
+        "gender": "FEMALE",
+        "disability_type": "CEREBRAL PALSE",
+        "disability_degree": "PROFOUND",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH17",
+        "name": "ANSH",
+        "age": 6,
+        "gender": "MALE",
+        "disability_type": "SPEECH AND LANGUAGE DISABILITY",
+        "disability_degree": "MILD",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU9",
+        "name": "DEEPIKA YADAV",
+        "age": 16,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH11",
+        "name": "AWANI",
+        "age": 10,
+        "gender": "FEMALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.45,
+          26.92
+        ]
+      },
+      "properties": {
+        "id": "SING7",
+        "name": "AASMA",
+        "age": 5,
+        "gender": "FEMALE",
+        "disability_type": "SPEECH AND LANGUAGE DISABILITY",
+        "disability_degree": "MILD",
+        "village": "SINGHPUR",
+        "gram_panchayat": "SINGHPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "JR025",
+        "name": "AMRITA",
+        "age": 11,
+        "gender": "FEMALE",
+        "disability_type": "IDD , SPEECH , LD(MD)",
+        "disability_degree": "PROFOUND",
+        "village": "NEKAVAR JR02",
+        "gram_panchayat": "JR02",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.42,
+          26.82
+        ]
+      },
+      "properties": {
+        "id": "BRAH8",
+        "name": "RAGINI NISHAD",
+        "age": 13,
+        "gender": "FEMALE",
+        "disability_type": "HI+ID",
+        "disability_degree": "SEVERE",
+        "village": "PIPRAHIYA",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU12",
+        "name": "ANURAG",
+        "age": 13,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "nan",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH5",
+        "name": "ANSH KUMAR MADHESHIYA",
+        "age": 8,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH1",
+        "name": "ATUL",
+        "age": 17,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU16",
+        "name": "RITIKA YADAV",
+        "age": 7,
+        "gender": "FEMALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.45,
+          26.92
+        ]
+      },
+      "properties": {
+        "id": "SING2",
+        "name": "SHREYANSH",
+        "age": 4,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "SINGHPUR",
+        "gram_panchayat": "SINGHPUR  ",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH10",
+        "name": "ANSHU NISHAD",
+        "age": 10,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU7",
+        "name": "Arjun Nishad",
+        "age": 15,
+        "gender": "MALE",
+        "disability_type": "MD, SPEECH",
+        "disability_degree": "nan",
+        "village": "nadua gyanpur",
+        "gram_panchayat": "nadua gyanpur",
+        "block": "brahmpur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH13",
+        "name": "Sandeep",
+        "age": 14,
+        "gender": "MALE",
+        "disability_type": "MD",
+        "disability_degree": "PROFOUND",
+        "village": "Vishwanthpur",
+        "gram_panchayat": "Vishwanthpur",
+        "block": "brahmpur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.44,
+          26.82
+        ]
+      },
+      "properties": {
+        "id": "VISH11",
+        "name": "KARTIK MOURY",
+        "age": 6,
+        "gender": "MALE",
+        "disability_type": "MD",
+        "disability_degree": "SEVERE",
+        "village": "SHEMRA TOLA",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH6",
+        "name": "SALONI",
+        "age": 8,
+        "gender": "FEMALE",
+        "disability_type": "HEARING IMPAIRMENT",
+        "disability_degree": "MILD",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "brahmpur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS7",
+        "name": "AVANISH MAURYA",
+        "age": 9,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL",
+        "disability_degree": "nan",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "nan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH17",
+        "name": "MUSKAN",
+        "age": 24,
+        "gender": "FEMALE",
+        "disability_type": "LOW VISION",
+        "disability_degree": "MILD",
+        "village": "VISHWANATHPUR",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.64,
+          26.88
+        ]
+      },
+      "properties": {
+        "id": "MATH3",
+        "name": "AARUSHI",
+        "age": 16,
+        "gender": "FEMALE",
+        "disability_type": "SPEECH LANGAUGE",
+        "disability_degree": "MODERATE",
+        "village": "MATHIYA",
+        "gram_panchayat": "MATHIYA",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH07",
+        "name": "ADITYA MAURYA",
+        "age": 9,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "VISHWANATHPUR",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MITH3",
+        "name": "SIKHA",
+        "age": 16,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "nan",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.45,
+          26.92
+        ]
+      },
+      "properties": {
+        "id": "SING8",
+        "name": "SIKHA YADAV",
+        "age": 12,
+        "gender": "FEMALE",
+        "disability_type": "INTELLECTUAL DISABILITY(DOWN SYNDROME)",
+        "disability_degree": "MODERATE",
+        "village": "SINGHPUR",
+        "gram_panchayat": "SINGHPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "JR-02-22",
+        "name": "ARPIT",
+        "age": 4,
+        "gender": "MALE",
+        "disability_type": "LD, SPEECH",
+        "disability_degree": "nan",
+        "village": "JR02",
+        "gram_panchayat": "JR02",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH16",
+        "name": "KRISHAN",
+        "age": 11,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "nan",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.45,
+          26.92
+        ]
+      },
+      "properties": {
+        "id": "SING3",
+        "name": "PAWAN",
+        "age": 8,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MILD",
+        "village": "SINGHPUR",
+        "gram_panchayat": "SINGHPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS2",
+        "name": "ANKITA",
+        "age": 12,
+        "gender": "FEMALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.3,
+          26.85
+        ]
+      },
+      "properties": {
+        "id": "NADU2",
+        "name": "ASHWANI KUMAR",
+        "age": 15,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "NADUA GYANPUR",
+        "gram_panchayat": "NADUA GYANPUR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH3",
+        "name": "ABHISHEK",
+        "age": 10,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH13",
+        "name": "ASHUTOSH",
+        "age": 10,
+        "gender": "MALE",
+        "disability_type": "SPEECH AND LANGUAGE DISABILITY",
+        "disability_degree": "MILD",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.28,
+          26.72
+        ]
+      },
+      "properties": {
+        "id": "BAIJ4",
+        "name": "LALU PATEL",
+        "age": null,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "BAIJUDIHA",
+        "gram_panchayat": "BAIJUDIHA",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.28,
+          26.72
+        ]
+      },
+      "properties": {
+        "id": "BAIJ6",
+        "name": "KULDEEP YADAV",
+        "age": null,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "BAIJUDIHA",
+        "gram_panchayat": "BAIJUDIHA",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.28,
+          26.72
+        ]
+      },
+      "properties": {
+        "id": "BAIJ2",
+        "name": "RIYA SINGH ",
+        "age": null,
+        "gender": "FEMALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "BAIJUDIHA",
+        "gram_panchayat": "BAIJUDIHA",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "HARA6",
+        "name": "RAJ",
+        "age": 12,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTOR DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "HARAIYA",
+        "gram_panchayat": "HARIYA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.28,
+          26.72
+        ]
+      },
+      "properties": {
+        "id": "BAIJ5",
+        "name": "RAJAN",
+        "age": null,
+        "gender": "MALE",
+        "disability_type": "HI",
+        "disability_degree": "MID",
+        "village": "BAIJUDIHA",
+        "gram_panchayat": "BAIJUDIHA",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH4",
+        "name": "PRIYANSHU KUMARI",
+        "age": null,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTOR DISABILITY",
+        "disability_degree": "MILD",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8,
+          27.5833
+        ]
+      },
+      "properties": {
+        "id": "BOHA1",
+        "name": "RAJ PASWAN",
+        "age": 14,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "BAHABAR",
+        "gram_panchayat": "BAHABAR",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8,
+          27.5833
+        ]
+      },
+      "properties": {
+        "id": "BOHA7",
+        "name": "PINKI SAHANI",
+        "age": 17,
+        "gender": "FEMALE",
+        "disability_type": "LOCOMOTER DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "BAHABAR",
+        "gram_panchayat": "BAHABAR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.28,
+          26.72
+        ]
+      },
+      "properties": {
+        "id": "BAIJ1",
+        "name": "SHUDHANSHU",
+        "age": null,
+        "gender": "MALE",
+        "disability_type": "SPEECH",
+        "disability_degree": "MILD",
+        "village": "BAIJUDIHA",
+        "gram_panchayat": "BISHAPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.28,
+          26.72
+        ]
+      },
+      "properties": {
+        "id": "BAIJ7",
+        "name": "ARUN",
+        "age": null,
+        "gender": "MALE",
+        "disability_type": "MUSCULAR DISTROPHY",
+        "disability_degree": "SEVERE",
+        "village": "BAIJUDIHA",
+        "gram_panchayat": "BAIJUDIHA",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.4,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "BOHA10",
+        "name": "NITISH YADAV",
+        "age": 17,
+        "gender": "MALE",
+        "disability_type": "LOCOMOTOR DISABILITY",
+        "disability_degree": "MODERATE",
+        "village": "KHURHRI",
+        "gram_panchayat": "BAHABAR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "HARA1",
+        "name": "ARJUN KUMAR",
+        "age": 11,
+        "gender": "MALE",
+        "disability_type": "CEREBRAL PALSY",
+        "disability_degree": "PROFOUND",
+        "village": "HARAIYA TOLA",
+        "gram_panchayat": "HARAIYA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "HARA7",
+        "name": "SIDDHI",
+        "age": 4,
+        "gender": "FEMALE",
+        "disability_type": "TOTAL BLINDNESS",
+        "disability_degree": "PROFIUND",
+        "village": "HARAIYA TOLA",
+        "gram_panchayat": "HARAIYA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "HARA3",
+        "name": "NIKITA",
+        "age": 12,
+        "gender": "FEMALE",
+        "disability_type": "CEREBRAL PALSY",
+        "disability_degree": "SEVERE",
+        "village": "HARAIYA TOLA",
+        "gram_panchayat": "HARAIYA ",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "HARA2",
+        "name": "SATYAM",
+        "age": 6,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "nan",
+        "village": "HARAIYA TOLA",
+        "gram_panchayat": "HARAIYA",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH7",
+        "name": "ADITYA",
+        "age": 14,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH9",
+        "name": "ANISHA",
+        "age": 9,
+        "gender": "FEMALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH6",
+        "name": "SHITAL",
+        "age": 18,
+        "gender": "FEMALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.81,
+          27.58
+        ]
+      },
+      "properties": {
+        "id": "BRAH15",
+        "name": "ANSHU NISHAD",
+        "age": 16,
+        "gender": "FEMALE",
+        "disability_type": "HI",
+        "disability_degree": "MILD",
+        "village": "BRAHMPUR",
+        "gram_panchayat": "BRAHMPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "JR02-21",
+        "name": "RISHI KUMAR",
+        "age": 9,
+        "gender": "MALE",
+        "disability_type": "(LD + IDD) MD",
+        "disability_degree": "MODERATE",
+        "village": "JR02",
+        "gram_panchayat": "JR02",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.38,
+          26.88
+        ]
+      },
+      "properties": {
+        "id": "JR02-3",
+        "name": "SATYAM",
+        "age": 10,
+        "gender": "MALE",
+        "disability_type": "(PHYSICAL,SPEECH + IDD) MD",
+        "disability_degree": "MODERATE",
+        "village": "RASULPUR 2",
+        "gram_panchayat": "RASULPUR2",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "JR02-13",
+        "name": "AMAN",
+        "age": 7,
+        "gender": "MALE",
+        "disability_type": "MD",
+        "disability_degree": "nan",
+        "village": "JR02",
+        "gram_panchayat": "JR02",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.95
+        ]
+      },
+      "properties": {
+        "id": "JR02-14",
+        "name": "NITISH CHAND",
+        "age": 9,
+        "gender": "MALE",
+        "disability_type": "LD + IDD (MD)",
+        "disability_degree": "MODERATE",
+        "village": "JR02",
+        "gram_panchayat": "JR2",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS5",
+        "name": "ARYAN",
+        "age": 5,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.03,
+          26.68
+        ]
+      },
+      "properties": {
+        "id": "VISH8",
+        "name": "RAJ",
+        "age": 9,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL",
+        "disability_degree": "SEVERE",
+        "village": "VISHWANATHPUR",
+        "gram_panchayat": "VISHWANATHPUR",
+        "block": "BRAHMPUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.35,
+          26.78
+        ]
+      },
+      "properties": {
+        "id": "MTH10",
+        "name": "DIMPLE",
+        "age": 7,
+        "gender": "MALE",
+        "disability_type": "MULTIPLE DISABILITY",
+        "disability_degree": "PROFOUND",
+        "village": "MITHABEL",
+        "gram_panchayat": "MITHABEL",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.5,
+          26.75
+        ]
+      },
+      "properties": {
+        "id": "PARS11",
+        "name": "JAGRITI KUMARI",
+        "age": 16,
+        "gender": "FEMALE",
+        "disability_type": "HI",
+        "disability_degree": "nan",
+        "village": "PARSAUNI",
+        "gram_panchayat": "PARSAUNI",
+        "block": "BRAHMPUR "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8167,
+          27.5667
+        ]
+      },
+      "properties": {
+        "id": "HARA5",
+        "name": "ANSH  ",
+        "age": 6,
+        "gender": "MALE",
+        "disability_type": "INTELLECTUAL DISABILITY",
+        "disability_degree": "SEVERE",
+        "village": "HARIYA",
+        "gram_panchayat": "HARAIYA ",
+        "block": "BRAHMPUR"
+      }
+    }
+  ]
+}

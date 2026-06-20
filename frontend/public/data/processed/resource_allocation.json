@@ -1,0 +1,938 @@
+{
+  "intervention_zones": [
+    {
+      "zone_id": "ZONE_002",
+      "name": "Zone BAHABAR",
+      "beneficiary_count": 6,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 4,
+        "MODERATE": 1
+      },
+      "recommended_interventions": [
+        "mobility_aids",
+        "occupational_therapy",
+        "communication_aids",
+        "behavior_therapy",
+        "special_education",
+        "life_skills",
+        "speech_therapy",
+        "physiotherapy"
+      ],
+      "estimated_cost": 4400.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_003",
+      "name": "Zone BAIJUDIHA",
+      "beneficiary_count": 6,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 1,
+        "MODERATE": 2,
+        "MILD": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 3800.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_004",
+      "name": "Zone BELWA",
+      "beneficiary_count": 7,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 1,
+        "MODERATE": 1,
+        "MILD": 3
+      },
+      "recommended_interventions": [
+        "mobility_aids",
+        "assistive_devices",
+        "occupational_therapy",
+        "braille_training",
+        "orientation_mobility",
+        "physiotherapy"
+      ],
+      "estimated_cost": 4300.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_006",
+      "name": "Zone BRAHMPUR",
+      "beneficiary_count": 15,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 5,
+        "MODERATE": 2,
+        "MILD": 5
+      },
+      "recommended_interventions": [
+        "communication_aids",
+        "behavior_therapy",
+        "special_education",
+        "life_skills",
+        "speech_therapy"
+      ],
+      "estimated_cost": 9900.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_011",
+      "name": "Zone HARPUR",
+      "beneficiary_count": 9,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 4,
+        "MODERATE": 1
+      },
+      "recommended_interventions": [
+        "speech_therapy",
+        "communication_aids"
+      ],
+      "estimated_cost": 5900.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_014",
+      "name": "Zone JR NO-2",
+      "beneficiary_count": 4,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 2,
+        "MODERATE": 2
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 3000.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_025",
+      "name": "Zone MATHIYA",
+      "beneficiary_count": 5,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 1,
+        "MODERATE": 1,
+        "MILD": 2
+      },
+      "recommended_interventions": [
+        "hearing_aids",
+        "life_skills",
+        "behavior_therapy",
+        "special_education",
+        "audiology",
+        "sign_language"
+      ],
+      "estimated_cost": 3200.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_026",
+      "name": "Zone MITHABEL",
+      "beneficiary_count": 13,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 2,
+        "MODERATE": 1,
+        "MILD": 3
+      },
+      "recommended_interventions": [
+        "hearing_aids",
+        "life_skills",
+        "behavior_therapy",
+        "special_education",
+        "audiology",
+        "sign_language"
+      ],
+      "estimated_cost": 7600.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_028",
+      "name": "Zone NADUA GYANPUR",
+      "beneficiary_count": 13,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 2,
+        "MODERATE": 2,
+        "MILD": 5
+      },
+      "recommended_interventions": [
+        "special_education",
+        "life_skills",
+        "behavior_therapy"
+      ],
+      "estimated_cost": 8000.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_032",
+      "name": "Zone PANCHDEORI",
+      "beneficiary_count": 9,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 3,
+        "MODERATE": 2,
+        "MILD": 3
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 6100.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_034",
+      "name": "Zone PARSAUNI",
+      "beneficiary_count": 14,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 4,
+        "MODERATE": 4,
+        "MILD": 3
+      },
+      "recommended_interventions": [
+        "hearing_aids",
+        "life_skills",
+        "behavior_therapy",
+        "special_education",
+        "audiology",
+        "sign_language"
+      ],
+      "estimated_cost": 9300.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_036",
+      "name": "Zone RAJI JAGDISHPUR",
+      "beneficiary_count": 16,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 1,
+        "MODERATE": 9
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 10100.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_042",
+      "name": "Zone SINGHPUR",
+      "beneficiary_count": 7,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 1,
+        "MODERATE": 1,
+        "MILD": 4
+      },
+      "recommended_interventions": [
+        "communication_aids",
+        "behavior_therapy",
+        "special_education",
+        "life_skills",
+        "speech_therapy"
+      ],
+      "estimated_cost": 4400.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_043",
+      "name": "Zone VISHWANATHPUR",
+      "beneficiary_count": 8,
+      "priority_score": 100,
+      "severity_distribution": {
+        "SEVERE": 4,
+        "MODERATE": 2,
+        "MILD": 1
+      },
+      "recommended_interventions": [
+        "special_education",
+        "life_skills",
+        "behavior_therapy"
+      ],
+      "estimated_cost": 5700.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_008",
+      "name": "Zone HARAIYA TOLA",
+      "beneficiary_count": 4,
+      "priority_score": 91.8,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [
+        "occupational_therapy",
+        "special_education",
+        "physiotherapy"
+      ],
+      "estimated_cost": 2300.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_019",
+      "name": "Zone JR02",
+      "beneficiary_count": 4,
+      "priority_score": 88.05,
+      "severity_distribution": {
+        "MODERATE": 2
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 2400.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_015",
+      "name": "Zone JR-02",
+      "beneficiary_count": 2,
+      "priority_score": 85.49,
+      "severity_distribution": {
+        "SEVERE": 2
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 1600.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_013",
+      "name": "Zone JR NO-02",
+      "beneficiary_count": 3,
+      "priority_score": 76.93,
+      "severity_distribution": {
+        "MODERATE": 2,
+        "MILD": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 2000.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_022",
+      "name": "Zone JRNO 02",
+      "beneficiary_count": 2,
+      "priority_score": 75.49,
+      "severity_distribution": {
+        "SEVERE": 1,
+        "MODERATE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 1500.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_001",
+      "name": "Zone BABUTOLA",
+      "beneficiary_count": 1,
+      "priority_score": 68.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_037",
+      "name": "Zone RAJIJAGDISHPUR",
+      "beneficiary_count": 2,
+      "priority_score": 62.99,
+      "severity_distribution": {
+        "MODERATE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 1200.0,
+      "impact_potential": "High"
+    },
+    {
+      "zone_id": "ZONE_030",
+      "name": "Zone NIBAHI",
+      "beneficiary_count": 3,
+      "priority_score": 56.93,
+      "severity_distribution": {
+        "MILD": 1
+      },
+      "recommended_interventions": [
+        "special_education",
+        "life_skills",
+        "behavior_therapy"
+      ],
+      "estimated_cost": 1600.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_010",
+      "name": "Zone HARIYAR",
+      "beneficiary_count": 2,
+      "priority_score": 55.49,
+      "severity_distribution": {
+        "MODERATE": 1,
+        "MILD": 1
+      },
+      "recommended_interventions": [
+        "speech_therapy",
+        "communication_aids"
+      ],
+      "estimated_cost": 1300.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_005",
+      "name": "Zone BOHABAR",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_007",
+      "name": "Zone HARAIYA",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_009",
+      "name": "Zone HARIYA",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [
+        "special_education",
+        "life_skills",
+        "behavior_therapy"
+      ],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_021",
+      "name": "Zone JRNO -02",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_033",
+      "name": "Zone PANDAY",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_035",
+      "name": "Zone PIPRAHIYA",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_038",
+      "name": "Zone RASUL 02",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_039",
+      "name": "Zone RASULPUR",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_041",
+      "name": "Zone SHEMRA TOLA",
+      "beneficiary_count": 1,
+      "priority_score": 53.47,
+      "severity_distribution": {
+        "SEVERE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 800.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_023",
+      "name": "Zone JRNO-02",
+      "beneficiary_count": 1,
+      "priority_score": 48.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_031",
+      "name": "Zone NIBATI",
+      "beneficiary_count": 1,
+      "priority_score": 48.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_020",
+      "name": "Zone JR2 ",
+      "beneficiary_count": 1,
+      "priority_score": 43.47,
+      "severity_distribution": {
+        "MODERATE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 700.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_024",
+      "name": "Zone KHURHRI",
+      "beneficiary_count": 1,
+      "priority_score": 43.47,
+      "severity_distribution": {
+        "MODERATE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 700.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_040",
+      "name": "Zone RASULPUR 2",
+      "beneficiary_count": 1,
+      "priority_score": 43.47,
+      "severity_distribution": {
+        "MODERATE": 1
+      },
+      "recommended_interventions": [],
+      "estimated_cost": 700.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_012",
+      "name": "Zone JR NO 2 ",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_016",
+      "name": "Zone JR-2",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_017",
+      "name": "Zone JR-2 ",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_018",
+      "name": "Zone JR. NO-2",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_027",
+      "name": "Zone NA ",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_029",
+      "name": "Zone NEKAVAR JR02",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_044",
+      "name": "Zone Vishwanthpur",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_045",
+      "name": "Zone nadua gyanpur",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    },
+    {
+      "zone_id": "ZONE_046",
+      "name": "Zone vishanthpur",
+      "beneficiary_count": 1,
+      "priority_score": 33.47,
+      "severity_distribution": {},
+      "recommended_interventions": [],
+      "estimated_cost": 500.0,
+      "impact_potential": "Medium"
+    }
+  ],
+  "camp_locations": [
+    {
+      "location_name": "Camp 1",
+      "village": "BRAHMPUR",
+      "total_beneficiaries": 178,
+      "nearby_villages": [
+        "PARSAUNI",
+        "RAJI JAGDISHPUR",
+        "NADUA GYANPUR",
+        "MITHABEL",
+        "HARPUR",
+        "VISHWANATHPUR",
+        "PANCHDEORI",
+        "BAHABAR",
+        "SINGHPUR",
+        "BAIJUDIHA",
+        "BELWA",
+        "JR NO-2",
+        "MATHIYA",
+        "HARAIYA TOLA",
+        "JR-02",
+        "JR NO-02",
+        "JR02",
+        "JRNO 02",
+        "HARIYAR",
+        "BABUTOLA",
+        "BOHABAR",
+        "HARAIYA",
+        "HARIYA",
+        "JRNO -02",
+        "NIBAHI",
+        "PANDAY",
+        "PIPRAHIYA",
+        "RASUL 02",
+        "RASULPUR",
+        "SHEMRA TOLA",
+        "RAJIJAGDISHPUR",
+        "JR2 ",
+        "KHURHRI",
+        "RASULPUR 2",
+        "JR NO 2 ",
+        "JR-2",
+        "JRNO-02",
+        "NEKAVAR JR02",
+        "NIBATI",
+        "Vishwanthpur",
+        "JR-2 ",
+        "JR. NO-2",
+        "NA ",
+        "nadua gyanpur",
+        "vishanthpur"
+      ],
+      "services_needed": [
+        "mobility_aids",
+        "hearing_aids",
+        "assistive_devices",
+        "occupational_therapy",
+        "communication_aids",
+        "behavior_therapy",
+        "sign_language",
+        "special_education",
+        "audiology",
+        "braille_training",
+        "life_skills",
+        "orientation_mobility",
+        "speech_therapy",
+        "physiotherapy"
+      ],
+      "recommended_team": [
+        "Speech Therapist",
+        "Physiotherapist",
+        "Special Educator",
+        "Audiologist",
+        "CBR Worker"
+      ],
+      "priority": 1
+    }
+  ],
+  "staff_requirements": {
+    "special_educators": 12,
+    "physiotherapists": 1,
+    "speech_therapists": 1,
+    "cbr_workers": 6
+  },
+  "service_requirements": {
+    "speech_therapy": 6,
+    "communication_aids": 6,
+    "physiotherapy": 5,
+    "mobility_aids": 3,
+    "occupational_therapy": 5,
+    "special_education": 26,
+    "behavior_therapy": 24,
+    "life_skills": 24,
+    "audiology": 3,
+    "sign_language": 3,
+    "hearing_aids": 3,
+    "orientation_mobility": 1,
+    "braille_training": 1,
+    "assistive_devices": 1
+  },
+  "outreach_schedule": [
+    {
+      "day": 1,
+      "week": 1,
+      "zone_id": "ZONE_002",
+      "village": "BAHABAR",
+      "priority": "MEDIUM",
+      "beneficiaries": 6,
+      "services": "mobility_aids, occupational_therapy, communication_aids",
+      "estimated_time_hours": 3.0
+    },
+    {
+      "day": 2,
+      "week": 1,
+      "zone_id": "ZONE_002",
+      "village": "BAHABAR",
+      "priority": "MEDIUM",
+      "beneficiaries": 6,
+      "services": "mobility_aids, occupational_therapy, communication_aids",
+      "estimated_time_hours": 3.0
+    },
+    {
+      "day": 3,
+      "week": 1,
+      "zone_id": "ZONE_002",
+      "village": "BAHABAR",
+      "priority": "MEDIUM",
+      "beneficiaries": 6,
+      "services": "mobility_aids, occupational_therapy, communication_aids",
+      "estimated_time_hours": 3.0
+    },
+    {
+      "day": 4,
+      "week": 1,
+      "zone_id": "ZONE_003",
+      "village": "BAIJUDIHA",
+      "priority": "MEDIUM",
+      "beneficiaries": 6,
+      "services": "",
+      "estimated_time_hours": 3.0
+    },
+    {
+      "day": 5,
+      "week": 1,
+      "zone_id": "ZONE_004",
+      "village": "BELWA",
+      "priority": "MEDIUM",
+      "beneficiaries": 7,
+      "services": "mobility_aids, assistive_devices, occupational_therapy",
+      "estimated_time_hours": 3.5
+    },
+    {
+      "day": 6,
+      "week": 2,
+      "zone_id": "ZONE_006",
+      "village": "BRAHMPUR",
+      "priority": "MEDIUM",
+      "beneficiaries": 15,
+      "services": "communication_aids, behavior_therapy, special_education",
+      "estimated_time_hours": 6
+    },
+    {
+      "day": 7,
+      "week": 2,
+      "zone_id": "ZONE_006",
+      "village": "BRAHMPUR",
+      "priority": "MEDIUM",
+      "beneficiaries": 15,
+      "services": "communication_aids, behavior_therapy, special_education",
+      "estimated_time_hours": 6
+    },
+    {
+      "day": 8,
+      "week": 2,
+      "zone_id": "ZONE_006",
+      "village": "BRAHMPUR",
+      "priority": "MEDIUM",
+      "beneficiaries": 15,
+      "services": "communication_aids, behavior_therapy, special_education",
+      "estimated_time_hours": 6
+    },
+    {
+      "day": 9,
+      "week": 2,
+      "zone_id": "ZONE_011",
+      "village": "HARPUR",
+      "priority": "MEDIUM",
+      "beneficiaries": 9,
+      "services": "speech_therapy, communication_aids",
+      "estimated_time_hours": 4.5
+    },
+    {
+      "day": 10,
+      "week": 2,
+      "zone_id": "ZONE_011",
+      "village": "HARPUR",
+      "priority": "MEDIUM",
+      "beneficiaries": 9,
+      "services": "speech_therapy, communication_aids",
+      "estimated_time_hours": 4.5
+    },
+    {
+      "day": 11,
+      "week": 3,
+      "zone_id": "ZONE_011",
+      "village": "HARPUR",
+      "priority": "MEDIUM",
+      "beneficiaries": 9,
+      "services": "speech_therapy, communication_aids",
+      "estimated_time_hours": 4.5
+    },
+    {
+      "day": 12,
+      "week": 3,
+      "zone_id": "ZONE_014",
+      "village": "JR NO-2",
+      "priority": "MEDIUM",
+      "beneficiaries": 4,
+      "services": "",
+      "estimated_time_hours": 2.0
+    },
+    {
+      "day": 13,
+      "week": 3,
+      "zone_id": "ZONE_014",
+      "village": "JR NO-2",
+      "priority": "MEDIUM",
+      "beneficiaries": 4,
+      "services": "",
+      "estimated_time_hours": 2.0
+    },
+    {
+      "day": 14,
+      "week": 3,
+      "zone_id": "ZONE_025",
+      "village": "MATHIYA",
+      "priority": "MEDIUM",
+      "beneficiaries": 5,
+      "services": "hearing_aids, life_skills, behavior_therapy",
+      "estimated_time_hours": 2.5
+    },
+    {
+      "day": 15,
+      "week": 3,
+      "zone_id": "ZONE_026",
+      "village": "MITHABEL",
+      "priority": "MEDIUM",
+      "beneficiaries": 13,
+      "services": "hearing_aids, life_skills, behavior_therapy",
+      "estimated_time_hours": 6
+    },
+    {
+      "day": 16,
+      "week": 4,
+      "zone_id": "ZONE_026",
+      "village": "MITHABEL",
+      "priority": "MEDIUM",
+      "beneficiaries": 13,
+      "services": "hearing_aids, life_skills, behavior_therapy",
+      "estimated_time_hours": 6
+    },
+    {
+      "day": 17,
+      "week": 4,
+      "zone_id": "ZONE_028",
+      "village": "NADUA GYANPUR",
+      "priority": "MEDIUM",
+      "beneficiaries": 13,
+      "services": "special_education, life_skills, behavior_therapy",
+      "estimated_time_hours": 6
+    },
+    {
+      "day": 18,
+      "week": 4,
+      "zone_id": "ZONE_028",
+      "village": "NADUA GYANPUR",
+      "priority": "MEDIUM",
+      "beneficiaries": 13,
+      "services": "special_education, life_skills, behavior_therapy",
+      "estimated_time_hours": 6
+    },
+    {
+      "day": 19,
+      "week": 4,
+      "zone_id": "ZONE_032",
+      "village": "PANCHDEORI",
+      "priority": "MEDIUM",
+      "beneficiaries": 9,
+      "services": "",
+      "estimated_time_hours": 4.5
+    },
+    {
+      "day": 20,
+      "week": 4,
+      "zone_id": "ZONE_032",
+      "village": "PANCHDEORI",
+      "priority": "MEDIUM",
+      "beneficiaries": 9,
+      "services": "",
+      "estimated_time_hours": 4.5
+    }
+  ]
+}
