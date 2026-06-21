@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 239 246 255;
+  --primary-dark: 99 102 241;
+}
+
+body {
+  background-color: rgb(var(--primary));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Card animations */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stat card gradients */
+.stat-gradient-blue {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stat-gradient-green {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.stat-gradient-orange {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.stat-gradient-purple {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Severity badges */
+.severity-critical {
+  @apply bg-red-100 text-red-800 font-semibold;
+}
+
+.severity-severe {
+  @apply bg-orange-100 text-orange-800 font-semibold;
+}
+
+.severity-moderate {
+  @apply bg-yellow-100 text-yellow-800 font-semibold;
+}
+
+.severity-mild {
+  @apply bg-green-100 text-green-800 font-semibold;
+}
+
+/* Insight cards */
+.insight-critical {
+  @apply border-l-4 border-red-500 bg-red-50;
+}
+
+.insight-high {
+  @apply border-l-4 border-orange-500 bg-orange-50;
+}
+
+.insight-medium {
+  @apply border-l-4 border-yellow-500 bg-yellow-50;
+}
+
+.insight-low {
+  @apply border-l-4 border-green-500 bg-green-50;
+}
+
+/* Map container */
+.map-container {
+  @apply rounded-xl overflow-hidden shadow-lg;
+  height: 500px;
+}
+
+/* Loading spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Sidebar styles */
+.sidebar-item {
+  @apply flex items-center gap-3 px-4 py-3 rounded-lg transition-all cursor-pointer;
+}
+
+.sidebar-item:hover {
+  @apply bg-white/10;
+}
+
+.sidebar-item.active {
+  @apply bg-white/20 font-semibold;
+}

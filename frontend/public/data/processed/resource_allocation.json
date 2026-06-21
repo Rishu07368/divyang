@@ -10,14 +10,14 @@
         "MODERATE": 1
       },
       "recommended_interventions": [
-        "mobility_aids",
-        "occupational_therapy",
-        "communication_aids",
-        "behavior_therapy",
-        "special_education",
+        "physiotherapy",
         "life_skills",
+        "occupational_therapy",
         "speech_therapy",
-        "physiotherapy"
+        "special_education",
+        "mobility_aids",
+        "communication_aids",
+        "behavior_therapy"
       ],
       "estimated_cost": 4400.0,
       "impact_potential": "High"
@@ -48,11 +48,11 @@
       },
       "recommended_interventions": [
         "mobility_aids",
-        "assistive_devices",
+        "physiotherapy",
         "occupational_therapy",
-        "braille_training",
+        "assistive_devices",
         "orientation_mobility",
-        "physiotherapy"
+        "braille_training"
       ],
       "estimated_cost": 4300.0,
       "impact_potential": "High"
@@ -68,11 +68,11 @@
         "MILD": 5
       },
       "recommended_interventions": [
-        "communication_aids",
-        "behavior_therapy",
-        "special_education",
         "life_skills",
-        "speech_therapy"
+        "speech_therapy",
+        "special_education",
+        "communication_aids",
+        "behavior_therapy"
       ],
       "estimated_cost": 9900.0,
       "impact_potential": "High"
@@ -87,8 +87,8 @@
         "MODERATE": 1
       },
       "recommended_interventions": [
-        "speech_therapy",
-        "communication_aids"
+        "communication_aids",
+        "speech_therapy"
       ],
       "estimated_cost": 5900.0,
       "impact_potential": "High"
@@ -119,9 +119,9 @@
       "recommended_interventions": [
         "hearing_aids",
         "life_skills",
-        "behavior_therapy",
-        "special_education",
         "audiology",
+        "special_education",
+        "behavior_therapy",
         "sign_language"
       ],
       "estimated_cost": 3200.0,
@@ -140,9 +140,9 @@
       "recommended_interventions": [
         "hearing_aids",
         "life_skills",
-        "behavior_therapy",
-        "special_education",
         "audiology",
+        "special_education",
+        "behavior_therapy",
         "sign_language"
       ],
       "estimated_cost": 7600.0,
@@ -159,9 +159,9 @@
         "MILD": 5
       },
       "recommended_interventions": [
-        "special_education",
         "life_skills",
-        "behavior_therapy"
+        "behavior_therapy",
+        "special_education"
       ],
       "estimated_cost": 8000.0,
       "impact_potential": "High"
@@ -193,9 +193,9 @@
       "recommended_interventions": [
         "hearing_aids",
         "life_skills",
-        "behavior_therapy",
-        "special_education",
         "audiology",
+        "special_education",
+        "behavior_therapy",
         "sign_language"
       ],
       "estimated_cost": 9300.0,
@@ -225,11 +225,11 @@
         "MILD": 4
       },
       "recommended_interventions": [
-        "communication_aids",
-        "behavior_therapy",
-        "special_education",
         "life_skills",
-        "speech_therapy"
+        "speech_therapy",
+        "special_education",
+        "communication_aids",
+        "behavior_therapy"
       ],
       "estimated_cost": 4400.0,
       "impact_potential": "High"
@@ -245,9 +245,9 @@
         "MILD": 1
       },
       "recommended_interventions": [
-        "special_education",
         "life_skills",
-        "behavior_therapy"
+        "behavior_therapy",
+        "special_education"
       ],
       "estimated_cost": 5700.0,
       "impact_potential": "High"
@@ -351,9 +351,9 @@
         "MILD": 1
       },
       "recommended_interventions": [
-        "special_education",
         "life_skills",
-        "behavior_therapy"
+        "behavior_therapy",
+        "special_education"
       ],
       "estimated_cost": 1600.0,
       "impact_potential": "Medium"
@@ -368,8 +368,8 @@
         "MILD": 1
       },
       "recommended_interventions": [
-        "speech_therapy",
-        "communication_aids"
+        "communication_aids",
+        "speech_therapy"
       ],
       "estimated_cost": 1300.0,
       "impact_potential": "Medium"
@@ -407,9 +407,9 @@
         "SEVERE": 1
       },
       "recommended_interventions": [
-        "special_education",
         "life_skills",
-        "behavior_therapy"
+        "behavior_therapy",
+        "special_education"
       ],
       "estimated_cost": 800.0,
       "impact_potential": "Medium"
@@ -686,20 +686,20 @@
         "vishanthpur"
       ],
       "services_needed": [
-        "mobility_aids",
         "hearing_aids",
-        "assistive_devices",
+        "life_skills",
+        "physiotherapy",
         "occupational_therapy",
+        "audiology",
+        "speech_therapy",
+        "braille_training",
+        "assistive_devices",
+        "special_education",
+        "mobility_aids",
+        "orientation_mobility",
         "communication_aids",
         "behavior_therapy",
-        "sign_language",
-        "special_education",
-        "audiology",
-        "braille_training",
-        "life_skills",
-        "orientation_mobility",
-        "speech_therapy",
-        "physiotherapy"
+        "sign_language"
       ],
       "recommended_team": [
         "Speech Therapist",
@@ -741,7 +741,7 @@
       "village": "BAHABAR",
       "priority": "MEDIUM",
       "beneficiaries": 6,
-      "services": "mobility_aids, occupational_therapy, communication_aids",
+      "services": "physiotherapy, life_skills, occupational_therapy",
       "estimated_time_hours": 3.0
     },
     {
@@ -751,7 +751,7 @@
       "village": "BAHABAR",
       "priority": "MEDIUM",
       "beneficiaries": 6,
-      "services": "mobility_aids, occupational_therapy, communication_aids",
+      "services": "physiotherapy, life_skills, occupational_therapy",
       "estimated_time_hours": 3.0
     },
     {
@@ -761,7 +761,7 @@
       "village": "BAHABAR",
       "priority": "MEDIUM",
       "beneficiaries": 6,
-      "services": "mobility_aids, occupational_therapy, communication_aids",
+      "services": "physiotherapy, life_skills, occupational_therapy",
       "estimated_time_hours": 3.0
     },
     {
@@ -781,7 +781,7 @@
       "village": "BELWA",
       "priority": "MEDIUM",
       "beneficiaries": 7,
-      "services": "mobility_aids, assistive_devices, occupational_therapy",
+      "services": "mobility_aids, physiotherapy, occupational_therapy",
       "estimated_time_hours": 3.5
     },
     {
@@ -791,7 +791,7 @@
       "village": "BRAHMPUR",
       "priority": "MEDIUM",
       "beneficiaries": 15,
-      "services": "communication_aids, behavior_therapy, special_education",
+      "services": "life_skills, speech_therapy, special_education",
       "estimated_time_hours": 6
     },
     {
@@ -801,7 +801,7 @@
       "village": "BRAHMPUR",
       "priority": "MEDIUM",
       "beneficiaries": 15,
-      "services": "communication_aids, behavior_therapy, special_education",
+      "services": "life_skills, speech_therapy, special_education",
       "estimated_time_hours": 6
     },
     {
@@ -811,7 +811,7 @@
       "village": "BRAHMPUR",
       "priority": "MEDIUM",
       "beneficiaries": 15,
-      "services": "communication_aids, behavior_therapy, special_education",
+      "services": "life_skills, speech_therapy, special_education",
       "estimated_time_hours": 6
     },
     {
@@ -821,7 +821,7 @@
       "village": "HARPUR",
       "priority": "MEDIUM",
       "beneficiaries": 9,
-      "services": "speech_therapy, communication_aids",
+      "services": "communication_aids, speech_therapy",
       "estimated_time_hours": 4.5
     },
     {
@@ -831,7 +831,7 @@
       "village": "HARPUR",
       "priority": "MEDIUM",
       "beneficiaries": 9,
-      "services": "speech_therapy, communication_aids",
+      "services": "communication_aids, speech_therapy",
       "estimated_time_hours": 4.5
     },
     {
@@ -841,7 +841,7 @@
       "village": "HARPUR",
       "priority": "MEDIUM",
       "beneficiaries": 9,
-      "services": "speech_therapy, communication_aids",
+      "services": "communication_aids, speech_therapy",
       "estimated_time_hours": 4.5
     },
     {
@@ -871,7 +871,7 @@
       "village": "MATHIYA",
       "priority": "MEDIUM",
       "beneficiaries": 5,
-      "services": "hearing_aids, life_skills, behavior_therapy",
+      "services": "hearing_aids, life_skills, audiology",
       "estimated_time_hours": 2.5
     },
     {
@@ -881,7 +881,7 @@
       "village": "MITHABEL",
       "priority": "MEDIUM",
       "beneficiaries": 13,
-      "services": "hearing_aids, life_skills, behavior_therapy",
+      "services": "hearing_aids, life_skills, audiology",
       "estimated_time_hours": 6
     },
     {
@@ -891,7 +891,7 @@
       "village": "MITHABEL",
       "priority": "MEDIUM",
       "beneficiaries": 13,
-      "services": "hearing_aids, life_skills, behavior_therapy",
+      "services": "hearing_aids, life_skills, audiology",
       "estimated_time_hours": 6
     },
     {
@@ -901,7 +901,7 @@
       "village": "NADUA GYANPUR",
       "priority": "MEDIUM",
       "beneficiaries": 13,
-      "services": "special_education, life_skills, behavior_therapy",
+      "services": "life_skills, behavior_therapy, special_education",
       "estimated_time_hours": 6
     },
     {
@@ -911,7 +911,7 @@
       "village": "NADUA GYANPUR",
       "priority": "MEDIUM",
       "beneficiaries": 13,
-      "services": "special_education, life_skills, behavior_therapy",
+      "services": "life_skills, behavior_therapy, special_education",
       "estimated_time_hours": 6
     },
     {

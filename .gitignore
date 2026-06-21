@@ -8,6 +8,17 @@ __pycache__/
 dist/
 build/
 
+# Node
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Build outputs
+frontend/.next/
+frontend/out/
+*.log
+logs/
+
 # IDE
 .vscode/
 .idea/
@@ -21,9 +32,6 @@ Thumbs.db
 # Environment
 .env
 .env.local
-node_modules/
 
-# Logs
-*.log
-logs/
-# Source Data (do not commit)\n*.xlsx
+# Data files (uploaded by users)
+analytics/uploads/
